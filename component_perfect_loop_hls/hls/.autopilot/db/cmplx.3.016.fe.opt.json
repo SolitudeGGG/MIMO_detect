@@ -1,0 +1,124 @@
+{
+  "0": {
+    "basicblocks": 86,
+    "calls": "6 2 5 2 2 5 2 2 4 2 2 2 2 2 2 2 7 2 2 2 2 2",
+    "file": "MHGD_accel.c",
+    "fileloc": 214,
+    "instructions": 374,
+    "loads": {
+      "L": 4
+    },
+    "name": "MHGD_detect_accel",
+    "stores": {
+      "L": 32,
+      "T": 3
+    },
+    "total_instructions": 2099
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 5,
+    "name": "to_ieee",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 324,
+    "instructions": 30,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 30
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_floor.h",
+    "fileloc": 13,
+    "instructions": 45,
+    "loads": {
+      "G": 1
+    },
+    "name": "generic_floor<double>",
+    "total_instructions": 45
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "3",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 115,
+    "loads": {
+      "L": 1
+    },
+    "name": "map",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 160
+  },
+  "5": {
+    "basicblocks": 52,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 135,
+    "instructions": 365,
+    "loads": {
+      "L": 29
+    },
+    "name": "Inverse_LU",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 365
+  },
+  "6": {
+    "basicblocks": 22,
+    "calls": "1 1 1 1 8 1 1 1 1",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 231,
+    "loads": {
+      "G": 4,
+      "L": 2
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 288
+  },
+  "7": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 37,
+    "name": "map",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 37
+  },
+  "8": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 17
+  }
+}

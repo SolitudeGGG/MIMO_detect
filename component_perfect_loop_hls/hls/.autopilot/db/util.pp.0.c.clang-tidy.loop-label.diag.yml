@@ -1,0 +1,346 @@
+---
+MainSourceFile:  /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_35_1:  '
+    FileOffset:      35
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          96538
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_35_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_42_2:  '
+    FileOffset:      42
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          96670
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_42_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_1:  '
+    FileOffset:      53
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          96847
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_101_1:  '
+    FileOffset:      101
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          97915
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_101_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_103_2:  '
+    FileOffset:      103
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          97946
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_103_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          98184
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_2:  '
+    FileOffset:      119
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          98215
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_3:  '
+    FileOffset:      124
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          98287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          98981
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_2:  '
+    FileOffset:      173
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          99139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_179_3:  '
+    FileOffset:      179
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          99254
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_179_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_186_4:  '
+    FileOffset:      186
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          99404
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_186_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_5:  '
+    FileOffset:      190
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          99509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_196_6:  '
+    FileOffset:      196
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          99649
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_196_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_203_7:  '
+    FileOffset:      203
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          99882
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_203_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_8:  '
+    FileOffset:      209
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          100022
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_219_9:  '
+    FileOffset:      219
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          100293
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_219_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_10:  '
+    FileOffset:      226
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          100467
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_230_11:  '
+    FileOffset:      230
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          100572
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_230_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_236_12:  '
+    FileOffset:      236
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          100716
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_236_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_13:  '
+    FileOffset:      248
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          101129
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_255_14:  '
+    FileOffset:      255
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          101293
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_255_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_15:  '
+    FileOffset:      259
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          101398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_264_16:  '
+    FileOffset:      264
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          101492
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_264_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          101940
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_290_1:  '
+    FileOffset:      290
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          102192
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_290_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          102583
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_316_1:  '
+    FileOffset:      316
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          102844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_316_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_1:  '
+    FileOffset:      345
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          103262
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_348_2:  '
+    FileOffset:      348
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          103368
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_348_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_352_3:  '
+    FileOffset:      352
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          103519
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_352_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_404_1:  '
+    FileOffset:      404
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          104474
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_404_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_416_2:  '
+    FileOffset:      416
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          104672
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_416_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_438_1:  '
+    FileOffset:      438
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          105062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_438_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_451_1:  '
+    FileOffset:      451
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          105311
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_451_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_462_1:  '
+    FileOffset:      462
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          105514
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_462_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_477_1:  '
+    FileOffset:      477
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          105719
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_477_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_489_1:  '
+    FileOffset:      489
+    FilePath:        util.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/.autopilot/db/util.pp.0.c
+        Offset:          105894
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_489_1: '
+...

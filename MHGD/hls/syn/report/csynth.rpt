@@ -1,0 +1,119 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MHGD_detect_accel'
+================================================================
++ General Information: 
+    * Date:           Tue Mar 25 20:26:15 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        MHGD
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+    |       Modules       | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |           |     |
+    |       & Loops       | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT    | URAM|
+    +---------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+    |+ MHGD_detect_accel  |     -|  6.00|        0|   0.000|         -|        1|     -|       yes|     -|   -|  -|  119 (~0%)|    -|
+    +---------------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+-----------+----------+
+| Port      | Mode    | Direction | Bitwidth |
++-----------+---------+-----------+----------+
+| H         | ap_none | in        | 64       |
+| Nr        | ap_none | in        | 32       |
+| Nt        | ap_none | in        | 32       |
+| ap_return |         | out       | 32       |
+| iter      | ap_none | in        | 32       |
+| lr_approx | ap_none | in        | 32       |
+| mmse_init | ap_none | in        | 32       |
+| mu        | ap_none | in        | 32       |
+| sigma2    | ap_none | in        | 32       |
+| v_tb      | ap_none | in        | 64       |
+| x_hat     | ap_none | in        | 64       |
+| y         | ap_none | in        | 64       |
++-----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+----------+
+| Argument  | Direction | Datatype |
++-----------+-----------+----------+
+| x_hat     | inout     | pointer  |
+| Nt        | in        | int      |
+| Nr        | in        | int      |
+| mu        | in        | int      |
+| H         | unused    | pointer  |
+| y         | unused    | pointer  |
+| sigma2    | in        | float    |
+| mmse_init | in        | int      |
+| lr_approx | in        | int      |
+| iter      | in        | int      |
+| v_tb      | unused    | pointer  |
+| return    | out       | float    |
++-----------+-----------+----------+
+
+* SW-to-HW Mapping
++-----------+--------------+---------+
+| Argument  | HW Interface | HW Type |
++-----------+--------------+---------+
+| x_hat     | x_hat        | port    |
+| Nt        | Nt           | port    |
+| Nr        | Nr           | port    |
+| mu        | mu           | port    |
+| H         | H            | port    |
+| y         | y            | port    |
+| sigma2    | sigma2       | port    |
+| mmse_init | mmse_init    | port    |
+| lr_approx | lr_approx    | port    |
+| iter      | iter         | port    |
+| v_tb      | v_tb         | port    |
+| return    | ap_return    | port    |
++-----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------+-----+--------+------------+-------+------+---------+
+| Name                  | DSP | Pragma | Variable   | Op    | Impl | Latency |
++-----------------------+-----+--------+------------+-------+------+---------+
+| + MHGD_detect_accel   | 0   |        |            |       |      |         |
+|   icmp_ln435_fu_70_p2 |     |        | icmp_ln435 | setgt | auto | 0       |
+|   icmp_ln420_fu_76_p2 |     |        | icmp_ln420 | seteq | auto | 0       |
+|   and_ln394_fu_82_p2  |     |        | and_ln394  | and   | auto | 0       |
+|   icmp_ln466_fu_88_p2 |     |        | icmp_ln466 | setgt | auto | 0       |
++-----------------------+-----+--------+------------+-------+------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

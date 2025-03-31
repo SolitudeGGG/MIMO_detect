@@ -1,0 +1,806 @@
+Execute         source -notrace -encoding utf-8 /tools/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute           source -encoding utf-8 /tools/Xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls opened at Mon Mar 31 09:41:55 CST 2025
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         write_ini /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls_config.cfg -apsfile /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/hls.aps -filepaths relative -quiet 
+Execute     add_files MHGD_accel.c 
+INFO: [HLS 200-1510] Running: add_files MHGD_accel.c 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel.c' to the project
+Execute     add_files MHGD_accel.h 
+INFO: [HLS 200-1510] Running: add_files MHGD_accel.h 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel.h' to the project
+Execute     add_files MIMO_simulation.c 
+INFO: [HLS 200-1510] Running: add_files MIMO_simulation.c 
+INFO: [HLS 200-10] Adding design file 'MIMO_simulation.c' to the project
+Execute     add_files MIMO_simulation.h 
+INFO: [HLS 200-1510] Running: add_files MIMO_simulation.h 
+INFO: [HLS 200-10] Adding design file 'MIMO_simulation.h' to the project
+Execute     add_files MyComplex.c 
+INFO: [HLS 200-1510] Running: add_files MyComplex.c 
+WARNING: [HLS 200-40] Cannot find design file 'MyComplex.c'
+Execute     add_files MyComplex.h 
+INFO: [HLS 200-1510] Running: add_files MyComplex.h 
+INFO: [HLS 200-10] Adding design file 'MyComplex.h' to the project
+Execute     add_files sys_config.h 
+INFO: [HLS 200-1510] Running: add_files sys_config.h 
+INFO: [HLS 200-10] Adding design file 'sys_config.h' to the project
+Execute     add_files util.c 
+INFO: [HLS 200-1510] Running: add_files util.c 
+INFO: [HLS 200-10] Adding design file 'util.c' to the project
+Execute     add_files util.h 
+INFO: [HLS 200-1510] Running: add_files util.h 
+INFO: [HLS 200-10] Adding design file 'util.h' to the project
+Execute     add_files -tb tb.c 
+INFO: [HLS 200-1510] Running: add_files -tb tb.c 
+INFO: [HLS 200-10] Adding test bench file 'tb.c' to the project
+Execute     add_files -tb result.golden.dat 
+INFO: [HLS 200-1510] Running: add_files -tb result.golden.dat 
+WARNING: [HLS 200-40] Cannot find test bench file 'result.golden.dat'
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=5.txt -cflags -I. 
+WARNING: [HLS 200-40] Cannot find test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=5.txt'
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=10.txt -cflags -I. 
+WARNING: [HLS 200-40] Cannot find test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=10.txt'
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=15.txt -cflags -I. 
+WARNING: [HLS 200-40] Cannot find test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=15.txt'
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=20.txt -cflags -I. 
+WARNING: [HLS 200-40] Cannot find test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=20.txt'
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=25.txt -cflags -I. 
+WARNING: [HLS 200-40] Cannot find test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/Y_SNR=25.txt'
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt' to the project
+Execute     add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt' to the project
+Execute     set_top MHGD_detect_accel 
+INFO: [HLS 200-1510] Running: set_top MHGD_detect_accel 
+Execute     set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+Execute       create_platform xcvu9p-flga2104-2-i -board  
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis/2024.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2104-2-i'
+Command       create_platform done; 0.9 sec.
+Execute       source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.95 sec.
+Execute     create_clock -period 10 
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+Execute       ::AP::init_summary_file csim 
+Execute         AP::app_get_file_relativeroot [AP::app_get_root] {}
+Command       AP::init_summary_file done; 2.52 sec.
+Execute       write_ini /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls_config.cfg -apsfile /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/hls.aps -filepaths relative -quiet 
+Execute         send_msg_by_id WARNING @200-1998@%s%s MyComplex.c /home/ggg_wufuqi/hls/MHGD /home/ggg_wufuqi/hls/MHGD 
+WARNING: [HLS 200-1998] cannot find relative file path 'MyComplex.c' in directory(s): /home/ggg_wufuqi/hls/MHGD /home/ggg_wufuqi/hls/MHGD
+Execute         send_msg_by_id WARNING @200-1998@%s%s ../../result.golden.dat /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD 
+WARNING: [HLS 200-1998] cannot find relative file path '../../result.golden.dat' in directory(s): /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute       send_msg_by_id WARNING @200-1998@%s%s ../../result.golden.dat /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD 
+WARNING: [HLS 200-1998] cannot find relative file path '../../result.golden.dat' in directory(s): /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute       send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute       source /tools/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       source run_sim.tcl 
+Command       ap_source done; 1868.99 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 1872.03 sec.
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:31:12; Allocated memory: 16.207 MB.
+Execute     set_directive_pipeline loop_perfect/LOOP_J 
+INFO: [HLS 200-1510] Running: set_directive_pipeline loop_perfect/LOOP_J 
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       ::AP::init_summary_file csynth 
+Execute         AP::app_get_file_relativeroot [AP::app_get_root] {}
+Command       AP::init_summary_file done; 2.53 sec.
+Execute       write_ini /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls_config.cfg -apsfile /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/hls.aps -filepaths relative -quiet 
+Execute         send_msg_by_id WARNING @200-1998@%s%s MyComplex.c /home/ggg_wufuqi/hls/MHGD /home/ggg_wufuqi/hls/MHGD 
+WARNING: [HLS 200-1998] cannot find relative file path 'MyComplex.c' in directory(s): /home/ggg_wufuqi/hls/MHGD /home/ggg_wufuqi/hls/MHGD
+Execute         send_msg_by_id WARNING @200-1998@%s%s ../../result.golden.dat /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD 
+WARNING: [HLS 200-1998] cannot find relative file path '../../result.golden.dat' in directory(s): /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute       send_msg_by_id WARNING @200-1998@%s%s ../../result.golden.dat /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD 
+WARNING: [HLS 200-1998] cannot find relative file path '../../result.golden.dat' in directory(s): /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/solution /home/ggg_wufuqi/hls/MHGD
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+WARNING: [HLS 200-40] Cannot find source file MyComplex.c; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.54 seconds. CPU system time: 0.03 seconds. Elapsed time: 2.59 seconds; current allocated memory: 679.941 MB.
+Execute         set_directive_top MHGD_detect_accel -name=MHGD_detect_accel 
+INFO: [HLS 200-10] Analyzing design file 'util.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling util.c as C
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang util.c -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.c.clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.c.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.err.log
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c std=gnu99 -target fpga  -directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/.systemc_flag -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c std=gnu99 -target fpga  -directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.clang-tidy.loop-label.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.clang-tidy.loop-label.err.log
+Execute           source /tools/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.xilinx-dataflow-lawyer.diag.yml /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.xilinx-dataflow-lawyer.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.xilinx-dataflow-lawyer.err.log
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.bc -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.pp.0.c.clang.err.log
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MIMO_simulation.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling MIMO_simulation.c as C
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang MIMO_simulation.c -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.c.clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.c.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.err.log
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c std=gnu99 -target fpga  -directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/.systemc_flag -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c std=gnu99 -target fpga  -directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.clang-tidy.loop-label.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.clang-tidy.loop-label.err.log
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.xilinx-dataflow-lawyer.diag.yml /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.xilinx-dataflow-lawyer.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.xilinx-dataflow-lawyer.err.log
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.bc -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.pp.0.c.clang.err.log
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MHGD_accel.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling MHGD_accel.c as C
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang MHGD_accel.c -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.c.clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.c.clang.err.log
+WARNING: [HLS 207-910] '__SYNTHESIS__' macro redefined (MHGD_accel.c:13:10)
+INFO: [HLS 207-71] previous definition is here (<command line>:3:9)
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/clang.err.log
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:216:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:217:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:218:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:219:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:220:36)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:221:36)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:222:44)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:223:47)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:224:47)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:225:42)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:226:39)
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c std=gnu99 -target fpga  -directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/.systemc_flag -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c std=gnu99 -target fpga  -directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/all.directive.json -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.clang-tidy.loop-label.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.clang-tidy.loop-label.err.log
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.xilinx-dataflow-lawyer.diag.yml /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.xilinx-dataflow-lawyer.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.xilinx-dataflow-lawyer.err.log
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot -I /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.bc -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.clang.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c.clang.err.log
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+WARNING: [HLS 207-5292] unused parameter 'Nr' (MHGD_accel.c:149:34)
+Execute         send_msg_by_id WARNING @200-1986@%s%s PIPELINE /home/ggg_wufuqi/hls/MHGD/run_tcl.tcl:70 
+WARNING: [HLS 200-1986] Could not apply PIPELINE directive, invalid function, label, or variable (/home/ggg_wufuqi/hls/MHGD/run_tcl.tcl:70)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.47 seconds. CPU system time: 0.44 seconds. Elapsed time: 0.91 seconds; current allocated memory: 683.121 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc -args  "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.g.bc" "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.g.bc" "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.g.bc"  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/util.g.bc /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MIMO_simulation.g.bc /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.g.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+Execute         run_link_or_opt -opt -out /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc -args /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.2.m1.bc -args /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis/2024.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis/2024.2/lnx64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis/2024.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis/2024.2/lnx64/lib/libhlsmc++_39.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.2.m1.bc > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+Command         run_link_or_opt done; 0.72 sec.
+Execute         run_link_or_opt -opt -out /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc -args /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=MHGD_detect_accel -reflow-float-conversion 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=MHGD_detect_accel -reflow-float-conversion -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 0.32 sec.
+Execute         run_link_or_opt -out /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.4.m2.bc -args /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis/2024.2/lnx64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis/2024.2/lnx64/lib/libfloatconversion_39.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.4.m2.bc > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+Execute         run_link_or_opt -opt -out /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.5.gdce.bc -args /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=MHGD_detect_accel 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.5.gdce.bc > /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: /tools/Xilinx/Vitis/2024.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=MHGD_detect_accel -mllvm -hls-db-dir -mllvm /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.5.gdce.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4320.000000_DSP_6840.000000_FF_2364480.000000_LUT_1182240.000000_SLICE_147780.000000_SLR_3.000000_URAM_960.000000 -device-name-info=xcvu9p-flga2104-2-i 2> /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute         send_msg_by_id WARNING @200-1995@%s%s%s 100,733 Compile/Link /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+WARNING: [HLS 200-1995] There were 100,733 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 10,633 Unroll/Inline (step 1) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 10,633 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 6,550 Unroll/Inline (step 2) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 6,550 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 6,415 Unroll/Inline (step 3) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 6,415 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,939 Unroll/Inline (step 4) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,939 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,464 Array/Struct (step 1) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,464 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,464 Array/Struct (step 2) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,464 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,566 Array/Struct (step 3) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,566 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,539 Array/Struct (step 4) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,539 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,188 Array/Struct (step 5) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,188 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,128 Performance (step 1) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,128 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,112 Performance (step 2) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,112 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,038 Performance (step 3) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,038 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,038 Performance (step 4) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,038 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,112 HW Transforms (step 1) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,112 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 2,024 HW Transforms (step 2) /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 2,024 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_490_4' is marked as complete unroll implied by the pipeline pragma (MHGD_accel.c:490:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_425_1' is marked as complete unroll implied by the pipeline pragma (util.c:425:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_287_1' is marked as complete unroll implied by the pipeline pragma (util.c:287:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_271_1' is marked as complete unroll implied by the pipeline pragma (util.c:271:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_462_1' is marked as complete unroll implied by the pipeline pragma (util.c:462:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_295_1' is marked as complete unroll implied by the pipeline pragma (util.c:295:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_239_14' is marked as complete unroll implied by the pipeline pragma (util.c:239:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_242_15' is marked as complete unroll implied by the pipeline pragma (util.c:242:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_247_16' is marked as complete unroll implied by the pipeline pragma (util.c:247:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_233_13' is marked as complete unroll implied by the pipeline pragma (util.c:233:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_214_10' is marked as complete unroll implied by the pipeline pragma (util.c:214:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_217_11' is marked as complete unroll implied by the pipeline pragma (util.c:217:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_222_12' is marked as complete unroll implied by the pipeline pragma (util.c:222:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_208_9' is marked as complete unroll implied by the pipeline pragma (util.c:208:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_180_4' is marked as complete unroll implied by the pipeline pragma (util.c:180:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_183_5' is marked as complete unroll implied by the pipeline pragma (util.c:183:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_188_6' is marked as complete unroll implied by the pipeline pragma (util.c:188:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_194_7' is marked as complete unroll implied by the pipeline pragma (util.c:194:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_199_8' is marked as complete unroll implied by the pipeline pragma (util.c:199:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_174_3' is marked as complete unroll implied by the pipeline pragma (util.c:174:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_169_2' is marked as complete unroll implied by the pipeline pragma (util.c:169:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_163_1' is marked as complete unroll implied by the pipeline pragma (util.c:163:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_114_1' is marked as complete unroll implied by the pipeline pragma (util.c:114:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_116_2' is marked as complete unroll implied by the pipeline pragma (util.c:116:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_121_3' is marked as complete unroll implied by the pipeline pragma (util.c:121:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_98_1' is marked as complete unroll implied by the pipeline pragma (util.c:98:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_100_2' is marked as complete unroll implied by the pipeline pragma (util.c:100:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_263_1' is marked as complete unroll implied by the pipeline pragma (util.c:263:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_323_1' is marked as complete unroll implied by the pipeline pragma (util.c:323:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_325_2' is marked as complete unroll implied by the pipeline pragma (util.c:325:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_328_3' is marked as complete unroll implied by the pipeline pragma (util.c:328:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_425_1' (util.c:425:20) in function 'generateUniformRandoms_float' completely with a factor of 10 (util.c:424:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.79.114.123.133.164)' into 'fp_struct<double>::to_double() const (.111.120.130.161)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.111.120.130.161)' into 'fp_struct<double>::to_ieee() const' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'complex_conjugate' into 'c_matmultiple' (util.c:302:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.208' into 'c_matmultiple' (util.c:302:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'c_matmultiple' (util.c:302:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.208' into 'MulMatrix' (util.c:111:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'MulMatrix' (util.c:111:0)
+INFO: [HLS 214-178] Inlining function 'initMatrix' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.208' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'complex_subtract' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide.221.227' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'MulMatrix' into 'Inverse_LU' (util.c:133:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.79.114.123.133.164)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(ap_uint<64>)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'floor' into 'map' (util.c:460:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal' into 'map' (util.c:460:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'c_eye_generate' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_add' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_int' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_sub' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_copy' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_float' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util.c:190:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util.c:190:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:190:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:190:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real'
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag'
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util.c:202:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util.c:202:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:202:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:202:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util.c:224:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util.c:224:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util.c:224:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.imag' (util.c:224:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util.c:226:41)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.imag' (util.c:226:41)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util.c:227:41)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:236:27)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:236:27)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:250:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:250:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla6.real' (util.c:250:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla6.imag' (util.c:250:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:255:29)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:255:29)
+INFO: [HLS 214-241] Aggregating scalar variable 'v_tb' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'y' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'H' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'x_hat' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:465:17)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:472:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:478:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:484:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:296:20)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:297:20)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (MHGD_accel.c:450:15)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:289:20)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_34_1> at util.c:34:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_40_2> at util.c:40:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_427_1> at MHGD_accel.c:427:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_413_1> at util.c:413:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_449_2> at MHGD_accel.c:449:21 
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_242_15'. (util.c:242:21)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_217_11'. (util.c:217:21)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_183_5'. (util.c:183:20)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_194_7'. (util.c:194:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_287_1' (util.c:287:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:287:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_295_1' (util.c:295:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:295:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_263_1' (util.c:263:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:263:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_271_1' (util.c:271:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:271:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_295_1' (util.c:295:20) in function 'map' as it has a variable trip count (util.c:295:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_462_1' (util.c:462:20) in function 'map' as it has a variable trip count (util.c:462:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_295_1' (util.c:295:20) in function 'map.344' as it has a variable trip count (util.c:295:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_462_1' (util.c:462:20) in function 'map.344' as it has a variable trip count (util.c:462:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_114_1' (util.c:114:20) in function 'Inverse_LU' as it has a variable trip count (util.c:114:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_116_2' (util.c:116:21) in function 'Inverse_LU' as it has a variable trip count (util.c:116:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_239_14' (util.c:239:21) in function 'Inverse_LU' as it has a variable trip count (util.c:239:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_242_15' (util.c:242:21) in function 'Inverse_LU' as it has a variable trip count (util.c:242:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_247_16' (util.c:247:23) in function 'Inverse_LU' as it has a variable trip count (util.c:247:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_214_10' (util.c:214:21) in function 'Inverse_LU' as it has a variable trip count (util.c:214:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_217_11' (util.c:217:21) in function 'Inverse_LU' as it has a variable trip count (util.c:217:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_222_12' (util.c:222:23) in function 'Inverse_LU' as it has a variable trip count (util.c:222:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_180_4' (util.c:180:20) in function 'Inverse_LU' as it has a variable trip count (util.c:180:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_183_5' (util.c:183:20) in function 'Inverse_LU' as it has a variable trip count (util.c:183:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_188_6' (util.c:188:22) in function 'Inverse_LU' as it has a variable trip count (util.c:188:22)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_194_7' (util.c:194:21) in function 'Inverse_LU' as it has a variable trip count (util.c:194:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_199_8' (util.c:199:22) in function 'Inverse_LU' as it has a variable trip count (util.c:199:22)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_323_1' (util.c:323:20) in function 'c_matmultiple' as it has a variable trip count (util.c:323:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_325_2' (util.c:325:20) in function 'c_matmultiple' as it has a variable trip count (util.c:325:20)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.82 seconds. CPU system time: 0.29 seconds. Elapsed time: 7.24 seconds; current allocated memory: 688.836 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 688.836 MB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top MHGD_detect_accel -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.0.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 692.535 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.1.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'map.344' into 'MHGD_detect_accel' (MHGD_accel.c:443) automatically.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.2.prechk.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 694.773 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.g.1.bc to /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.1.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.1.tmp.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 718.281 MB.
+Execute           transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.2.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute             auto_get_db
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -cdfg-build /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.3.bc -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 719.758 MB.
+INFO-FLOW: Finish building internal data model.
+Command       elaborate done; 8.26 sec.
+Execute       ap_eval exec zip -j /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'MHGD_detect_accel' ...
+Execute         ap_set_top_model MHGD_detect_accel 
+Execute         get_model_list MHGD_detect_accel -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model MHGD_detect_accel 
+Execute         preproc_iomode -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         get_model_list MHGD_detect_accel -filter all-wo-channel 
+INFO-FLOW: Model list for configure: MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 MHGD_detect_accel
+INFO-FLOW: Configuring Module : MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 ...
+Execute         set_default_model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         apply_spec_resource_limit MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+INFO-FLOW: Configuring Module : MHGD_detect_accel ...
+Execute         set_default_model MHGD_detect_accel 
+Execute         apply_spec_resource_limit MHGD_detect_accel 
+INFO-FLOW: Model list for preprocess: MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 MHGD_detect_accel
+INFO-FLOW: Preprocessing Module: MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 ...
+Execute         set_default_model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         cdfg_preprocess -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         rtl_gen_preprocess MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+INFO-FLOW: Preprocessing Module: MHGD_detect_accel ...
+Execute         set_default_model MHGD_detect_accel 
+Execute         cdfg_preprocess -model MHGD_detect_accel 
+Execute         rtl_gen_preprocess MHGD_detect_accel 
+INFO-FLOW: Model list for synthesis: MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 MHGD_detect_accel
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         schedule -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_480_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_480_3'
+WARNING: [HLS 200-871] Estimated clock period (7.379 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3' consists of the following:
+	wire read operation ('p_acc_read') on port 'p_acc' [8]  (0.000 ns)
+	'fcmp' operation 1 bit ('tmp_1', MHGD_accel.c:519) [27]  (6.870 ns)
+	'and' operation 1 bit ('and_ln519', MHGD_accel.c:519) [28]  (0.000 ns)
+	'and' operation 1 bit ('and_ln519_1', MHGD_accel.c:519) [29]  (0.122 ns)
+	'store' operation 0 bit ('k_write_ln480', MHGD_accel.c:480) of variable 'add_ln480', MHGD_accel.c:480 on local variable 'k' [32]  (0.387 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 720.551 MB.
+Execute         syn_report -verbosereport -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         db_write -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.sched.adb -f 
+INFO-FLOW: Finish scheduling MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.
+Execute         set_default_model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         bind -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 720.551 MB.
+Execute         syn_report -verbosereport -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         db_write -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.bind.adb -f 
+INFO-FLOW: Finish binding MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MHGD_detect_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model MHGD_detect_accel 
+Execute         schedule -model MHGD_detect_accel 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive for function 'MHGD_detect_accel': contains subfunction 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3' which is not pipelined.
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive for function 'MHGD_detect_accel': contains subfunction 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3' which is not pipelined.
+WARNING: [HLS 200-871] Estimated clock period (7.766 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'MHGD_detect_accel' consists of the following:
+	'call' operation 1 bit ('targetBlock', MHGD_accel.c:214) to 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3' [49]  (7.766 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 720.551 MB.
+Execute         syn_report -verbosereport -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.verbose.sched.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         db_write -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.sched.adb -f 
+INFO-FLOW: Finish scheduling MHGD_detect_accel.
+Execute         set_default_model MHGD_detect_accel 
+Execute         bind -model MHGD_detect_accel 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 720.551 MB.
+Execute         syn_report -verbosereport -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.verbose.bind.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         db_write -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.bind.adb -f 
+INFO-FLOW: Finish binding MHGD_detect_accel.
+Execute         get_model_list MHGD_detect_accel -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         rtl_gen_preprocess MHGD_detect_accel 
+INFO-FLOW: Model list for RTL generation: MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 MHGD_detect_accel
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -top_prefix MHGD_detect_accel_ -sub_prefix MHGD_detect_accel_ -mg_file /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 720.551 MB.
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.rtl_wrap.cfg.tcl 
+Execute         gen_rtl MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -style xilinx -f -lang vhdl -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/vhdl/MHGD_detect_accel_MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         gen_rtl MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -style xilinx -f -lang vlog -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/verilog/MHGD_detect_accel_MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+Execute         syn_report -csynth -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         syn_report -rtlxml -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3_csynth.xml 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         syn_report -verbosereport -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         db_write -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -f -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.adb 
+Execute         db_write -model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -bindview -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 -p /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MHGD_detect_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model MHGD_detect_accel -top_prefix  -sub_prefix MHGD_detect_accel_ -mg_file /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/x_hat' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/Nt' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/Nr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/mu' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/H' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/y' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/sigma2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/mmse_init' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/lr_approx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/iter' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/v_tb' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MHGD_detect_accel' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/x_hat' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/Nr' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/mu' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/H' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/y' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/sigma2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/lr_approx' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/v_tb' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'dexp_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MHGD_detect_accel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 720.551 MB.
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.rtl_wrap.cfg.tcl 
+Execute         gen_rtl MHGD_detect_accel -istop -style xilinx -f -lang vhdl -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/vhdl/MHGD_detect_accel 
+Execute         gen_rtl MHGD_detect_accel -istop -style xilinx -f -lang vlog -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/verilog/MHGD_detect_accel 
+Execute         syn_report -csynth -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/MHGD_detect_accel_csynth.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         syn_report -rtlxml -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/MHGD_detect_accel_csynth.xml 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         syn_report -verbosereport -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.verbose.rpt 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         db_write -model MHGD_detect_accel -f -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.adb 
+Execute         db_write -model MHGD_detect_accel -bindview -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info MHGD_detect_accel -p /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel 
+Execute         export_constraint_db -f -tool general -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.constraint.tcl 
+Execute         syn_report -designview -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.design.xml 
+Execute         syn_report -csynthDesign -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth.rpt -MHOut /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute           list_part -family xcvu9p-flga2104-2-i 
+Execute             ap_family_info -name xcvu9p-flga2104-2-i -data names 
+Execute             ap_part_info -quiet -name xcvu9p-flga2104-2-i -data family 
+Execute         syn_report -wcfg -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model MHGD_detect_accel -o /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.protoinst 
+Execute         sc_get_clocks MHGD_detect_accel 
+Execute         sc_get_portdomain MHGD_detect_accel 
+INFO-FLOW: Model list for RTL component generation: MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 MHGD_detect_accel
+INFO-FLOW: Handling components in module [MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3] ... 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.compgen.tcl 
+INFO-FLOW: Found component MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1.
+INFO-FLOW: Append model MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1
+INFO-FLOW: Found component MHGD_detect_accel_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model MHGD_detect_accel_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [MHGD_detect_accel] ... 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.compgen.tcl 
+INFO-FLOW: Found component MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1.
+INFO-FLOW: Append model MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: Found component MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1.
+INFO-FLOW: Append model MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1
+INFO-FLOW: Append model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3
+INFO-FLOW: Append model MHGD_detect_accel
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1 MHGD_detect_accel_flow_control_loop_pipe_sequential_init MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1 MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1 MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 MHGD_detect_accel
+INFO-FLOW: Generating /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1
+INFO-FLOW: To file: write model MHGD_detect_accel_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: To file: write model MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1
+INFO-FLOW: To file: write model MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3
+INFO-FLOW: To file: write model MHGD_detect_accel
+INFO-FLOW: Generating /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/vhdl' dstVlogDir='/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/vlog' tclDir='/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db' modelList='MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1
+MHGD_detect_accel_flow_control_loop_pipe_sequential_init
+MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1
+MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1
+MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3
+MHGD_detect_accel
+' expOnly='0'
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.compgen.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 722.039 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='MHGD_detect_accel_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1
+MHGD_detect_accel_flow_control_loop_pipe_sequential_init
+MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1
+MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1
+MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3
+MHGD_detect_accel
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/top-io-be.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.tbgen.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.rtl_wrap.cfg.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.compgen.dataonly.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3.tbgen.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.tbgen.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_detect_accel.constraint.tcl 
+Execute         sc_get_clocks MHGD_detect_accel 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/global.setting.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/impl/misc/MHGD_detect_accel_dexp_64ns_64ns_64_8_full_dsp_1_ip.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/impl/misc/MHGD_detect_accel_fcmp_32ns_32ns_1_1_no_dsp_1_ip.tcl 
+Execute         source /home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/impl/misc/MHGD_detect_accel_fptrunc_64ns_32_2_no_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST MHGD_detect_accel MODULE2INSTS {MHGD_detect_accel MHGD_detect_accel MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3_fu_74} INST2MODULE {MHGD_detect_accel MHGD_detect_accel grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3_fu_74 MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3} INSTDATA {MHGD_detect_accel {DEPTH 1 CHILDREN grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3_fu_74} grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3_fu_74 {DEPTH 2 CHILDREN {}}} MODULEDATA {MHGD_detect_accel_Pipeline_VITIS_LOOP_480_3 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setlt PRAGMA {} RTLNAME icmp_ln480_fu_115_p2 SOURCE MHGD_accel.c:480 VARIABLE icmp_ln480 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setlt} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln480_fu_121_p2 SOURCE MHGD_accel.c:480 VARIABLE add_ln480 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln519_fu_137_p2 SOURCE MHGD_accel.c:519 VARIABLE icmp_ln519 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln519_1_fu_143_p2 SOURCE MHGD_accel.c:519 VARIABLE icmp_ln519_1 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln519_fu_149_p2 SOURCE MHGD_accel.c:519 VARIABLE or_ln519 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE fcmp PRAGMA {} RTLNAME fcmp_32ns_32ns_1_1_no_dsp_1_U1 SOURCE MHGD_accel.c:519 VARIABLE tmp_1 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fcmp} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln519_fu_155_p2 SOURCE MHGD_accel.c:519 VARIABLE and_ln519 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln519_1_fu_161_p2 SOURCE MHGD_accel.c:519 VARIABLE and_ln519_1 LOOP VITIS_LOOP_480_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} MHGD_detect_accel {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln449_fu_92_p2 SOURCE MHGD_accel.c:449 VARIABLE icmp_ln449 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln434_fu_98_p2 SOURCE MHGD_accel.c:434 VARIABLE icmp_ln434 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln413_fu_104_p2 SOURCE util.c:413 VARIABLE and_ln413 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL fulldsp LATENCY 7 OPTYPE dexp PRAGMA {} RTLNAME dexp_64ns_64ns_64_8_full_dsp_1_U9 SOURCE MHGD_accel.c:516 VARIABLE tmp_s LOOP {} BUNDLEDNAME {} DSP 26 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dexp} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE fptrunc PRAGMA {} RTLNAME fptrunc_64ns_32_2_no_dsp_1_U8 SOURCE MHGD_accel.c:516 VARIABLE p_acc LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op fptrunc} VISIBLE false}} AREA {DSP 26 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 722.930 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MHGD_detect_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for MHGD_detect_accel.
+Execute         syn_report -model MHGD_detect_accel -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 128.77 MHz
+Command       autosyn done; 0.32 sec.
+Command     csynth_design done; 11.19 sec.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:11; Allocated memory: 60.141 MB.
+Execute     cleanup_all 

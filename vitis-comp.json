@@ -1,0 +1,12 @@
+{
+  "name": "MHGD",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "MHGD"
+  },
+  "template": "empty_hls_component"
+}

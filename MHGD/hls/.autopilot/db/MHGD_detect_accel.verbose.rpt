@@ -1,0 +1,704 @@
+
+
+================================================================
+== Vitis HLS Report for 'MHGD_detect_accel'
+================================================================
+* Date:           Tue Mar 25 20:26:15 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        MHGD
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.303 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     119|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|       0|     119|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|       0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |and_ln394_fu_82_p2   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln420_fu_76_p2  |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln435_fu_70_p2  |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln466_fu_88_p2  |      icmp|   0|  0|  39|          32|           1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0| 119|          97|           4|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+-------------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------+-----+-----+------------+-------------------+--------------+
+|ap_start   |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_done    |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_idle    |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_ready   |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_return  |  out|   32|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_rst     |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|x_hat      |   in|   64|     ap_none|              x_hat|       pointer|
+|Nt         |   in|   32|     ap_none|                 Nt|        scalar|
+|Nr         |   in|   32|     ap_none|                 Nr|        scalar|
+|mu         |   in|   32|     ap_none|                 mu|        scalar|
+|H          |   in|   64|     ap_none|                  H|       pointer|
+|y          |   in|   64|     ap_none|                  y|       pointer|
+|sigma2     |   in|   32|     ap_none|             sigma2|        scalar|
+|mmse_init  |   in|   32|     ap_none|          mmse_init|        scalar|
+|lr_approx  |   in|   32|     ap_none|          lr_approx|        scalar|
+|iter       |   in|   32|     ap_none|               iter|        scalar|
+|v_tb       |   in|   64|     ap_none|               v_tb|       pointer|
++-----------+-----+-----+------------+-------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 1
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.30>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 2 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%spectopmodule_ln212 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [MHGD_accel.c:212]   --->   Operation 3 'spectopmodule' 'spectopmodule_ln212' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %x_hat"   --->   Operation 4 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %x_hat, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Nt"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Nt, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Nr"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Nr, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %mu"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mu, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %H"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %H, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %y"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %y, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sigma2"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sigma2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %mmse_init"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mmse_init, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %lr_approx"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %lr_approx, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %iter"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %iter, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %v_tb"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %v_tb, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%iter_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %iter" [MHGD_accel.c:212]   --->   Operation 26 'read' 'iter_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%mmse_init_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mmse_init" [MHGD_accel.c:212]   --->   Operation 27 'read' 'mmse_init_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%Nt_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %Nt" [MHGD_accel.c:212]   --->   Operation 28 'read' 'Nt_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.01ns)   --->   "%icmp_ln435 = icmp_sgt  i32 %Nt_read, i32 0" [MHGD_accel.c:435]   --->   Operation 29 'icmp' 'icmp_ln435' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (1.01ns)   --->   "%icmp_ln420 = icmp_eq  i32 %mmse_init_read, i32 0" [MHGD_accel.c:420]   --->   Operation 30 'icmp' 'icmp_ln420' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.28ns)   --->   "%and_ln394 = and i1 %icmp_ln420, i1 %icmp_ln435" [util.c:394->MHGD_accel.c:434]   --->   Operation 31 'and' 'and_ln394' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln420 = br i1 %and_ln394, void %VITIS_LOOP_475_4, void %for.inc26.split" [MHGD_accel.c:420]   --->   Operation 32 'br' 'br_ln420' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (1.01ns)   --->   "%icmp_ln466 = icmp_sgt  i32 %iter_read, i32 0" [MHGD_accel.c:466]   --->   Operation 33 'icmp' 'icmp_ln466' <Predicate = (!and_ln394)> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln466 = br i1 %icmp_ln466, void %for.inc.i217, void %VITIS_LOOP_475_4.split" [MHGD_accel.c:466]   --->   Operation 34 'br' 'br_ln466' <Predicate = (!and_ln394)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln270 = br i1 %icmp_ln435, void %my_complex_copy.exit219, void %for.inc.i217.split" [util.c:270->MHGD_accel.c:522]   --->   Operation 35 'br' 'br_ln270' <Predicate = (!and_ln394 & !icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln525 = br void %UnifiedReturnBlock" [MHGD_accel.c:525]   --->   Operation 36 'br' 'br_ln525' <Predicate = (!and_ln394 & !icmp_ln435 & !icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%specpipeline_ln270 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [util.c:270->MHGD_accel.c:522]   --->   Operation 37 'specpipeline' 'specpipeline_ln270' <Predicate = (!and_ln394 & icmp_ln435 & !icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln270 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [util.c:270->MHGD_accel.c:522]   --->   Operation 38 'specloopname' 'specloopname_ln270' <Predicate = (!and_ln394 & icmp_ln435 & !icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln0 = br void %UnifiedUnreachableBlock"   --->   Operation 39 'br' 'br_ln0' <Predicate = (!and_ln394 & icmp_ln435 & !icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln466 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [MHGD_accel.c:466]   --->   Operation 40 'specloopname' 'specloopname_ln466' <Predicate = (!and_ln394 & icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln525 = br void %UnifiedReturnBlock" [MHGD_accel.c:525]   --->   Operation 41 'br' 'br_ln525' <Predicate = (!and_ln394 & icmp_ln466)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%ret_ln525 = ret i32 0" [MHGD_accel.c:525]   --->   Operation 42 'ret' 'ret_ln525' <Predicate = (!and_ln394 & icmp_ln466) | (!and_ln394 & !icmp_ln435)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%specpipeline_ln218 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [MHGD_accel.c:218]   --->   Operation 43 'specpipeline' 'specpipeline_ln218' <Predicate = (and_ln394)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%specloopname_ln435 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [MHGD_accel.c:435]   --->   Operation 44 'specloopname' 'specloopname_ln435' <Predicate = (and_ln394)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln0 = br void %UnifiedUnreachableBlock"   --->   Operation 45 'br' 'br_ln0' <Predicate = (and_ln394)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%unreachable_ln0 = unreachable"   --->   Operation 46 'unreachable' 'unreachable_ln0' <Predicate = (icmp_ln435 & !icmp_ln466) | (and_ln394)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 1
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ x_hat]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ Nt]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ Nr]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ mu]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ H]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ y]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ sigma2]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ mmse_init]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ lr_approx]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ iter]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ v_tb]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+spectopmodule_ln212 (spectopmodule) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+specbitsmap_ln0     (specbitsmap  ) [ 00]
+specinterface_ln0   (specinterface) [ 00]
+iter_read           (read         ) [ 00]
+mmse_init_read      (read         ) [ 00]
+Nt_read             (read         ) [ 00]
+icmp_ln435          (icmp         ) [ 01]
+icmp_ln420          (icmp         ) [ 00]
+and_ln394           (and          ) [ 01]
+br_ln420            (br           ) [ 00]
+icmp_ln466          (icmp         ) [ 01]
+br_ln466            (br           ) [ 00]
+br_ln270            (br           ) [ 00]
+br_ln525            (br           ) [ 00]
+specpipeline_ln270  (specpipeline ) [ 00]
+specloopname_ln270  (specloopname ) [ 00]
+br_ln0              (br           ) [ 00]
+specloopname_ln466  (specloopname ) [ 00]
+br_ln525            (br           ) [ 00]
+ret_ln525           (ret          ) [ 00]
+specpipeline_ln218  (specpipeline ) [ 00]
+specloopname_ln435  (specloopname ) [ 00]
+br_ln0              (br           ) [ 00]
+unreachable_ln0     (unreachable  ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="x_hat">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="x_hat"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="Nt">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Nt"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="Nr">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Nr"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="mu">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mu"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="H">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="H"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="y">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="y"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="sigma2">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sigma2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="mmse_init">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mmse_init"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="lr_approx">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lr_approx"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="iter">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="iter"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="v_tb">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="v_tb"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="iter_read_read_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="32" slack="0"/>
+<pin id="54" dir="0" index="1" bw="32" slack="0"/>
+<pin id="55" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="iter_read/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="mmse_init_read_read_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="32" slack="0"/>
+<pin id="60" dir="0" index="1" bw="32" slack="0"/>
+<pin id="61" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="mmse_init_read/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="Nt_read_read_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="32" slack="0"/>
+<pin id="66" dir="0" index="1" bw="32" slack="0"/>
+<pin id="67" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Nt_read/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="icmp_ln435_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="32" slack="0"/>
+<pin id="72" dir="0" index="1" bw="32" slack="0"/>
+<pin id="73" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln435/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="icmp_ln420_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="32" slack="0"/>
+<pin id="78" dir="0" index="1" bw="32" slack="0"/>
+<pin id="79" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln420/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="and_ln394_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="1" slack="0"/>
+<pin id="84" dir="0" index="1" bw="1" slack="0"/>
+<pin id="85" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="and(23) " fcode="and"/>
+<opset="and_ln394/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="icmp_ln466_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="32" slack="0"/>
+<pin id="90" dir="0" index="1" bw="32" slack="0"/>
+<pin id="91" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln466/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="56"><net_src comp="40" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="57"><net_src comp="18" pin="0"/><net_sink comp="52" pin=1"/></net>
+
+<net id="62"><net_src comp="40" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="63"><net_src comp="14" pin="0"/><net_sink comp="58" pin=1"/></net>
+
+<net id="68"><net_src comp="40" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="69"><net_src comp="2" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="74"><net_src comp="64" pin="2"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="34" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="58" pin="2"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="34" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="76" pin="2"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="70" pin="2"/><net_sink comp="82" pin=1"/></net>
+
+<net id="92"><net_src comp="52" pin="2"/><net_sink comp="88" pin=0"/></net>
+
+<net id="93"><net_src comp="34" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: MHGD_detect_accel : Nt | {1 }
+	Port: MHGD_detect_accel : mmse_init | {1 }
+	Port: MHGD_detect_accel : iter | {1 }
+  - Chain level:
+	State 1
+		and_ln394 : 1
+		br_ln420 : 1
+		br_ln466 : 1
+		br_ln270 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------|---------|---------|
+| Operation|      Functional Unit      |    FF   |   LUT   |
+|----------|---------------------------|---------|---------|
+|          |      icmp_ln435_fu_70     |    0    |    39   |
+|   icmp   |      icmp_ln420_fu_76     |    0    |    39   |
+|          |      icmp_ln466_fu_88     |    0    |    39   |
+|----------|---------------------------|---------|---------|
+|    and   |      and_ln394_fu_82      |    0    |    2    |
+|----------|---------------------------|---------|---------|
+|          |    iter_read_read_fu_52   |    0    |    0    |
+|   read   | mmse_init_read_read_fu_58 |    0    |    0    |
+|          |     Nt_read_read_fu_64    |    0    |    0    |
+|----------|---------------------------|---------|---------|
+|   Total  |                           |    0    |   119   |
+|----------|---------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |    0   |   119  |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |    -   |    -   |
++-----------+--------+--------+
+|   Total   |    0   |   119  |
++-----------+--------+--------+

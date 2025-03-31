@@ -1,0 +1,78 @@
+INFO: [HLS 200-2005] Using work_dir /home/ggg_wufuqi/hls/MHGD/MHGD 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=MHGD_accel.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MHGD_accel.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=MHGD_accel.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MHGD_accel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=MyComplex.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MyComplex.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=util.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/util.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=util.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/util.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=sys_config.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(23)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/sys_config.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(24)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(25)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(2)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/tb.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=5.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(4)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=5.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=10.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(5)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=10.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=15.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=15.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=20.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=20.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=25.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=25.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=5.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=5.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=10.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=10.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=15.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=15.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=20.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=20.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=25.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=25.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.argv=MHGD_detect_accel' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying ini 'csim.argv=MHGD_detect_accel' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying ini 'csim.O=0' from /home/ggg_wufuqi/hls/MHGD/MHGD/hls-debug.cfg(3)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/ggg_wufuqi/hls/MHGD/MHGD/hls-debug.cfg(4)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.setup=1' from /home/ggg_wufuqi/hls/MHGD/MHGD/hls-debug.cfg(2)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb.c in debug mode
+   Compiling ../../../../MIMO_simulation.c in debug mode
+   Compiling ../../../../util.c in debug mode
+   Compiling ../../../../MHGD_accel.c in debug mode
+   Generating csim.exe
+../../../../util.c:287:14: warning: variable 'a_element' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+                                else if (transA == 0) {  // ??????
+                                         ^~~~~~~~~~~
+../../../../util.c:302:29: note: uninitialized use occurs here
+                                temp = complex_multiply(a_element, b_element);
+                                                        ^~~~~~~~~
+../../../../util.c:287:10: note: remove the 'if' if its condition is always true
+                                else if (transA == 0) {  // ??????
+                                     ^~~~~~~~~~~~~~~~~
+../../../../util.c:279:5: note: variable 'a_element' is declared here
+                                MyComplex a_element;
+                                ^
+1 warning generated.
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1.08 seconds. Total CPU system time: 0.16 seconds. Total elapsed time: 1.16 seconds; peak allocated memory: 127.004 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 4s

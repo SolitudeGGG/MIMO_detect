@@ -1,0 +1,29 @@
+{
+    "0": {
+        "name": "MHGD_detect_accel",
+        "file": "MHGD_accel.c",
+        "fileloc": "214",
+        "instructions": "51",
+        "total_instructions": "79",
+        "calls": "1",
+        "basicblocks": "8"
+    },
+    "1": {
+        "name": "MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3",
+        "file": "MHGD_accel.c",
+        "fileloc": "238",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "5",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

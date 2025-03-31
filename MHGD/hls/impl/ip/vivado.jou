@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar 25 20:26:16 2025
+# Process ID         : 3822183
+# Current directory  : /home/ggg_wufuqi/hls/MHGD/MHGD/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /home/ggg_wufuqi/hls/MHGD/MHGD/hls/impl/ip/vivado.log
+# Journal file       : /home/ggg_wufuqi/hls/MHGD/MHGD/hls/impl/ip/vivado.jou
+# Running On         : fpga-accelerator-server-14900k
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i9-14900K
+# CPU Frequency      : 4922.923 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 100935 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 109525 MB
+# Available Virtual  : 74519 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

@@ -1,0 +1,28 @@
+{
+    "files.associations": {
+        "iterator": "c",
+        "MMSE.C": "cpp",
+        "mycomplex.h": "c",
+        "random": "c",
+        "util.h": "c",
+        "complex": "c",
+        "bit": "c",
+        "fstream": "c",
+        "__threading_support": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "memory_resource": "c",
+        "memory": "c",
+        "algorithm": "c",
+        "ranges": "c",
+        "span": "c",
+        "string_view": "c",
+        "__locale": "c",
+        "locale": "c",
+        "time.h": "c",
+        "math.h": "c",
+        "limits": "c",
+        "ratio": "c",
+        "semaphore": "c"
+    }
+}

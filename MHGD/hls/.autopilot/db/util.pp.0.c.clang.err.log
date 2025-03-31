@@ -1,0 +1,5 @@
+In file included from util.c:1:
+./util.h:10:9: warning: unknown pragma ignored [-Winvalid-hls-pragmas]
+#pragma warning(disable:4996)
+        ^
+1 warning generated.

@@ -1,0 +1,7 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../tb.c in debug mode
+   Compiling ../../../../MIMO_simulation.c in debug mode
+   Compiling ../../../../util.c in debug mode
+   Compiling ../../../../MHGD_accel.c in debug mode
+   Generating csim.exe

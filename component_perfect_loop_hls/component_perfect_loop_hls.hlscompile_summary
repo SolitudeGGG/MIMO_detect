@@ -1,0 +1,212 @@
+<ENTRY>
+{
+ "thisFile": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/component_perfect_loop_hls.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496726",
+ "buildStep": {
+  "cmdId": "af6e770e-979a-4637-afcb-84c983576b08",
+  "name": "vitis-run",
+  "logFile": "/home/ggg_wufuqi/hls/MHGD/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/ggg_wufuqi/hls/MHGD/run_tcl.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MHGD"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496726",
+ "status": {
+  "cmdId": "af6e770e-979a-4637-afcb-84c983576b08",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496727",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MHGD_detect_accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ggg_wufuqi/hls/MHGD/MHGD_accel.c",
+     "/home/ggg_wufuqi/hls/MHGD/MHGD_accel.h",
+     "/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.c",
+     "/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.h",
+     "/home/ggg_wufuqi/hls/MHGD/MyComplex.c",
+     "/home/ggg_wufuqi/hls/MHGD/MyComplex.h",
+     "/home/ggg_wufuqi/hls/MHGD/sys_config.h",
+     "/home/ggg_wufuqi/hls/MHGD/util.c",
+     "/home/ggg_wufuqi/hls/MHGD/util.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496727",
+ "buildStep": {
+  "cmdId": "aeda082d-bb25-4e09-8642-864ceca7a810",
+  "name": "csynth_design",
+  "logFile": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MHGD"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496728",
+ "status": {
+  "cmdId": "aeda082d-bb25-4e09-8642-864ceca7a810",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496728",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496728",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 31 11:41:36 2025",
+ "timestampMillis": "1743392496728",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 31 11:41:45 2025",
+ "timestampMillis": "1743392505263",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 31 11:41:45 2025",
+ "timestampMillis": "1743392505263",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 31 11:41:45 2025",
+ "timestampMillis": "1743392505263",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 11:41:45 2025",
+ "timestampMillis": "1743392505263",
+ "status": {
+  "cmdId": "aeda082d-bb25-4e09-8642-864ceca7a810",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 11:41:45 2025",
+ "timestampMillis": "1743392505266",
+ "status": {
+  "cmdId": "af6e770e-979a-4637-afcb-84c983576b08",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

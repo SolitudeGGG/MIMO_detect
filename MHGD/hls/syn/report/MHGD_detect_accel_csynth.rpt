@@ -1,0 +1,124 @@
+
+
+================================================================
+== Vitis HLS Report for 'MHGD_detect_accel'
+================================================================
+* Date:           Tue Mar 25 20:26:15 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        MHGD
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.303 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     119|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|       0|     119|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|       0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |and_ln394_fu_82_p2   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln420_fu_76_p2  |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln435_fu_70_p2  |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln466_fu_88_p2  |      icmp|   0|  0|  39|          32|           1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0| 119|          97|           4|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+-------------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------+-----+-----+------------+-------------------+--------------+
+|ap_start   |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_done    |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_idle    |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_ready   |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_return  |  out|   32|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_rst     |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|x_hat      |   in|   64|     ap_none|              x_hat|       pointer|
+|Nt         |   in|   32|     ap_none|                 Nt|        scalar|
+|Nr         |   in|   32|     ap_none|                 Nr|        scalar|
+|mu         |   in|   32|     ap_none|                 mu|        scalar|
+|H          |   in|   64|     ap_none|                  H|       pointer|
+|y          |   in|   64|     ap_none|                  y|       pointer|
+|sigma2     |   in|   32|     ap_none|             sigma2|        scalar|
+|mmse_init  |   in|   32|     ap_none|          mmse_init|        scalar|
+|lr_approx  |   in|   32|     ap_none|          lr_approx|        scalar|
+|iter       |   in|   32|     ap_none|               iter|        scalar|
+|v_tb       |   in|   64|     ap_none|               v_tb|       pointer|
++-----------+-----+-----+------------+-------------------+--------------+
+
