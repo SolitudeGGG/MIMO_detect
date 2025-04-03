@@ -1,0 +1,4 @@
+1 warning and 26 errors generated.
+Error while processing /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MHGD_accel_1.pp.0.cpp.
+clang-tidy applied 145 of 145 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

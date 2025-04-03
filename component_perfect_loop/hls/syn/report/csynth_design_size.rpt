@@ -1,0 +1,136 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 100,733 *    | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  10,633      | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   6,550      | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   6,415      | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   2,939      | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   2,464      | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   2,464      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   2,566      | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   2,539      | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   2,188      | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   2,128      | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   2,112      | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |   2,038      | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   2,038      | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   2,112      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   2,024      | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++----------------------------------------+-------------------+-------------------+-----------------+-----------------+-----------------+-----------------+
+| Function                               | Location          | Compile/Link      | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++----------------------------------------+-------------------+-------------------+-----------------+-----------------+-----------------+-----------------+
+| + MHGD_detect_accel                    | MHGD_accel.c:214  | 100,733 *         | 2,939           | 2,188           | 2,038           | 2,024           |
+|  + pow                                 | powdouble.cpp:6   | 53,658 (2 calls)  |                 |                 |                 |                 |
+|   + pow_generic<double>                | hls_pow.h:291     | 53,654 (2 calls)  |                 |                 |                 |                 |
+|      fp_struct                         | x_hls_utils.h:456 |  1,276 (4 calls)  |                 |                 |                 |                 |
+|      fp_struct                         | x_hls_utils.h:454 |      8 (2 calls)  |                 |                 |                 |                 |
+|      expv                              | x_hls_utils.h:485 |    436 (4 calls)  |                 |                 |                 |                 |
+|    + generic_isinf<double>             | hls_isinf.h:16    |  1,556 (4 calls)  |                 |                 |                 |                 |
+|       fp_struct                        | x_hls_utils.h:456 |  1,276 (4 calls)  |                 |                 |                 |                 |
+|    + generic_isnan<double>             | hls_isnan.h:16    |  1,560 (4 calls)  |                 |                 |                 |                 |
+|       fp_struct                        | x_hls_utils.h:456 |  1,276 (4 calls)  |                 |                 |                 |                 |
+|    + to_ieee                           | x_hls_utils.h:509 |  5,454 (18 calls) |                 |                 |                 |                 |
+|     + to_double                        | x_hls_utils.h:494 |  5,418 (18 calls) |                 |                 |                 |                 |
+|        data                            | x_hls_utils.h:475 |  5,022 (18 calls) |                 |                 |                 |                 |
+|    + log_range_reduction<71>           | hls_pow.h:186     | 20,370 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,512 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,456 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,466 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,474 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,474 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,474 (2 calls)  |                 |                 |                 |                 |
+|       log_range_reduce<ap_fixed<12...  | hls_pow.h:30      |  2,474 (2 calls)  |                 |                 |                 |                 |
+|      exp_Z1P_m_1                       | hls_pow.h:224     |  5,450 (2 calls)  |                 |                 |                 |                 |
+|    c_eye_generate                      | util.c:31         |     96 (3 calls)  |                 |                 |                 |                 |
+|  + c_matmultiple                       | util.c:302        |  3,706 (17 calls) |  680 (17 calls) |  510 (17 calls) |  476 (17 calls) |  476 (17 calls) |
+|     complex_conjugate                  | util.c:278        |    578 (34 calls) |                 |                 |                 |                 |
+|     complex_multiply                   | util.c:57         |    578 (17 calls) |                 |                 |                 |                 |
+|     complex_add                        | util.c:65         |    374 (17 calls) |                 |                 |                 |                 |
+|    my_complex_add                      | util.c:262        |    144 (4 calls)  |                 |                 |                 |                 |
+|  + Inverse_LU                          | util.c:132        |  2,264 (2 calls)  |  910 (2 calls)  |  734 (2 calls)  |  698 (2 calls)  |  710 (2 calls)  |
+|     initMatrix                         | util.c:95         |    232 (8 calls)  |                 |                 |                 |                 |
+|     complex_divide                     | util.c:81         |    376 (8 calls)  |                 |                 |                 |                 |
+|     complex_multiply                   | util.c:57         |    408 (12 calls) |                 |                 |                 |                 |
+|     complex_add                        | util.c:65         |    176 (8 calls)  |                 |                 |                 |                 |
+|     complex_subtract                   | util.c:73         |     88 (4 calls)  |                 |                 |                 |                 |
+|   + MulMatrix                          | util.c:110        |    240 (2 calls)  |                 |                 |                 |                 |
+|      complex_multiply                  | util.c:57         |     68 (2 calls)  |                 |                 |                 |                 |
+|      complex_add                       | util.c:65         |     44 (2 calls)  |                 |                 |                 |                 |
+|  + map                                 | util.c:459        | 11,254 (2 calls)  |  342 (2 calls)  |  253 (2 calls)  |  251 (2 calls)  |  193 (2 calls)  |
+|   + floor                              | floordouble.cpp:6 | 10,708 (4 calls)  |                 |                 |                 |                 |
+|    + generic_floor<double>             | hls_floor.h:13    | 10,700 (4 calls)  |                 |                 |                 |                 |
+|       init_mask_table<double>          | hls_round.h:20    |     76 (4 calls)  |                 |                 |                 |                 |
+|       fp_struct                        | x_hls_utils.h:456 |  1,276 (4 calls)  |                 |                 |                 |                 |
+|       __signbit                        | x_hls_utils.h:512 |     72 (8 calls)  |                 |                 |                 |                 |
+|     + generic_copysign<double>         | hls_copysign.h:10 |  3,836 (4 calls)  |                 |                 |                 |                 |
+|        fp_struct                       | x_hls_utils.h:456 |  2,552 (8 calls)  |                 |                 |                 |                 |
+|      + to_ieee                         | x_hls_utils.h:509 |  1,212 (4 calls)  |                 |                 |                 |                 |
+|       + to_double                      | x_hls_utils.h:494 |  1,204 (4 calls)  |                 |                 |                 |                 |
+|          data                          | x_hls_utils.h:475 |  1,116 (4 calls)  |                 |                 |                 |                 |
+|       data                             | x_hls_utils.h:475 |  1,116 (4 calls)  |                 |                 |                 |                 |
+|       fp_struct                        | x_hls_utils.h:464 |  1,156 (4 calls)  |                 |                 |                 |                 |
+|     + to_ieee                          | x_hls_utils.h:509 |  1,212 (4 calls)  |                 |                 |                 |                 |
+|      + to_double                       | x_hls_utils.h:494 |  1,204 (4 calls)  |                 |                 |                 |                 |
+|         data                           | x_hls_utils.h:475 |  1,116 (4 calls)  |                 |                 |                 |                 |
+|     my_complex_scal                    | util.c:294        |     48 (2 calls)  |                 |                 |                 |                 |
+|     generic_floor<double>              | hls_floor.h:13    |                   |  180 (4 calls)  |   90 (2 calls)  |   90 (2 calls)  |   45            |
+|  + generateUniformRandoms_int          | util.c:405        | 28,989            |                 |                 |                 |                 |
+|   + pow                                | powdouble.cpp:6   | 26,829            |                 |                 |                 |                 |
+|    + pow_generic<double>               | hls_pow.h:291     | 26,827            |                 |                 |                 |                 |
+|       fp_struct                        | x_hls_utils.h:456 |    638 (2 calls)  |                 |                 |                 |                 |
+|       fp_struct                        | x_hls_utils.h:454 |      4            |                 |                 |                 |                 |
+|       expv                             | x_hls_utils.h:485 |    218 (2 calls)  |                 |                 |                 |                 |
+|     + generic_isinf<double>            | hls_isinf.h:16    |    778 (2 calls)  |                 |                 |                 |                 |
+|        fp_struct                       | x_hls_utils.h:456 |    638 (2 calls)  |                 |                 |                 |                 |
+|     + generic_isnan<double>            | hls_isnan.h:16    |    780 (2 calls)  |                 |                 |                 |                 |
+|        fp_struct                       | x_hls_utils.h:456 |    638 (2 calls)  |                 |                 |                 |                 |
+|     + to_ieee                          | x_hls_utils.h:509 |  2,727 (9 calls)  |                 |                 |                 |                 |
+|      + to_double                       | x_hls_utils.h:494 |  2,709 (9 calls)  |                 |                 |                 |                 |
+|         data                           | x_hls_utils.h:475 |  2,511 (9 calls)  |                 |                 |                 |                 |
+|     + log_range_reduction<71>          | hls_pow.h:186     | 10,185            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,256            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,228            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,233            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,237            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,237            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,237            |                 |                 |                 |                 |
+|        log_range_reduce<ap_fixed<12... | hls_pow.h:30      |  1,237            |                 |                 |                 |                 |
+|       exp_Z1P_m_1                      | hls_pow.h:224     |  2,725            |                 |                 |                 |                 |
+|     lcg_rand                           | util.c:17         |      4            |                 |                 |                 |                 |
+|    my_complex_sub                      | util.c:270        |     72 (2 calls)  |                 |                 |                 |                 |
+|    my_complex_copy                     | util.c:286        |    160 (5 calls)  |                 |                 |                 |                 |
+|    my_complex_scal                     | util.c:294        |     48 (2 calls)  |                 |                 |                 |                 |
+|  + generateUniformRandoms_float...     | util.c:424        |     20            |                 |                 |                 |                 |
+|     lcg_rand_1                         | util.c:23         |      6            |                 |                 |                 |                 |
+|  + pow_generic<double>                 | hls_pow.h:291     |                   |  680            |  353            |  293            |  288            |
+|     to_ieee                            | x_hls_utils.h:509 |                   |   81 (9 calls)  |   72 (8 calls)  |   40 (8 calls)  |   40 (8 calls)  |
+|     log_range_reduction<71>            | hls_pow.h:186     |                   |  224            |   29            |   17            |   17            |
++----------------------------------------+-------------------+-------------------+-----------------+-----------------+-----------------+-----------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

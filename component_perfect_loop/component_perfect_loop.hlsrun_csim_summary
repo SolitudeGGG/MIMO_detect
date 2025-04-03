@@ -1,0 +1,128 @@
+<ENTRY>
+{
+ "thisFile": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/component_perfect_loop.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 31 09:41:58 2025",
+ "timestampMillis": "1743385318556",
+ "buildStep": {
+  "cmdId": "e653d4aa-9d20-4f18-b928-a4c7c948ee4e",
+  "name": "vitis-run",
+  "logFile": "/home/ggg_wufuqi/hls/MHGD/logs/hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/ggg_wufuqi/hls/MHGD/run_tcl.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MHGD"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 09:41:58 2025",
+ "timestampMillis": "1743385318556",
+ "status": {
+  "cmdId": "e653d4aa-9d20-4f18-b928-a4c7c948ee4e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar 31 09:41:58 2025",
+ "timestampMillis": "1743385318557",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MHGD_detect_accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ggg_wufuqi/hls/MHGD/MHGD_accel.c",
+     "/home/ggg_wufuqi/hls/MHGD/MHGD_accel.h",
+     "/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.c",
+     "/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.h",
+     "/home/ggg_wufuqi/hls/MHGD/MyComplex.c",
+     "/home/ggg_wufuqi/hls/MHGD/MyComplex.h",
+     "/home/ggg_wufuqi/hls/MHGD/sys_config.h",
+     "/home/ggg_wufuqi/hls/MHGD/util.c",
+     "/home/ggg_wufuqi/hls/MHGD/util.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 31 09:41:58 2025",
+ "timestampMillis": "1743385318558",
+ "buildStep": {
+  "cmdId": "0f0f60fc-c755-4fea-aba0-f56bc88b3f48",
+  "name": "csim_design",
+  "logFile": "/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MHGD"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 09:41:58 2025",
+ "timestampMillis": "1743385318559",
+ "status": {
+  "cmdId": "0f0f60fc-c755-4fea-aba0-f56bc88b3f48",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 10:13:08 2025",
+ "timestampMillis": "1743387188074",
+ "status": {
+  "cmdId": "0f0f60fc-c755-4fea-aba0-f56bc88b3f48",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 31 10:13:08 2025",
+ "timestampMillis": "1743387188077",
+ "status": {
+  "cmdId": "e653d4aa-9d20-4f18-b928-a4c7c948ee4e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

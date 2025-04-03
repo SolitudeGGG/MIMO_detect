@@ -1,0 +1,166 @@
+---
+MainSourceFile:  /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_1:  '
+    FileOffset:      50
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          107814
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_2:  '
+    FileOffset:      60
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          108068
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_1:  '
+    FileOffset:      190
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_2:  '
+    FileOffset:      199
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_3:  '
+    FileOffset:      208
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_221_4:  '
+    FileOffset:      221
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111781
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_221_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_5:  '
+    FileOffset:      224
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111818
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_6:  '
+    FileOffset:      226
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111886
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_7:  '
+    FileOffset:      228
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          111944
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_236_8:  '
+    FileOffset:      236
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          112160
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_236_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_340_1:  '
+    FileOffset:      340
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          114506
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_340_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_342_2:  '
+    FileOffset:      342
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          114536
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_342_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_347_3:  '
+    FileOffset:      347
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          114720
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_347_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_1:  '
+    FileOffset:      381
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          115432
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_383_2:  '
+    FileOffset:      383
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          115462
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_383_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_389_3:  '
+    FileOffset:      389
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          115654
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_389_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          116242
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_413_2:  '
+    FileOffset:      413
+    FilePath:        MIMO_simulation.c
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MIMO_simulation.pp.0.c
+        Offset:          116272
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_413_2: '
+...

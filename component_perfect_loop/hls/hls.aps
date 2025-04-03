@@ -1,0 +1,20 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="hls"/>
+    </name>
+    <project>
+        <value string="component_perfect_loop"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <writeConfigIni value="true"/>
+    <targetInfo>
+        <TargetInfo value="xcvu9p:-flga2104:-2-i"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="10" default="false"/>
+    </clockList>
+</AutoPilot:solution>
+

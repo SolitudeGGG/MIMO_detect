@@ -1,0 +1,182 @@
+{
+  "0": {
+    "basicblocks": 65,
+    "calls": "6 2 4 1 2 11 12 2 1 4 7 5 4 7 7 7 7 6 6 11 7 3 11 7 7 7 7",
+    "file": "MHGD_accel_1.cpp",
+    "fileloc": 214,
+    "instructions": 399,
+    "loads": {
+      "L": 15
+    },
+    "name": "MHGD_detect_accel",
+    "stores": {
+      "L": 27,
+      "T": 5
+    },
+    "total_instructions": 3329
+  },
+  "1": {
+    "basicblocks": 45,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 141,
+    "instructions": 489,
+    "loads": {
+      "L": 33
+    },
+    "name": "Inverse_LU",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 489
+  },
+  "10": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "hls_log_apfixed.h",
+    "fileloc": 445,
+    "instructions": 225,
+    "loads": {
+      "G": 7,
+      "L": 1
+    },
+    "name": "range_reduction<111>",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 225
+  },
+  "11": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 331,
+    "instructions": 26,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 26
+  },
+  "12": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 331,
+    "instructions": 24,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 24
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 33,
+    "instructions": 27,
+    "name": "c_eye_generate",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 27
+  },
+  "3": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 494,
+    "instructions": 49,
+    "loads": {
+      "L": 2
+    },
+    "name": "map",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 49
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 331,
+    "instructions": 26,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 26
+  },
+  "5": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 494,
+    "instructions": 168,
+    "loads": {
+      "L": 8
+    },
+    "name": "map",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 168
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_sqrt_apfixed.h",
+    "fileloc": 16,
+    "instructions": 2,
+    "name": "sqrt_fixed<97, 65>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  },
+  "7": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "util_1.cpp",
+    "fileloc": 331,
+    "instructions": 15,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 15
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "10",
+    "file": "hls_log_apfixed.h",
+    "fileloc": 473,
+    "instructions": 95,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "log<131, 33>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 320
+  },
+  "9": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_exp_apfixed.h",
+    "fileloc": 931,
+    "instructions": 250,
+    "loads": {
+      "G": 5
+    },
+    "name": "exp_core<64, 32, 98>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 250
+  }
+}

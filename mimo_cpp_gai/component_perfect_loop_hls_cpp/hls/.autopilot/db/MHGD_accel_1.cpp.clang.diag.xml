@@ -1,0 +1,37 @@
+<dict>
+  <key>main-file</key>
+  <string>MHGD_accel_1.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>MHGD_accel_1.cpp</string>
+      <key>line</key>
+      <integer>13</integer>
+      <key>column</key>
+      <integer>10</integer>
+      <key>message</key>
+      <string>&apos;__SYNTHESIS__&apos; macro redefined</string>
+      <key>ID</key>
+      <integer>910</integer>
+      <key>WarningOption</key>
+      <string>macro-redefined</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>note</string>
+      <key>filename</key>
+      <string>&lt;command line&gt;</string>
+      <key>line</key>
+      <integer>3</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>previous definition is here</string>
+      <key>ID</key>
+      <integer>71</integer>
+    </dict>
+  </array>
+</dict>

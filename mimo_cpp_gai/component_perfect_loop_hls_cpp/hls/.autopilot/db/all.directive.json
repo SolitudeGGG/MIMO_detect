@@ -1,0 +1,38 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "loop_perfect",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "LOOP_J",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/run_cpp.tcl",
+    "sourceLine": 73,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "MHGD_detect_accel",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "MHGD_detect_accel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/run_cpp.tcl",
+    "sourceLine": 77,
+    "success": true
+  }
+]

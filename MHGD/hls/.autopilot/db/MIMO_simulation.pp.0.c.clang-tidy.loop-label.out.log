@@ -1,0 +1,90 @@
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3450:3: warning: Added loop label VITIS_LOOP_50_1:   [xilinx-label-all-loops]
+  while (!feof(f))
+  ^~~~~
+  VITIS_LOOP_50_1: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3450:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3460:3: warning: Added loop label VITIS_LOOP_60_2:   [xilinx-label-all-loops]
+  while (!feof(f))
+  ^~~~~
+  VITIS_LOOP_60_2: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3460:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3583:2: warning: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+ while (!feof(f))
+ ^~~~~
+ VITIS_LOOP_190_1: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3583:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3592:2: warning: Added loop label VITIS_LOOP_199_2:   [xilinx-label-all-loops]
+ while (!feof(f))
+ ^~~~~
+ VITIS_LOOP_199_2: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3592:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3601:2: warning: Added loop label VITIS_LOOP_208_3:   [xilinx-label-all-loops]
+ while (!feof(f))
+ ^~~~~
+ VITIS_LOOP_208_3: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3601:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3614:2: warning: Added loop label VITIS_LOOP_221_4:   [xilinx-label-all-loops]
+ for (i = 0; i < max_iter; i++)
+ ^~~
+ VITIS_LOOP_221_4: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3614:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3617:3: warning: Added loop label VITIS_LOOP_224_5:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr * Nt; j++)
+  ^~~
+  VITIS_LOOP_224_5: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3617:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3619:3: warning: Added loop label VITIS_LOOP_226_6:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr; j++)
+  ^~~
+  VITIS_LOOP_226_6: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3619:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3621:3: warning: Added loop label VITIS_LOOP_228_7:   [xilinx-label-all-loops]
+  for (j = 0; j < Nt * mu; j++)
+  ^~~
+  VITIS_LOOP_228_7: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3621:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3629:3: warning: Added loop label VITIS_LOOP_236_8:   [xilinx-label-all-loops]
+  for (j = 0; j < Nt * mu; j++)
+  ^~~
+  VITIS_LOOP_236_8: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3629:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3733:2: warning: Added loop label VITIS_LOOP_340_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_340_1: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3733:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3735:3: warning: Added loop label VITIS_LOOP_342_2:   [xilinx-label-all-loops]
+  for (j = 0; j < 4; j++)
+  ^~~
+  VITIS_LOOP_342_2: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3735:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3740:3: warning: Added loop label VITIS_LOOP_347_3:   [xilinx-label-all-loops]
+  for (j = 0; j < 4; j++)
+  ^~~
+  VITIS_LOOP_347_3: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3740:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3774:2: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_381_1: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3774:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3776:3: warning: Added loop label VITIS_LOOP_383_2:   [xilinx-label-all-loops]
+  for (j = 0; j < 16; j++)
+  ^~~
+  VITIS_LOOP_383_2: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3776:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3782:3: warning: Added loop label VITIS_LOOP_389_3:   [xilinx-label-all-loops]
+  for (j = 0; j < 16; j++)
+  ^~~
+  VITIS_LOOP_389_3: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3782:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3804:2: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_411_1: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3804:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3806:3: warning: Added loop label VITIS_LOOP_413_2:   [xilinx-label-all-loops]
+  for (j = 0; j < 64; j++)
+  ^~~
+  VITIS_LOOP_413_2: 
+/home/ggg_wufuqi/hls/MHGD/MHGD/hls/.autopilot/db/MIMO_simulation.pp.0.c:3806:3: note: FIX-IT applied suggested code changes

@@ -1,0 +1,212 @@
+<ENTRY>
+{
+ "thisFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/component_perfect_loop_hls.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603083",
+ "buildStep": {
+  "cmdId": "00e5f117-7dfb-4f41-996b-6451e42656cf",
+  "name": "vitis-run",
+  "logFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/ggg_wufuqi/hls/MIMO_detect-main/run_tcl.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MIMO_detect-main"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603084",
+ "status": {
+  "cmdId": "00e5f117-7dfb-4f41-996b-6451e42656cf",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603084",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MHGD_detect_accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/MHGD_accel.c",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/MHGD_accel.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/MIMO_simulation.c",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/MIMO_simulation.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/MyComplex.c",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/MyComplex.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/sys_config.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/util.c",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/util.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603085",
+ "buildStep": {
+  "cmdId": "e8eec59c-4fc3-4437-8720-bfe485916603",
+  "name": "csynth_design",
+  "logFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MIMO_detect-main"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603086",
+ "status": {
+  "cmdId": "e8eec59c-4fc3-4437-8720-bfe485916603",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603086",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603087",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr  1 14:56:43 2025",
+ "timestampMillis": "1743490603088",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr  1 14:56:51 2025",
+ "timestampMillis": "1743490611740",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr  1 14:56:51 2025",
+ "timestampMillis": "1743490611740",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr  1 14:56:51 2025",
+ "timestampMillis": "1743490611740",
+ "report": {
+  "path": "/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 14:56:51 2025",
+ "timestampMillis": "1743490611740",
+ "status": {
+  "cmdId": "e8eec59c-4fc3-4437-8720-bfe485916603",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 14:56:51 2025",
+ "timestampMillis": "1743490611743",
+ "status": {
+  "cmdId": "00e5f117-7dfb-4f41-996b-6451e42656cf",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

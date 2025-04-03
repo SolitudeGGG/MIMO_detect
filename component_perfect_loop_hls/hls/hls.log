@@ -1,0 +1,349 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+Tool Version Limit: 2024.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: add_files MHGD_accel.c 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel.c' to the project
+INFO: [HLS 200-1510] Running: add_files MHGD_accel.h 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel.h' to the project
+INFO: [HLS 200-1510] Running: add_files MIMO_simulation.c 
+INFO: [HLS 200-10] Adding design file 'MIMO_simulation.c' to the project
+INFO: [HLS 200-1510] Running: add_files MIMO_simulation.h 
+INFO: [HLS 200-10] Adding design file 'MIMO_simulation.h' to the project
+INFO: [HLS 200-1510] Running: add_files MyComplex.c 
+WARNING: [HLS 200-40] Cannot find design file 'MyComplex.c'
+INFO: [HLS 200-1510] Running: add_files MyComplex.h 
+INFO: [HLS 200-10] Adding design file 'MyComplex.h' to the project
+INFO: [HLS 200-1510] Running: add_files sys_config.h 
+INFO: [HLS 200-10] Adding design file 'sys_config.h' to the project
+INFO: [HLS 200-1510] Running: add_files util.c 
+INFO: [HLS 200-10] Adding design file 'util.c' to the project
+INFO: [HLS 200-1510] Running: add_files util.h 
+INFO: [HLS 200-10] Adding design file 'util.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb.c 
+INFO: [HLS 200-10] Adding test bench file 'tb.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt' to the project
+INFO: [HLS 200-1510] Running: set_top MHGD_detect_accel 
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_pipeline loop_perfect/LOOP_J 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-1998] cannot find relative file path 'MyComplex.c' in directory(s): /home/ggg_wufuqi/hls/MIMO_detect-main /home/ggg_wufuqi/hls/MIMO_detect-main
+WARNING: [HLS 200-40] Cannot find source file MyComplex.c; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.58 seconds; current allocated memory: 663.145 MB.
+INFO: [HLS 200-10] Analyzing design file 'util.c' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MIMO_simulation.c' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MHGD_accel.c' ... 
+WARNING: [HLS 207-910] '__SYNTHESIS__' macro redefined (MHGD_accel.c:13:10)
+INFO: [HLS 207-71] previous definition is here (<command line>:3:9)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:216:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:217:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:218:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:219:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:220:36)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:221:36)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:222:44)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:223:47)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:224:47)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:225:42)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel.c:226:39)
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+WARNING: [HLS 207-5292] unused parameter 'Nr' (MHGD_accel.c:149:34)
+WARNING: [HLS 200-1986] Could not apply PIPELINE directive, invalid function, label, or variable (/home/ggg_wufuqi/hls/MIMO_detect-main/run_tcl.tcl:70)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.54 seconds. CPU system time: 0.39 seconds. Elapsed time: 0.93 seconds; current allocated memory: 666.801 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 200-1995] There were 100,732 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10,626 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,547 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,410 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,942 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,462 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,462 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,564 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,537 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,185 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,125 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,109 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,036 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,036 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,110 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,099 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_494_4' is marked as complete unroll implied by the pipeline pragma (MHGD_accel.c:494:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_451_1' is marked as complete unroll implied by the pipeline pragma (util.c:451:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_307_1' is marked as complete unroll implied by the pipeline pragma (util.c:307:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_290_1' is marked as complete unroll implied by the pipeline pragma (util.c:290:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_489_1' is marked as complete unroll implied by the pipeline pragma (util.c:489:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_316_1' is marked as complete unroll implied by the pipeline pragma (util.c:316:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_255_14' is marked as complete unroll implied by the pipeline pragma (util.c:255:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_259_15' is marked as complete unroll implied by the pipeline pragma (util.c:259:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_264_16' is marked as complete unroll implied by the pipeline pragma (util.c:264:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_248_13' is marked as complete unroll implied by the pipeline pragma (util.c:248:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_226_10' is marked as complete unroll implied by the pipeline pragma (util.c:226:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_230_11' is marked as complete unroll implied by the pipeline pragma (util.c:230:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_236_12' is marked as complete unroll implied by the pipeline pragma (util.c:236:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_219_9' is marked as complete unroll implied by the pipeline pragma (util.c:219:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_186_4' is marked as complete unroll implied by the pipeline pragma (util.c:186:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_190_5' is marked as complete unroll implied by the pipeline pragma (util.c:190:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_196_6' is marked as complete unroll implied by the pipeline pragma (util.c:196:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_203_7' is marked as complete unroll implied by the pipeline pragma (util.c:203:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_209_8' is marked as complete unroll implied by the pipeline pragma (util.c:209:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_179_3' is marked as complete unroll implied by the pipeline pragma (util.c:179:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_173_2' is marked as complete unroll implied by the pipeline pragma (util.c:173:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_166_1' is marked as complete unroll implied by the pipeline pragma (util.c:166:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_117_1' is marked as complete unroll implied by the pipeline pragma (util.c:117:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_119_2' is marked as complete unroll implied by the pipeline pragma (util.c:119:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_124_3' is marked as complete unroll implied by the pipeline pragma (util.c:124:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_101_1' is marked as complete unroll implied by the pipeline pragma (util.c:101:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_103_2' is marked as complete unroll implied by the pipeline pragma (util.c:103:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_281_1' is marked as complete unroll implied by the pipeline pragma (util.c:281:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_345_1' is marked as complete unroll implied by the pipeline pragma (util.c:345:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_348_2' is marked as complete unroll implied by the pipeline pragma (util.c:348:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_352_3' is marked as complete unroll implied by the pipeline pragma (util.c:352:22)
+WARNING: [HLS 214-398] Updating loop lower bound from 1 to 10 for loop 'VITIS_LOOP_451_1' (util.c:451:20) in function 'generateUniformRandoms_float'. (util.c:450:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_451_1' (util.c:451:20) in function 'generateUniformRandoms_float' completely with a factor of 10 (util.c:450:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.79.114.123.133.164)' into 'fp_struct<double>::to_double() const (.111.120.130.161)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.111.120.130.161)' into 'fp_struct<double>::to_ieee() const' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'complex_conjugate' into 'c_matmultiple' (util.c:324:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.208' into 'c_matmultiple' (util.c:324:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'c_matmultiple' (util.c:324:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.208' into 'MulMatrix' (util.c:114:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'MulMatrix' (util.c:114:0)
+INFO: [HLS 214-178] Inlining function 'initMatrix' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.208' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'complex_subtract' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide.221.227' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'MulMatrix' into 'Inverse_LU' (util.c:136:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.79.114.123.133.164)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(ap_uint<64>)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'floor' into 'map' (util.c:487:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal' into 'map' (util.c:487:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'c_eye_generate' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_add' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_int' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_sub' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_copy' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_float' into 'MHGD_detect_accel' (MHGD_accel.c:215:0)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util.c:199:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util.c:199:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:199:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:199:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real'
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag'
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util.c:213:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util.c:213:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:213:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:213:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util.c:239:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util.c:239:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util.c:239:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.imag' (util.c:239:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util.c:241:41)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.imag' (util.c:241:41)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util.c:242:41)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:252:27)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:252:27)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:268:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:268:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla6.real' (util.c:268:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla6.imag' (util.c:268:21)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util.c:273:29)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util.c:273:29)
+INFO: [HLS 214-241] Aggregating scalar variable 'v_tb' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'y' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'H' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'x_hat' with compact=bit mode in 64-bits (MHGD_accel.c:215:0)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:493:17)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:500:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:506:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:512:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:318:19)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:319:20)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (MHGD_accel.c:452:13)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util.c:310:20)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_35_1> at util.c:35:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_42_2> at util.c:42:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_427_1> at MHGD_accel.c:427:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_438_1> at util.c:438:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_449_2> at MHGD_accel.c:449:21 
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_259_15'. (util.c:259:21)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_230_11'. (util.c:230:21)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_190_5'. (util.c:190:20)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_203_7'. (util.c:203:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_307_1' (util.c:307:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:307:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_316_1' (util.c:316:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:316:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_281_1' (util.c:281:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:281:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_494_4' (MHGD_accel.c:494:21) in function 'MHGD_detect_accel' as it has a variable trip count (MHGD_accel.c:494:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_290_1' (util.c:290:20) in function 'MHGD_detect_accel' as it has a variable trip count (util.c:290:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_316_1' (util.c:316:20) in function 'map' as it has a variable trip count (util.c:316:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_489_1' (util.c:489:20) in function 'map' as it has a variable trip count (util.c:489:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_316_1' (util.c:316:20) in function 'map.344' as it has a variable trip count (util.c:316:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_489_1' (util.c:489:20) in function 'map.344' as it has a variable trip count (util.c:489:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_117_1' (util.c:117:20) in function 'Inverse_LU' as it has a variable trip count (util.c:117:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_119_2' (util.c:119:21) in function 'Inverse_LU' as it has a variable trip count (util.c:119:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_255_14' (util.c:255:21) in function 'Inverse_LU' as it has a variable trip count (util.c:255:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_259_15' (util.c:259:21) in function 'Inverse_LU' as it has a variable trip count (util.c:259:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_264_16' (util.c:264:23) in function 'Inverse_LU' as it has a variable trip count (util.c:264:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_226_10' (util.c:226:21) in function 'Inverse_LU' as it has a variable trip count (util.c:226:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_230_11' (util.c:230:21) in function 'Inverse_LU' as it has a variable trip count (util.c:230:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_236_12' (util.c:236:23) in function 'Inverse_LU' as it has a variable trip count (util.c:236:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_186_4' (util.c:186:20) in function 'Inverse_LU' as it has a variable trip count (util.c:186:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_190_5' (util.c:190:20) in function 'Inverse_LU' as it has a variable trip count (util.c:190:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_196_6' (util.c:196:22) in function 'Inverse_LU' as it has a variable trip count (util.c:196:22)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_203_7' (util.c:203:21) in function 'Inverse_LU' as it has a variable trip count (util.c:203:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_209_8' (util.c:209:22) in function 'Inverse_LU' as it has a variable trip count (util.c:209:22)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_345_1' (util.c:345:20) in function 'c_matmultiple' as it has a variable trip count (util.c:345:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_348_2' (util.c:348:20) in function 'c_matmultiple' as it has a variable trip count (util.c:348:20)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.79 seconds. CPU system time: 0.3 seconds. Elapsed time: 7.23 seconds; current allocated memory: 680.566 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 680.566 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 684.281 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'map.344' into 'MHGD_detect_accel' (MHGD_accel.c:443) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 686.531 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 710.164 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 711.535 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MHGD_detect_accel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_483_3'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation 1 bit ('and_ln524_1', MHGD_accel.c:524)) in the first pipeline iteration (II = 1 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_483_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 712.492 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 712.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MHGD_detect_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive for function 'MHGD_detect_accel': contains subfunction 'MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3' which is not pipelined.
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive for function 'MHGD_detect_accel': contains subfunction 'MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3' which is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 712.492 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 712.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 712.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MHGD_detect_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/x_hat' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/Nt' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/Nr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/mu' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/H' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/y' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/sigma2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/mmse_init' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/lr_approx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/iter' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/v_tb' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MHGD_detect_accel' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/x_hat' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/Nr' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/mu' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/H' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/y' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/sigma2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/lr_approx' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/v_tb' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'dexp_64ns_64ns_64_13_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MHGD_detect_accel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 712.492 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 713.906 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 714.996 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MHGD_detect_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for MHGD_detect_accel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.72 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:11; Allocated memory: 68.438 MB.

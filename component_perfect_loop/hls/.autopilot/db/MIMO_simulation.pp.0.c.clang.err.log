@@ -1,0 +1,6 @@
+In file included from MIMO_simulation.c:1:
+In file included from ./MIMO_simulation.h:3:
+./util.h:10:9: warning: unknown pragma ignored [-Winvalid-hls-pragmas]
+#pragma warning(disable:4996)
+        ^
+1 warning generated.

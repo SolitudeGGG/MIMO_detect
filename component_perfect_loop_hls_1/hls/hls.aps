@@ -1,0 +1,20 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="hls"/>
+    </name>
+    <project>
+        <value string="component_perfect_loop_hls_1"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <writeConfigIni value="true"/>
+    <targetInfo>
+        <TargetInfo value="xck26:-sfvc784:-2LV-c"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="10" default="false"/>
+    </clockList>
+</AutoPilot:solution>
+

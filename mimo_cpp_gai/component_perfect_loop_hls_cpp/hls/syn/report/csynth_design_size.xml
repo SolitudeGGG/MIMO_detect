@@ -1,0 +1,82 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 425544 *, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  25434, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  12746, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   7738, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   4357, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   3709, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   3680, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   3680, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   3680, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   3606, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   3387, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   3347, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   3329, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   3261, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   3437, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   3465, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="MHGD_detect_accel" col1="MHGD_accel_1.cpp:214" col2="425544" col2_note="*" col3="4357" col4="3606" col5="3261" col6="3465">
+                    <row id="20" col0="c_eye_generate" col1="util_1.cpp:33" col2="3657" col2_disp=" 3,657 (3 calls)" col3="87" col3_disp="  87 (3 calls)" col4="87" col4_disp="  87 (3 calls)" col5="81" col5_disp="  81 (3 calls)" col6="87" col6_disp="  87 (3 calls)"/>
+                    <row id="81" col0="c_matmultiple" col1="util_1.cpp:331" col2="72726" col2_disp="72,726 (17 calls)" col3="680" col3_disp=" 680 (17 calls)" col4="354" col4_disp=" 354 (17 calls)" col5="330" col5_disp=" 330 (17 calls)" col6="348" col6_disp=" 348 (17 calls)">
+                        <row id="80" col0="complex_conjugate" col1="util_1.cpp:304" col2="4318" col2_disp=" 4,318 (34 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="18" col0="complex_multiply" col1="util_1.cpp:62" col2="18649" col2_disp="18,649 (17 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="19" col0="complex_add" col1="util_1.cpp:70" col2="7905" col2_disp=" 7,905 (17 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="22" col0="my_complex_add" col1="util_1.cpp:286" col2="1944" col2_disp=" 1,944 (4 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="23" col0="Inverse_LU" col1="util_1.cpp:141" col2="57956" col2_disp="57,956 (2 calls)" col3="1198" col3_disp="1,198 (2 calls)" col4="1014" col4_disp="1,014 (2 calls)" col5="978" col5_disp=" 978 (2 calls)" col6="1008" col6_disp="1,008 (2 calls)">
+                        <row id="28" col0="initMatrix" col1="util_1.cpp:100" col2="6504" col2_disp=" 6,504 (8 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="27" col0="complex_divide" col1="util_1.cpp:86" col2="14528" col2_disp="14,528 (8 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="18" col0="complex_multiply" col1="util_1.cpp:62" col2="13164" col2_disp="13,164 (12 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="19" col0="complex_add" col1="util_1.cpp:70" col2="3720" col2_disp=" 3,720 (8 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="26" col0="complex_subtract" col1="util_1.cpp:78" col2="1860" col2_disp=" 1,860 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="29" col0="MulMatrix" col1="util_1.cpp:117" col2="4846" col2_disp=" 4,846 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="18" col0="complex_multiply" col1="util_1.cpp:62" col2="2194" col2_disp=" 2,194 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="19" col0="complex_add" col1="util_1.cpp:70" col2="930" col2_disp="   930 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="100" col0="map" col1="util_1.cpp:494" col2="28060" col2_disp="28,060 (2 calls)" col3="328" col3_disp=" 328 (2 calls)" col4="227" col4_disp=" 227 (2 calls)" col5="217" col5_disp=" 217 (2 calls)" col6="312" col6_disp=" 312 (2 calls)">
+                        <row id="52" col0="my_complex_scal" col1="util_1.cpp:321" col2="824" col2_disp="   824 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="21" col0="generateUniformRandoms_int" col1="util_1.cpp:437" col2="28992" col3="" col4="" col5="" col6="">
+                        <row id="63" col0="lcg_rand" col1="util_1.cpp:19" col2="4" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="85" col0="my_complex_sub" col1="util_1.cpp:295" col2="972" col2_disp="   972 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="96" col0="my_complex_copy" col1="util_1.cpp:312" col2="160" col2_disp="   160 (5 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="52" col0="my_complex_scal" col1="util_1.cpp:321" col2="824" col2_disp="   824 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="99" col0="generateUniformRandoms_float" col1="util_1.cpp:457" col2="423" col3="" col4="" col5="" col6="">
+                        <row id="74" col0="lcg_rand_1" col1="util_1.cpp:25" col2="403" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="95" col0="sqrt_fixed&lt;97, 65&gt;" col1="hls_sqrt_apfixed.h:16" col2="" col3="10" col3_disp="  10 (5 calls)" col4="10" col4_disp="  10 (5 calls)" col5="6" col5_disp="   6 (3 calls)" col6="9" col6_disp="   9 (3 calls)"/>
+                    <row id="6" col0="exp&lt;64, 32&gt;" col1="hls_exp_apfixed.h:13" col2="" col3="216" col4="216" col5="" col6=""/>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

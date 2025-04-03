@@ -1,0 +1,1457 @@
+---
+MainSourceFile:  /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          489226
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          489692
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          490159
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          773231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      91
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      92
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      93
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      94
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      95
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      125
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      126
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      127
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      128
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      130
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      131
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      132
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      133
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      134
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      184
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      185
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      186
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      213
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      214
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      216
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      217
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      218
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1249454
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1250268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_1:  '
+    FileOffset:      289
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1252915
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1255638
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_629_1:  '
+    FileOffset:      629
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1258799
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_629_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_633_2:  '
+    FileOffset:      633
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1258880
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_633_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1261189
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_840_1:  '
+    FileOffset:      840
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1262683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_840_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_859_2:  '
+    FileOffset:      859
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1262913
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_859_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1173_1:  '
+    FileOffset:      1173
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1269095
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1256_1:  '
+    FileOffset:      1256
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1270698
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1278545
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_2:  '
+    FileOffset:      74
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1278695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1278792
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_4:  '
+    FileOffset:      145
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1280652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_5:  '
+    FileOffset:      151
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1280802
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_6:  '
+    FileOffset:      155
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1280899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_7:  '
+    FileOffset:      170
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1281280
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_8:  '
+    FileOffset:      178
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1281511
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_9:  '
+    FileOffset:      243
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1284958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_10:  '
+    FileOffset:      249
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1285110
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_11:  '
+    FileOffset:      253
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1285210
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_12:  '
+    FileOffset:      268
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1285592
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_13:  '
+    FileOffset:      276
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1285830
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_14:  '
+    FileOffset:      505
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1301385
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_15:  '
+    FileOffset:      511
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1301537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_16:  '
+    FileOffset:      515
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1301636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_525_17:  '
+    FileOffset:      525
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1301813
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_525_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_18:  '
+    FileOffset:      529
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1301911
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_19:  '
+    FileOffset:      539
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1302196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_547_20:  '
+    FileOffset:      547
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1302451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_547_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_908_21:  '
+    FileOffset:      908
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1334690
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_908_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_914_22:  '
+    FileOffset:      914
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1334842
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_914_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_23:  '
+    FileOffset:      918
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1334942
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1034_1:  '
+    FileOffset:      1034
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1337618
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1040_2:  '
+    FileOffset:      1040
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1337768
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1040_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_3:  '
+    FileOffset:      1044
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1337866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_4:  '
+    FileOffset:      1131
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1341336
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_5:  '
+    FileOffset:      1137
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1341487
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1341586
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1160_7:  '
+    FileOffset:      1160
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1342066
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1160_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1167_8:  '
+    FileOffset:      1167
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1342308
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1167_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1283_9:  '
+    FileOffset:      1283
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1347880
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1283_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1289_10:  '
+    FileOffset:      1289
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1348032
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1289_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1293_11:  '
+    FileOffset:      1293
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1348131
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1293_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1313_12:  '
+    FileOffset:      1313
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1348640
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1313_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1320_13:  '
+    FileOffset:      1320
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1348889
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1320_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1582_14:  '
+    FileOffset:      1582
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1366246
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1582_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_15:  '
+    FileOffset:      1588
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1366398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1592_16:  '
+    FileOffset:      1592
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1366498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1592_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1616_17:  '
+    FileOffset:      1616
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1366972
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1616_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1623_18:  '
+    FileOffset:      1623
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1367239
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1623_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2053_19:  '
+    FileOffset:      2053
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1405810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2053_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2059_20:  '
+    FileOffset:      2059
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1405962
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2059_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2063_21:  '
+    FileOffset:      2063
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1406062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2063_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2193_1:  '
+    FileOffset:      2193
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1408682
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2200_2:  '
+    FileOffset:      2200
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1408845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2200_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2204_3:  '
+    FileOffset:      2204
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1408937
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2204_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2251_4:  '
+    FileOffset:      2251
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1410546
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2251_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2258_5:  '
+    FileOffset:      2258
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1410708
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2262_6:  '
+    FileOffset:      2262
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1410800
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2262_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2280_7:  '
+    FileOffset:      2280
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1411173
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2335_8:  '
+    FileOffset:      2335
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1413639
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2335_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2342_9:  '
+    FileOffset:      2342
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1413806
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2342_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2346_10:  '
+    FileOffset:      2346
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1413899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2346_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2364_11:  '
+    FileOffset:      2364
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1414280
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2364_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2453_12:  '
+    FileOffset:      2453
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1419721
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2453_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2460_13:  '
+    FileOffset:      2460
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1419889
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2460_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2464_14:  '
+    FileOffset:      2464
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1419983
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2464_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2474_15:  '
+    FileOffset:      2474
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1420154
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2474_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2478_16:  '
+    FileOffset:      2478
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1420245
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2478_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2489_17:  '
+    FileOffset:      2489
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1420527
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2489_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2497_18:  '
+    FileOffset:      2497
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1420714
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2497_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2822_19:  '
+    FileOffset:      2822
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1455184
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2822_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2829_20:  '
+    FileOffset:      2829
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1455352
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2829_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2833_21:  '
+    FileOffset:      2833
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1455446
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2833_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2921_1:  '
+    FileOffset:      2921
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1457248
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2928_2:  '
+    FileOffset:      2928
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1457356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2928_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2932_3:  '
+    FileOffset:      2932
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1457427
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2932_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2947_4:  '
+    FileOffset:      2947
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1457715
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2947_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2979_5:  '
+    FileOffset:      2979
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1458929
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2979_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2986_6:  '
+    FileOffset:      2986
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1459040
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2986_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2990_7:  '
+    FileOffset:      2990
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1459113
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2990_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3005_8:  '
+    FileOffset:      3005
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1459408
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3005_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_9:  '
+    FileOffset:      3055
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1462741
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3062_10:  '
+    FileOffset:      3062
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1462852
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3062_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3066_11:  '
+    FileOffset:      3066
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1462925
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3066_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3081_12:  '
+    FileOffset:      3081
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1463221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3081_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3218_13:  '
+    FileOffset:      3218
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1482533
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3218_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3225_14:  '
+    FileOffset:      3225
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1482647
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3225_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3229_15:  '
+    FileOffset:      3229
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1482722
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3244_16:  '
+    FileOffset:      3244
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1483009
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3244_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3404_17:  '
+    FileOffset:      3404
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1508619
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3404_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3411_18:  '
+    FileOffset:      3411
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1508733
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3411_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3415_19:  '
+    FileOffset:      3415
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1508810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3415_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1542877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_921_1:  '
+    FileOffset:      921
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1551266
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1345_1:  '
+    FileOffset:      1345
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1570239
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_240_1:  '
+    FileOffset:      240
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1585093
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_240_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_2:  '
+    FileOffset:      268
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1585614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1601525
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1602675
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1602984
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1603494
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1605408
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1605773
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_3:  '
+    FileOffset:      315
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1606081
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_433_1:  '
+    FileOffset:      433
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1607909
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_433_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_2:  '
+    FileOffset:      447
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1608234
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1610885
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1613777
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1615064
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1625956
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1626131
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1626292
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1626454
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1626628
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1626803
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1626964
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1627126
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_mad_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1698634
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_cbrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1700377
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1704882
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1705613
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_3:  '
+    FileOffset:      169
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1707298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_1:  '
+    FileOffset:      50
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1787874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_2:  '
+    FileOffset:      60
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1788128
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_1:  '
+    FileOffset:      190
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1791278
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_2:  '
+    FileOffset:      199
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1791462
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_3:  '
+    FileOffset:      208
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1791649
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_221_4:  '
+    FileOffset:      221
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1791845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_221_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_5:  '
+    FileOffset:      224
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1791882
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_6:  '
+    FileOffset:      226
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1791950
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_7:  '
+    FileOffset:      228
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1792008
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_236_8:  '
+    FileOffset:      236
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1792224
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_236_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_340_1:  '
+    FileOffset:      340
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1794570
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_340_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_342_2:  '
+    FileOffset:      342
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1794600
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_342_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_347_3:  '
+    FileOffset:      347
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1794816
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_347_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_1:  '
+    FileOffset:      381
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1795542
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_383_2:  '
+    FileOffset:      383
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1795572
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_383_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_389_3:  '
+    FileOffset:      389
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1795796
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_389_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1796398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_413_2:  '
+    FileOffset:      413
+    FilePath:        MIMO_simulation_1.cpp
+    Replacements:    
+      - FilePath:        /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp
+        Offset:          1796428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_413_2: '
+...

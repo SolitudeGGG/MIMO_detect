@@ -1,0 +1,7 @@
+MHGD_accel_1.cpp:13:10: warning: '__SYNTHESIS__' macro redefined [-Wmacro-redefined]
+#define  __SYNTHESIS__
+         ^
+<command line>:3:9: note: previous definition is here
+#define __SYNTHESIS__ 1
+        ^
+1 warning generated.

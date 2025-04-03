@@ -1,0 +1,13 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="loop_perfect" label="LOOP_J" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="MHGD_detect_accel" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="MHGD_detect_accel"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

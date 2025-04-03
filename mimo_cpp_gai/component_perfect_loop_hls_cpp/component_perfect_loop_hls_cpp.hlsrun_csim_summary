@@ -1,0 +1,130 @@
+<ENTRY>
+{
+ "thisFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/component_perfect_loop_hls_cpp.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Apr  1 16:25:53 2025",
+ "timestampMillis": "1743495953342",
+ "buildStep": {
+  "cmdId": "2edaf4c9-c560-47e6-897b-46f4eec9df98",
+  "name": "vitis-run",
+  "logFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/logs/hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/run_cpp.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 16:25:53 2025",
+ "timestampMillis": "1743495953342",
+ "status": {
+  "cmdId": "2edaf4c9-c560-47e6-897b-46f4eec9df98",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Apr  1 16:25:53 2025",
+ "timestampMillis": "1743495953343",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MHGD_detect_accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MHGD_accel_1.cpp",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MHGD_accel_1.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MIMO_simulation_1.cpp",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MIMO_simulation_1.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MyComplex.cpp",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MyComplex_1.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sys_config_1.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/util_1.cpp",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/util_1.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MMSE_1.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MMSE_1.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr  1 16:25:53 2025",
+ "timestampMillis": "1743495953343",
+ "buildStep": {
+  "cmdId": "238c36c3-07fe-466e-b4b9-3cd6aeea3266",
+  "name": "csim_design",
+  "logFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 16:25:53 2025",
+ "timestampMillis": "1743495953344",
+ "status": {
+  "cmdId": "238c36c3-07fe-466e-b4b9-3cd6aeea3266",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 16:26:05 2025",
+ "timestampMillis": "1743495965746",
+ "status": {
+  "cmdId": "238c36c3-07fe-466e-b4b9-3cd6aeea3266",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr  1 16:26:05 2025",
+ "timestampMillis": "1743495965748",
+ "status": {
+  "cmdId": "2edaf4c9-c560-47e6-897b-46f4eec9df98",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

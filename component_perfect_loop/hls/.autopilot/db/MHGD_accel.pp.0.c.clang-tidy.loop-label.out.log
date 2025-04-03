@@ -1,0 +1,80 @@
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3179:2: warning: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_115_1: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3179:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3182:2: warning: Added loop label VITIS_LOOP_118_2:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_118_2: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3182:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3186:2: warning: Added loop label VITIS_LOOP_122_3:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_122_3: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3186:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3189:2: warning: Added loop label VITIS_LOOP_125_4:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_125_4: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3189:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3254:2: warning: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_190_1: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3254:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3256:2: warning: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_192_2: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3256:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3258:2: warning: Added loop label VITIS_LOOP_194_3:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_194_3: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3258:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3260:2: warning: Added loop label VITIS_LOOP_196_4:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_196_4: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3260:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3326:3: warning: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+  for (i = 0; i < Nr * Nr; i++)
+  ^~~
+  VITIS_LOOP_427_1: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3326:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3348:3: warning: Added loop label VITIS_LOOP_449_2:   [xilinx-label-all-loops]
+  for (i = 0; i < Nt; i++)
+  ^~~
+  VITIS_LOOP_449_2: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3348:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3379:2: warning: Added loop label VITIS_LOOP_480_3:   [xilinx-label-all-loops]
+ for (k = 0; k < iter; k++)
+ ^~~
+ VITIS_LOOP_480_3: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3379:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3389:3: warning: Added loop label VITIS_LOOP_490_4:   [xilinx-label-all-loops]
+  for(int l=offset; l < Nt+offset; l++){
+  ^~~
+  VITIS_LOOP_490_4: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3389:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3453:2: warning: Added loop label VITIS_LOOP_554_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_554_1: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3453:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3459:3: warning: Added loop label VITIS_LOOP_560_2:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr; j++)
+  ^~~
+  VITIS_LOOP_560_2: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3459:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3467:3: warning: Added loop label VITIS_LOOP_568_3:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr; j++)
+  ^~~
+  VITIS_LOOP_568_3: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3467:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3473:2: warning: Added loop label VITIS_LOOP_586_4:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_586_4: 
+/home/ggg_wufuqi/hls/MHGD/component_perfect_loop/hls/.autopilot/db/MHGD_accel.pp.0.c:3473:2: note: FIX-IT applied suggested code changes

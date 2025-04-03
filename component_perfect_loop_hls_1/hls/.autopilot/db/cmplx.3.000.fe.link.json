@@ -1,0 +1,808 @@
+{
+  "0": {
+    "basicblocks": 46,
+    "calls": "12 34 16 27 28 12 34 16 16 34 27 28 16 16 45 13 16 26 16 21 16 16 16 16 16 19 27 19 27 45 16 26 16 21 43 21 21 16 16 16 21",
+    "file": "MHGD_accel.c",
+    "fileloc": 214,
+    "instructions": 321,
+    "loads": {
+      "G": 86,
+      "L": 9,
+      "T": 2
+    },
+    "name": "MHGD_detect_accel",
+    "stores": {
+      "L": 4,
+      "T": 1
+    },
+    "total_instructions": 100732
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 8,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "10": {
+    "basicblocks": 3,
+    "calls": "7",
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "name": "generic_isnan<double>",
+    "total_instructions": 390
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 503,
+    "instructions": 24,
+    "name": "mantissa",
+    "total_instructions": 183
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "powdouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "pow",
+    "total_instructions": 26829
+  },
+  "13": {
+    "basicblocks": 7,
+    "calls": "12 37 5",
+    "file": "util.c",
+    "fileloc": 430,
+    "instructions": 20,
+    "name": "generateUniformRandoms_int",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 28989
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 7, 6, 73, 83>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1228
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 17, 6, 92, 87>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1237
+  },
+  "16": {
+    "basicblocks": 34,
+    "calls": "24 24 35 33",
+    "file": "util.c",
+    "fileloc": 324,
+    "instructions": 128,
+    "loads": {
+      "L": 10
+    },
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 218
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 12, 6, 83, 92>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1233
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 22, 6, 87, 82>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1237
+  },
+  "19": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 315,
+    "instructions": 24,
+    "loads": {
+      "L": 2
+    },
+    "name": "my_complex_scal",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 24
+  },
+  "2": {
+    "basicblocks": 16,
+    "calls": "7 11 1 1 47 47",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 133,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2132
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "41",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 303
+  },
+  "21": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 306,
+    "instructions": 32,
+    "loads": {
+      "L": 2
+    },
+    "name": "my_complex_copy",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 32
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 27, 6, 82, 77>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1237
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 102,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 4, 4, 71, 73>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1256
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 298,
+    "instructions": 17,
+    "loads": {
+      "L": 3
+    },
+    "name": "complex_conjugate",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 17
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 30,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<121, 12, AP_TRN, AP_WRAP, 0>, 32, 6, 77, 72>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1237
+  },
+  "26": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 289,
+    "instructions": 36,
+    "loads": {
+      "L": 4
+    },
+    "name": "my_complex_sub",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
+  },
+  "27": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 280,
+    "instructions": 36,
+    "loads": {
+      "L": 4
+    },
+    "name": "my_complex_add",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
+  },
+  "28": {
+    "basicblocks": 81,
+    "calls": "29 29 29 29 30 35 33 32 35 33 32 30 35 33 35 35 30 35 33 30 31",
+    "file": "util.c",
+    "fileloc": 135,
+    "instructions": 372,
+    "loads": {
+      "L": 14
+    },
+    "name": "Inverse_LU",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 1132
+  },
+  "29": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 98,
+    "instructions": 29,
+    "name": "initMatrix",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 29
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, double>",
+    "total_instructions": 2134
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 84,
+    "instructions": 47,
+    "loads": {
+      "L": 13
+    },
+    "name": "complex_divide",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 47
+  },
+  "31": {
+    "basicblocks": 16,
+    "calls": "35 33",
+    "file": "util.c",
+    "fileloc": 113,
+    "instructions": 64,
+    "loads": {
+      "L": 3
+    },
+    "name": "MulMatrix",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 120
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 76,
+    "instructions": 22,
+    "loads": {
+      "L": 5
+    },
+    "name": "complex_subtract",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 22
+  },
+  "33": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 68,
+    "instructions": 22,
+    "loads": {
+      "L": 5
+    },
+    "name": "complex_add",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 22
+  },
+  "34": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 32,
+    "instructions": 32,
+    "name": "c_eye_generate",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 32
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 60,
+    "instructions": 34,
+    "loads": {
+      "L": 9
+    },
+    "name": "complex_multiply",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 34
+  },
+  "36": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 24,
+    "instructions": 6,
+    "name": "lcg_rand_1",
+    "total_instructions": 6
+  },
+  "37": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 18,
+    "instructions": 4,
+    "name": "lcg_rand",
+    "total_instructions": 4
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 475,
+    "instructions": 32,
+    "name": "data",
+    "total_instructions": 279
+  },
+  "39": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 20,
+    "instructions": 19,
+    "name": "init_mask_table<double>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "65 66 67 63 64 62 57 58 59 61 54 55 56 52 53 51 60 50",
+    "file": "powrdouble.pp.cpp",
+    "fileloc": 0,
+    "instructions": 19,
+    "name": "",
+    "total_instructions": 26421
+  },
+  "40": {
+    "basicblocks": 12,
+    "calls": "39 7 47 46 47 38 49 20",
+    "file": "hls_floor.h",
+    "fileloc": 13,
+    "instructions": 103,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_floor<double>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 2675
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "38",
+    "file": "x_hls_utils.h",
+    "fileloc": 494,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_double",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 301
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 224,
+    "instructions": 224,
+    "name": "exp_Z1P_m_1",
+    "total_instructions": 2725
+  },
+  "43": {
+    "basicblocks": 7,
+    "calls": "36",
+    "file": "util.c",
+    "fileloc": 450,
+    "instructions": 14,
+    "name": "generateUniformRandoms_float",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 20
+  },
+  "44": {
+    "basicblocks": 1,
+    "calls": "40",
+    "file": "floordouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "floor",
+    "total_instructions": 2677
+  },
+  "45": {
+    "basicblocks": 47,
+    "calls": "44 44 19",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 249,
+    "loads": {
+      "L": 26
+    },
+    "name": "map",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 5627
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "7 7 20",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 959
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 512,
+    "instructions": 4,
+    "name": "__signbit",
+    "total_instructions": 9
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "23 14 17 15 18 22 25",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 85,
+    "loads": {
+      "L": 7
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 10185
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 464,
+    "instructions": 40,
+    "name": "fp_struct",
+    "total_instructions": 289
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i32",
+    "total_instructions": 2136
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2726,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1556",
+    "total_instructions": 4353
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2420,
+    "instructions": 33,
+    "name": "__cxx_global_var_init.1268",
+    "total_instructions": 545
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 1041,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.474",
+    "total_instructions": 1089
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2153,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1011",
+    "total_instructions": 4353
+  },
+  "54": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 604,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.277",
+    "total_instructions": 1089
+  },
+  "55": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 679,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.341",
+    "total_instructions": 1089
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 940,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.451",
+    "total_instructions": 1089
+  },
+  "57": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 307,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.84",
+    "total_instructions": 1089
+  },
+  "58": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 379,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.148",
+    "total_instructions": 1089
+  },
+  "59": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 454,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.149",
+    "total_instructions": 1089
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 454,
+    "instructions": 4,
+    "name": "fp_struct",
+    "total_instructions": 4
+  },
+  "60": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2459,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1300",
+    "total_instructions": 4353
+  },
+  "61": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 529,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.213",
+    "total_instructions": 1089
+  },
+  "62": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 232,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.83",
+    "total_instructions": 1089
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 88,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.18",
+    "total_instructions": 1089
+  },
+  "64": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 160,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.82",
+    "total_instructions": 1089
+  },
+  "65": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 16,
+    "instructions": 17,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 273
+  },
+  "66": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 39,
+    "instructions": 17,
+    "name": "__cxx_global_var_init.16",
+    "total_instructions": 273
+  },
+  "67": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 62,
+    "instructions": 17,
+    "name": "__cxx_global_var_init.17",
+    "total_instructions": 273
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 319
+  },
+  "8": {
+    "basicblocks": 3,
+    "calls": "7",
+    "file": "hls_isinf.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "name": "generic_isinf<double>",
+    "total_instructions": 389
+  },
+  "9": {
+    "basicblocks": 71,
+    "calls": "7 7 6 1 1 8 10 10 8 20 20 20 20 20 48 42 20 20 20 20",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 1064,
+    "loads": {
+      "G": 3,
+      "L": 23
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 26827
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "0": {
+    "basicblocks": 73,
+    "calls": "8 6 1 6 6 1 6 6 5 6 6 6 6 6 6 6 4 6 6 6 6 6",
+    "file": "MHGD_accel.c",
+    "fileloc": 214,
+    "instructions": 330,
+    "loads": {
+      "L": 7,
+      "T": 6
+    },
+    "name": "MHGD_detect_accel",
+    "stores": {
+      "L": 32,
+      "T": 6
+    },
+    "total_instructions": 2564
+  },
+  "1": {
+    "basicblocks": 59,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 135,
+    "instructions": 404,
+    "loads": {
+      "L": 30
+    },
+    "name": "Inverse_LU",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 404
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_floor.h",
+    "fileloc": 13,
+    "instructions": 45,
+    "loads": {
+      "G": 1
+    },
+    "name": "generic_floor<double>",
+    "total_instructions": 45
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 9,
+    "loads": {
+      "L": 3
+    },
+    "name": "to_ieee",
+    "total_instructions": 9
+  },
+  "4": {
+    "basicblocks": 10,
+    "calls": "2 2",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 78,
+    "loads": {
+      "L": 4
+    },
+    "name": "map",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 168
+  },
+  "5": {
+    "basicblocks": 10,
+    "calls": "2 2",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 144,
+    "loads": {
+      "L": 14
+    },
+    "name": "map",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 234
+  },
+  "6": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 324,
+    "instructions": 28,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 28
+  },
+  "7": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 224,
+    "loads": {
+      "G": 7,
+      "L": 1
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 224
+  },
+  "8": {
+    "basicblocks": 22,
+    "calls": "3 3 3 3 7 3 3 3 3",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 252,
+    "loads": {
+      "G": 4,
+      "L": 2
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 548
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "0": {
+    "basicblocks": 106,
+    "calls": "1 5 6 5 5 6 5 5 4 5 5 5 5 5 5 5 4 5 5 5 5 5",
+    "file": "MHGD_accel.c",
+    "fileloc": 214,
+    "instructions": 330,
+    "loads": {
+      "L": 7
+    },
+    "name": "MHGD_detect_accel",
+    "stores": {
+      "L": 32,
+      "T": 6
+    },
+    "total_instructions": 2942
+  },
+  "1": {
+    "basicblocks": 31,
+    "calls": "3 3 3 3 3 7 3 3 3 3",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 375,
+    "loads": {
+      "G": 6,
+      "L": 2
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 680
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_floor.h",
+    "fileloc": 13,
+    "instructions": 45,
+    "loads": {
+      "G": 1
+    },
+    "name": "generic_floor<double>",
+    "total_instructions": 45
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 9,
+    "loads": {
+      "L": 3
+    },
+    "name": "to_ieee",
+    "total_instructions": 9
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "2 2",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 81,
+    "loads": {
+      "L": 4
+    },
+    "name": "map",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 171
+  },
+  "5": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 324,
+    "instructions": 40,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 40
+  },
+  "6": {
+    "basicblocks": 93,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 135,
+    "instructions": 455,
+    "loads": {
+      "L": 30
+    },
+    "name": "Inverse_LU",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 455
+  },
+  "7": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 224,
+    "loads": {
+      "G": 7,
+      "L": 1
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 224
+  }
+}

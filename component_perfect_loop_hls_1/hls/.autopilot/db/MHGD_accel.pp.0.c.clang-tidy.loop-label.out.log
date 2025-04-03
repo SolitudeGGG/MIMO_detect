@@ -1,0 +1,80 @@
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3191:2: warning: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_115_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3191:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3194:2: warning: Added loop label VITIS_LOOP_118_2:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_118_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3194:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3198:2: warning: Added loop label VITIS_LOOP_122_3:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_122_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3198:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3201:2: warning: Added loop label VITIS_LOOP_125_4:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_125_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3201:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3266:2: warning: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_190_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3266:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3268:2: warning: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
+ for (i = 0; i < mu; i++)
+ ^~~
+ VITIS_LOOP_192_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3268:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3270:2: warning: Added loop label VITIS_LOOP_194_3:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_194_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3270:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3272:2: warning: Added loop label VITIS_LOOP_196_4:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_196_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3272:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3338:3: warning: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+  for (i = 0; i < Nr * Nr; i++)
+  ^~~
+  VITIS_LOOP_427_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3338:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3360:3: warning: Added loop label VITIS_LOOP_449_2:   [xilinx-label-all-loops]
+  for (i = 0; i < Nt; i++)
+  ^~~
+  VITIS_LOOP_449_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3360:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3394:2: warning: Added loop label VITIS_LOOP_483_3:   [xilinx-label-all-loops]
+ for (k = 0; k < iter; k++)
+ ^~~
+ VITIS_LOOP_483_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3394:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3405:3: warning: Added loop label VITIS_LOOP_494_4:   [xilinx-label-all-loops]
+  for(int i = 0; i < Nt; i++){
+  ^~~
+  VITIS_LOOP_494_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3405:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3470:2: warning: Added loop label VITIS_LOOP_559_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_559_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3470:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3476:3: warning: Added loop label VITIS_LOOP_565_2:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr; j++)
+  ^~~
+  VITIS_LOOP_565_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3476:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3484:3: warning: Added loop label VITIS_LOOP_573_3:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr; j++)
+  ^~~
+  VITIS_LOOP_573_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3484:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3490:2: warning: Added loop label VITIS_LOOP_591_4:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_591_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/component_perfect_loop_hls_1/hls/.autopilot/db/MHGD_accel.pp.0.c:3490:2: note: FIX-IT applied suggested code changes

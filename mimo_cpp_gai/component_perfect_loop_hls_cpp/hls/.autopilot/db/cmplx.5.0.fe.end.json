@@ -1,0 +1,47 @@
+{
+    "0": {
+        "name": "MHGD_detect_accel",
+        "file": "MHGD_accel_1.cpp",
+        "fileloc": "214",
+        "instructions": "53",
+        "total_instructions": "346",
+        "calls": "2 1",
+        "basicblocks": "10"
+    },
+    "1": {
+        "name": "MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3",
+        "file": "MHGD_accel_1.cpp",
+        "fileloc": "489",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "5",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "map.4",
+        "file": "util_1.cpp",
+        "fileloc": "494",
+        "instructions": "274",
+        "total_instructions": "274",
+        "calls": "",
+        "basicblocks": "11",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "2"
+        }
+    }
+}

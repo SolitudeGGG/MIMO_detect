@@ -1,0 +1,230 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="./util.h:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="./util.h:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-910" msg_severity="WARNING" msg_loc="MHGD_accel.c:11:10" msg_body="'__SYNTHESIS__' macro redefined">
+        <args ClangWarningOption="macro-redefined"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-71" msg_severity="INFO" msg_loc="&lt;command line&gt;:3:9" msg_body="previous definition is here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="MHGD_accel.c:147:34" msg_body="unused parameter 'Nr'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="./util.h:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=MHGD_detect_accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isinf&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="int generic_isinf&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isnan&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="int generic_isnan&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)' into 'fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 494 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)' into 'fp_struct&lt;double&gt;::to_ieee() const'">
+        <args Callee="fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 494 Column 0" Caller="fp_struct&lt;double&gt;::to_ieee() const" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 71, 73&gt;(ap_ufixed&lt;71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 71, 73&gt;(ap_ufixed&lt;71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 73, 83&gt;(ap_ufixed&lt;73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 73, 83&gt;(ap_ufixed&lt;73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 12, 6, 83, 92&gt;(ap_ufixed&lt;83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 12, 6, 83, 92&gt;(ap_ufixed&lt;83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 17, 6, 92, 87&gt;(ap_ufixed&lt;92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 17, 6, 92, 87&gt;(ap_ufixed&lt;92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 22, 6, 87, 82&gt;(ap_ufixed&lt;87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 22, 6, 87, 82&gt;(ap_ufixed&lt;87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 27, 6, 82, 77&gt;(ap_ufixed&lt;82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 27, 6, 82, 77&gt;(ap_ufixed&lt;82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32, 6, 77, 72&gt;(ap_ufixed&lt;77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32, 6, 77, 72&gt;(ap_ufixed&lt;77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::expv() const' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::expv() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 485 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'int generic_isinf&lt;double&gt;(double)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="int generic_isinf&lt;double&gt;(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h Line 16 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'int generic_isnan&lt;double&gt;(double)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="int generic_isnan&lt;double&gt;(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h Line 16 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'pow_reduce::pow_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="pow_reduce::pow_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 224 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:285:0" msg_body="Inlining function 'complex_conjugate' into 'c_matmultiple'">
+        <args Callee="complex_conjugate" Callee-DebugLoc="File util.c Line 261 Column 0" Caller="c_matmultiple" Caller-DebugLoc="File util.c Line 285 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:285:0" msg_body="Inlining function 'complex_multiply.208' into 'c_matmultiple'">
+        <args Callee="complex_multiply.208" Callee-DebugLoc="File util.c Line 57 Column 0" Caller="c_matmultiple" Caller-DebugLoc="File util.c Line 285 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:285:0" msg_body="Inlining function 'complex_add' into 'c_matmultiple'">
+        <args Callee="complex_add" Callee-DebugLoc="File util.c Line 65 Column 0" Caller="c_matmultiple" Caller-DebugLoc="File util.c Line 285 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:111:0" msg_body="Inlining function 'complex_multiply.208' into 'MulMatrix'">
+        <args Callee="complex_multiply.208" Callee-DebugLoc="File util.c Line 57 Column 0" Caller="MulMatrix" Caller-DebugLoc="File util.c Line 111 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:111:0" msg_body="Inlining function 'complex_add' into 'MulMatrix'">
+        <args Callee="complex_add" Callee-DebugLoc="File util.c Line 65 Column 0" Caller="MulMatrix" Caller-DebugLoc="File util.c Line 111 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'initMatrix' into 'Inverse_LU'">
+        <args Callee="initMatrix" Callee-DebugLoc="File util.c Line 96 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'complex_divide' into 'Inverse_LU'">
+        <args Callee="complex_divide" Callee-DebugLoc="File util.c Line 81 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'complex_multiply.208' into 'Inverse_LU'">
+        <args Callee="complex_multiply.208" Callee-DebugLoc="File util.c Line 57 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'complex_add' into 'Inverse_LU'">
+        <args Callee="complex_add" Callee-DebugLoc="File util.c Line 65 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'complex_subtract' into 'Inverse_LU'">
+        <args Callee="complex_subtract" Callee-DebugLoc="File util.c Line 73 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'complex_divide.221.227' into 'Inverse_LU'">
+        <args Callee="complex_divide.221.227" Callee-DebugLoc="File util.c Line 81 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:133:0" msg_body="Inlining function 'MulMatrix' into 'Inverse_LU'">
+        <args Callee="MulMatrix" Callee-DebugLoc="File util.c Line 111 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 133 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double generic_copysign&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double generic_copysign&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_copysign&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0" Caller="double generic_copysign&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::__signbit() const' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::__signbit() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 512 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'double generic_copysign&lt;double&gt;(double, double)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="double generic_copysign&lt;double&gt;(double, double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h Line 10 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 475 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(ap_uint&lt;64&gt;)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(ap_uint&lt;64&gt;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 464 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:441:0" msg_body="Inlining function 'floor' into 'map'">
+        <args Callee="floor" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c/floordouble.cpp Line 6 Column 0" Caller="map" Caller-DebugLoc="File util.c Line 441 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:441:0" msg_body="Inlining function 'my_complex_scal' into 'map'">
+        <args Callee="my_complex_scal" Callee-DebugLoc="File util.c Line 277 Column 0" Caller="map" Caller-DebugLoc="File util.c Line 441 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'pow' into 'MHGD_detect_accel'">
+        <args Callee="pow" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp Line 6 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'c_eye_generate' into 'MHGD_detect_accel'">
+        <args Callee="c_eye_generate" Callee-DebugLoc="File util.c Line 32 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'my_complex_add' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_add" Callee-DebugLoc="File util.c Line 245 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'generateUniformRandoms_int' into 'MHGD_detect_accel'">
+        <args Callee="generateUniformRandoms_int" Callee-DebugLoc="File util.c Line 386 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'my_complex_sub' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_sub" Callee-DebugLoc="File util.c Line 253 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'my_complex_copy' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_copy" Callee-DebugLoc="File util.c Line 269 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'my_complex_scal' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_scal" Callee-DebugLoc="File util.c Line 277 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Inlining function 'generateUniformRandoms_float' into 'MHGD_detect_accel'">
+        <args Callee="generateUniformRandoms_float" Callee-DebugLoc="File util.c Line 405 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:183:24" msg_body="Ignore address on register port 'vla.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:183:24" msg_body="Ignore address on register port 'vla.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:183:24" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:183:24" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:193:24" msg_body="Ignore address on register port 'vla.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:193:24" msg_body="Ignore address on register port 'vla.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:193:24" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:193:24" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:211:24" msg_body="Ignore address on register port 'vla.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:211:24" msg_body="Ignore address on register port 'vla.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:211:24" msg_body="Ignore address on register port 'vla4.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:211:24" msg_body="Ignore address on register port 'vla4.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:213:41" msg_body="Ignore address on register port 'vla4.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:213:41" msg_body="Ignore address on register port 'vla4.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:214:41" msg_body="Ignore address on register port 'vla4.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:222:28" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:222:28" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:233:24" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:233:24" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:233:24" msg_body="Ignore address on register port 'vla6.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:233:24" msg_body="Ignore address on register port 'vla6.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:238:29" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:238:29" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="util.c:407:12" msg_body="The program may have out of bound array access on variable 'p_uni'"/>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Aggregating scalar variable 'v_tb' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="v_tb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Aggregating scalar variable 'y' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Aggregating scalar variable 'H' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="H"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:213:0" msg_body="Aggregating scalar variable 'x_hat' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="x_hat"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:446:17" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:453:18" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:459:18" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:465:18" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:279:20" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:280:20" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="MHGD_accel.c:436:15" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:272:20" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:227:22" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_227_15'.">
+        <args LoopName="VITIS_LOOP_227_15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:227:22" msg_body="loop_flatten 0 1 Inverse_LU util.c:227:22VITIS_LOOP_227_15 util.c:227:22">
+        <args LoopLoc="util.c:227:22" LoopLoc-DebugLoc="File util.c Line 227 Column 22" LoopName="VITIS_LOOP_227_15" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:227:22" PragmaSrcLoc-DebugLoc="File util.c Line 227 Column 22" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:206:22" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_206_11'.">
+        <args LoopName="VITIS_LOOP_206_11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:206:22" msg_body="loop_flatten 0 1 Inverse_LU util.c:206:22VITIS_LOOP_206_11 util.c:206:22">
+        <args LoopLoc="util.c:206:22" LoopLoc-DebugLoc="File util.c Line 206 Column 22" LoopName="VITIS_LOOP_206_11" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:206:22" PragmaSrcLoc-DebugLoc="File util.c Line 206 Column 22" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:178:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_178_5'.">
+        <args LoopName="VITIS_LOOP_178_5"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:178:21" msg_body="loop_flatten 0 1 Inverse_LU util.c:178:21VITIS_LOOP_178_5 util.c:178:21">
+        <args LoopLoc="util.c:178:21" LoopLoc-DebugLoc="File util.c Line 178 Column 21" LoopName="VITIS_LOOP_178_5" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:178:21" PragmaSrcLoc-DebugLoc="File util.c Line 178 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:187:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_187_7'.">
+        <args LoopName="VITIS_LOOP_187_7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:187:21" msg_body="loop_flatten 0 1 Inverse_LU util.c:187:21VITIS_LOOP_187_7 util.c:187:21">
+        <args LoopLoc="util.c:187:21" LoopLoc-DebugLoc="File util.c Line 187 Column 21" LoopName="VITIS_LOOP_187_7" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:187:21" PragmaSrcLoc-DebugLoc="File util.c Line 187 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

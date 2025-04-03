@@ -1,0 +1,382 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MHGD_detect_accel'
+================================================================
++ General Information: 
+    * Date:           Wed Apr  2 12:08:03 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        component_perfect_loop_hls_cpp
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+----+------------+-------------+-----+
+    |                     Modules                    | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |         |    |            |             |     |
+    |                     & Loops                    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM   | DSP|     FF     |     LUT     | URAM|
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+----+------------+-------------+-----+
+    |+ MHGD_detect_accel                             |     -|  0.00|    17936|  1.794e+05|         -|    17937|      -|        no|  16 (5%)|   -|  22257 (9%)|  26776 (22%)|    -|
+    | + map_4                                        |     -|  0.00|     2932|  2.932e+04|         -|     2932|      -|        no|        -|   -|  20820 (8%)|  24981 (21%)|    -|
+    |  o VITIS_LOOP_497_1                            |     -|  7.30|     2820|  2.820e+04|       282|        -|     10|        no|        -|   -|           -|            -|    -|
+    |  o VITIS_LOOP_323_1                            |     -|  7.30|      110|  1.100e+03|        11|        -|     10|        no|        -|   -|           -|            -|    -|
+    | + MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3  |     -|  5.43|    15002|  1.500e+05|         -|    15002|      -|        no|        -|   -|    34 (~0%)|    166 (~0%)|    -|
+    |  o VITIS_LOOP_489_3                            |     -|  7.30|    15000|  1.500e+05|         1|        1|  15000|       yes|        -|   -|           -|            -|    -|
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+----+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | READ_WRITE | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=16           |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------+
+| Interface     | Register | Offset | Width | Access | Description          |
++---------------+----------+--------+-------+--------+----------------------+
+| s_axi_control | x_hat_1  | 0x10   | 32    | W      | Data signal of x_hat |
+| s_axi_control | x_hat_2  | 0x14   | 32    | W      | Data signal of x_hat |
+| s_axi_control | H_1      | 0x1c   | 32    | W      | Data signal of H     |
+| s_axi_control | H_2      | 0x20   | 32    | W      | Data signal of H     |
+| s_axi_control | y_1      | 0x28   | 32    | W      | Data signal of y     |
+| s_axi_control | y_2      | 0x2c   | 32    | W      | Data signal of y     |
+| s_axi_control | v_tb_1   | 0x34   | 32    | W      | Data signal of v_tb  |
+| s_axi_control | v_tb_2   | 0x38   | 32    | W      | Data signal of v_tb  |
++---------------+----------+--------+-------+--------+----------------------+
+
+* Other Ports
++-----------+---------+-----------+----------+
+| Port      | Mode    | Direction | Bitwidth |
++-----------+---------+-----------+----------+
+| Nr        | ap_none | in        | 32       |
+| Nt        | ap_none | in        | 32       |
+| ap_return |         | out       | 32       |
+| iter      | ap_none | in        | 32       |
+| lr_approx | ap_none | in        | 32       |
+| mmse_init | ap_none | in        | 32       |
+| mu        | ap_none | in        | 32       |
+| sigma2    | ap_none | in        | 32       |
++-----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+----------+
+| Argument  | Direction | Datatype |
++-----------+-----------+----------+
+| x_hat     | inout     | pointer  |
+| Nt        | in        | int      |
+| Nr        | in        | int      |
+| mu        | in        | int      |
+| H         | inout     | pointer  |
+| y         | inout     | pointer  |
+| sigma2    | in        | float    |
+| mmse_init | in        | int      |
+| lr_approx | in        | int      |
+| iter      | in        | int      |
+| v_tb      | inout     | pointer  |
+| return    | out       | float    |
++-----------+-----------+----------+
+
+* SW-to-HW Mapping
++-----------+---------------+-----------+----------+-----------------------------------+
+| Argument  | HW Interface  | HW Type   | HW Usage | HW Info                           |
++-----------+---------------+-----------+----------+-----------------------------------+
+| x_hat     | m_axi_gmem    | interface |          | channel=0                         |
+| x_hat     | s_axi_control | register  | offset   | name=x_hat_1 offset=0x10 range=32 |
+| x_hat     | s_axi_control | register  | offset   | name=x_hat_2 offset=0x14 range=32 |
+| Nt        | Nt            | port      |          |                                   |
+| Nr        | Nr            | port      |          |                                   |
+| mu        | mu            | port      |          |                                   |
+| H         | m_axi_gmem    | interface |          | channel=0                         |
+| H         | s_axi_control | register  | offset   | name=H_1 offset=0x1c range=32     |
+| H         | s_axi_control | register  | offset   | name=H_2 offset=0x20 range=32     |
+| y         | m_axi_gmem    | interface |          | channel=0                         |
+| y         | s_axi_control | register  | offset   | name=y_1 offset=0x28 range=32     |
+| y         | s_axi_control | register  | offset   | name=y_2 offset=0x2c range=32     |
+| sigma2    | sigma2        | port      |          |                                   |
+| mmse_init | mmse_init     | port      |          |                                   |
+| lr_approx | lr_approx     | port      |          |                                   |
+| iter      | iter          | port      |          |                                   |
+| v_tb      | m_axi_gmem    | interface |          | channel=0                         |
+| v_tb      | s_axi_control | register  | offset   | name=v_tb_1 offset=0x34 range=32  |
+| v_tb      | s_axi_control | register  | offset   | name=v_tb_2 offset=0x38 range=32  |
+| return    | ap_return     | port      |          |                                   |
++-----------+---------------+-----------+----------+-----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* All M_AXI Variable Accesses
++--------------+----------+-------------------------+-----------+--------------+--------+------------------+-------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location         | Direction | Burst Status | Length | Loop             | Loop Location     | Resolution | Problem                                                                                                                                                                                                        |
++--------------+----------+-------------------------+-----------+--------------+--------+------------------+-------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| m_axi_gmem   | x_hat    | MHGD_accel_1.cpp:458:11 | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %struct.MyComplex = type { %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>", %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" } |
+| m_axi_gmem   | x_hat    | util_1.cpp:315:19       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:316:20       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:325:19       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:325:19       | write     | Fail         |        | VITIS_LOOP_323_1 | util_1.cpp:323:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:325:19       | write     | Fail         |        | VITIS_LOOP_323_1 | util_1.cpp:323:20 | 214-232    | Access store is in the conditional branch                                                                                                                                                                      |
+| m_axi_gmem   | x_hat    | util_1.cpp:325:19       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:325:19       | read      | Inferred     | 2      | VITIS_LOOP_323_1 | util_1.cpp:323:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:326:20       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:326:20       | write     | Fail         |        | VITIS_LOOP_323_1 | util_1.cpp:323:20 | 214-232    | Access store is in the conditional branch                                                                                                                                                                      |
+| m_axi_gmem   | x_hat    | util_1.cpp:326:20       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:326:20       | write     | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:326:20       | read      | Inferred     | 2      | VITIS_LOOP_323_1 | util_1.cpp:323:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:500:16       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:501:17       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:505:35       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:505:35       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:505:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:505:35       | read      | Inferred     | 2      | VITIS_LOOP_497_1 | util_1.cpp:497:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:506:35       | read      | Fail         |        | VITIS_LOOP_497_1 | util_1.cpp:497:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:506:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:507:35       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:507:35       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:507:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:507:35       | read      | Inferred     | 2      | VITIS_LOOP_497_1 | util_1.cpp:497:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:508:35       | read      | Fail         |        | VITIS_LOOP_497_1 | util_1.cpp:497:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:508:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:511:35       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:511:35       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:511:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:511:35       | read      | Inferred     | 2      | VITIS_LOOP_497_1 | util_1.cpp:497:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:512:35       | read      | Fail         |        | VITIS_LOOP_497_1 | util_1.cpp:497:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:512:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:513:35       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:513:35       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:513:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:513:35       | read      | Inferred     | 2      | VITIS_LOOP_497_1 | util_1.cpp:497:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:514:35       | read      | Fail         |        | VITIS_LOOP_497_1 | util_1.cpp:497:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:514:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:517:35       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:517:35       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:517:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:517:35       | read      | Inferred     | 2      | VITIS_LOOP_497_1 | util_1.cpp:497:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:518:35       | read      | Fail         |        | VITIS_LOOP_497_1 | util_1.cpp:497:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:518:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:519:35       | read      | Widen Fail   |        |                  |                   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0                                                                                                          |
+| m_axi_gmem   | x_hat    | util_1.cpp:519:35       | read      | Fail         |        |                  |                   | 214-231    | Access is clobbered by store                                                                                                                                                                                   |
+| m_axi_gmem   | x_hat    | util_1.cpp:519:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
+| m_axi_gmem   | x_hat    | util_1.cpp:519:35       | read      | Inferred     | 2      | VITIS_LOOP_497_1 | util_1.cpp:497:20 |            |                                                                                                                                                                                                                |
+| m_axi_gmem   | x_hat    | util_1.cpp:520:35       | read      | Fail         |        | VITIS_LOOP_497_1 | util_1.cpp:497:20 | 214-230    | Stride is incompatible                                                                                                                                                                                         |
+| m_axi_gmem   | x_hat    | util_1.cpp:520:18       | write     | Fail         |        |                  |                   | 214-378    | Unsupported access data type. Expected integer or floating point type but received %"struct.ap_fixed<64, 32, AP_TRN, AP_WRAP, 0>" = type { %"struct.ap_fixed_base<64, 32, true, AP_TRN, AP_WRAP, 0>" }         |
++--------------+----------+-------------------------+-----------+--------------+--------+------------------+-------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                                           | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + MHGD_detect_accel                            | 0   |        |              |        |           |         |
+|   icmp_ln440_fu_142_p2                         |     |        | icmp_ln440   | seteq  | auto      | 0       |
+|   icmp_ln455_fu_148_p2                         |     |        | icmp_ln455   | setlt  | auto      | 0       |
+|   icmp_ln323_fu_154_p2                         |     |        | icmp_ln323   | setgt  | auto      | 0       |
+|  + map_4                                       | 0   |        |              |        |           |         |
+|    xor_ln497_fu_370_p2                         |     |        | xor_ln497    | xor    | auto      | 0       |
+|    empty_fu_392_p2                             |     |        | empty        | shl    | auto_pipe | 0       |
+|    empty_32_fu_414_p2                          |     |        | empty_32     | shl    | auto_pipe | 0       |
+|    icmp_ln497_fu_446_p2                        |     |        | icmp_ln497   | setlt  | auto      | 0       |
+|    add_ln497_fu_451_p2                         |     |        | add_ln497    | add    | fabric    | 0       |
+|    empty_33_fu_500_p2                          |     |        | empty_33     | add    | fabric    | 0       |
+|    sdiv_96ns_1ns_96_100_1_U1                   |     |        | sdiv_ln500   | sdiv   | auto      | 99      |
+|    sub_ln500_fu_525_p2                         |     |        | sub_ln500    | sub    | fabric    | 0       |
+|    sub_ln500_1_fu_545_p2                       |     |        | sub_ln500_1  | sub    | fabric    | 0       |
+|    x_fu_569_p3                                 |     |        | x            | select | auto_sel  | 0       |
+|    icmp_ln66_fu_585_p2                         |     |        | icmp_ln66    | seteq  | auto      | 0       |
+|    select_ln500_fu_609_p3                      |     |        | select_ln500 | select | auto_sel  | 0       |
+|    add_ln500_fu_625_p2                         |     |        | add_ln500    | add    | fabric    | 0       |
+|    shl_ln500_fu_670_p2                         |     |        | shl_ln500    | shl    | auto_pipe | 0       |
+|    sdiv_96ns_1ns_96_100_1_U2                   |     |        | sdiv_ln501   | sdiv   | auto      | 99      |
+|    sub_ln501_fu_728_p2                         |     |        | sub_ln501    | sub    | fabric    | 0       |
+|    sub_ln501_1_fu_748_p2                       |     |        | sub_ln501_1  | sub    | fabric    | 0       |
+|    x_2_fu_772_p3                               |     |        | x_2          | select | auto_sel  | 0       |
+|    icmp_ln66_1_fu_788_p2                       |     |        | icmp_ln66_1  | seteq  | auto      | 0       |
+|    select_ln501_fu_812_p3                      |     |        | select_ln501 | select | auto_sel  | 0       |
+|    add_ln501_fu_828_p2                         |     |        | add_ln501    | add    | fabric    | 0       |
+|    add_ln501_1_fu_651_p2                       |     |        | add_ln501_1  | add    | fabric    | 0       |
+|    shl_ln501_fu_847_p2                         |     |        | shl_ln501    | shl    | auto_pipe | 0       |
+|    grp_fu_348_p2                               |     |        | lshr_ln517   | lshr   | auto_pipe | 0       |
+|    grp_fu_353_p2                               |     |        | lshr_ln517_1 | lshr   | auto_pipe | 0       |
+|    icmp_ln517_fu_866_p2                        |     |        | icmp_ln517   | setgt  | auto      | 0       |
+|    select_ln517_fu_872_p3                      |     |        | select_ln517 | select | auto_sel  | 0       |
+|    shl_ln517_fu_884_p2                         |     |        | shl_ln517    | shl    | auto_pipe | 0       |
+|    grp_fu_348_p2                               |     |        | lshr_ln518   | lshr   | auto_pipe | 0       |
+|    icmp_ln518_fu_959_p2                        |     |        | icmp_ln518   | setlt  | auto      | 0       |
+|    select_ln518_fu_965_p3                      |     |        | select_ln518 | select | auto_sel  | 0       |
+|    shl_ln518_fu_977_p2                         |     |        | shl_ln518    | shl    | auto_pipe | 0       |
+|    icmp_ln519_fu_1036_p2                       |     |        | icmp_ln519   | setgt  | auto      | 0       |
+|    select_ln519_fu_1041_p3                     |     |        | select_ln519 | select | auto_sel  | 0       |
+|    shl_ln519_fu_1052_p2                        |     |        | shl_ln519    | shl    | auto_pipe | 0       |
+|    grp_fu_353_p2                               |     |        | lshr_ln520   | lshr   | auto_pipe | 0       |
+|    icmp_ln520_fu_1103_p2                       |     |        | icmp_ln520   | setlt  | auto      | 0       |
+|    select_ln520_fu_1109_p3                     |     |        | select_ln520 | select | auto_sel  | 0       |
+|    shl_ln520_fu_1121_p2                        |     |        | shl_ln520    | shl    | auto_pipe | 0       |
+|    grp_fu_348_p2                               |     |        | lshr_ln511   | lshr   | auto_pipe | 0       |
+|    grp_fu_353_p2                               |     |        | lshr_ln511_1 | lshr   | auto_pipe | 0       |
+|    icmp_ln511_fu_893_p2                        |     |        | icmp_ln511   | setgt  | auto      | 0       |
+|    select_ln511_fu_899_p3                      |     |        | select_ln511 | select | auto_sel  | 0       |
+|    shl_ln511_fu_911_p2                         |     |        | shl_ln511    | shl    | auto_pipe | 0       |
+|    grp_fu_348_p2                               |     |        | lshr_ln512   | lshr   | auto_pipe | 0       |
+|    icmp_ln512_fu_986_p2                        |     |        | icmp_ln512   | setlt  | auto      | 0       |
+|    select_ln512_fu_992_p3                      |     |        | select_ln512 | select | auto_sel  | 0       |
+|    shl_ln512_fu_1004_p2                        |     |        | shl_ln512    | shl    | auto_pipe | 0       |
+|    icmp_ln513_fu_1057_p2                       |     |        | icmp_ln513   | setgt  | auto      | 0       |
+|    select_ln513_fu_1062_p3                     |     |        | select_ln513 | select | auto_sel  | 0       |
+|    shl_ln513_fu_1073_p2                        |     |        | shl_ln513    | shl    | auto_pipe | 0       |
+|    grp_fu_353_p2                               |     |        | lshr_ln514   | lshr   | auto_pipe | 0       |
+|    icmp_ln514_fu_1130_p2                       |     |        | icmp_ln514   | setlt  | auto      | 0       |
+|    select_ln514_fu_1136_p3                     |     |        | select_ln514 | select | auto_sel  | 0       |
+|    shl_ln514_fu_1148_p2                        |     |        | shl_ln514    | shl    | auto_pipe | 0       |
+|    grp_fu_348_p2                               |     |        | lshr_ln505   | lshr   | auto_pipe | 0       |
+|    grp_fu_353_p2                               |     |        | lshr_ln505_1 | lshr   | auto_pipe | 0       |
+|    icmp_ln505_fu_920_p2                        |     |        | icmp_ln505   | setgt  | auto      | 0       |
+|    select_ln505_fu_926_p3                      |     |        | select_ln505 | select | auto_sel  | 0       |
+|    shl_ln505_fu_938_p2                         |     |        | shl_ln505    | shl    | auto_pipe | 0       |
+|    grp_fu_348_p2                               |     |        | lshr_ln506   | lshr   | auto_pipe | 0       |
+|    icmp_ln506_fu_1013_p2                       |     |        | icmp_ln506   | setlt  | auto      | 0       |
+|    select_ln506_fu_1019_p3                     |     |        | select_ln506 | select | auto_sel  | 0       |
+|    shl_ln506_fu_1031_p2                        |     |        | shl_ln506    | shl    | auto_pipe | 0       |
+|    icmp_ln507_fu_1078_p2                       |     |        | icmp_ln507   | setgt  | auto      | 0       |
+|    select_ln507_fu_1083_p3                     |     |        | select_ln507 | select | auto_sel  | 0       |
+|    shl_ln507_fu_1094_p2                        |     |        | shl_ln507    | shl    | auto_pipe | 0       |
+|    grp_fu_353_p2                               |     |        | lshr_ln508   | lshr   | auto_pipe | 0       |
+|    icmp_ln508_fu_1157_p2                       |     |        | icmp_ln508   | setlt  | auto      | 0       |
+|    select_ln508_fu_1163_p3                     |     |        | select_ln508 | select | auto_sel  | 0       |
+|    shl_ln508_fu_1175_p2                        |     |        | shl_ln508    | shl    | auto_pipe | 0       |
+|    icmp_ln323_fu_1191_p2                       |     |        | icmp_ln323   | setlt  | auto      | 0       |
+|    add_ln323_fu_1196_p2                        |     |        | add_ln323    | add    | fabric    | 0       |
+|    empty_62_fu_1214_p2                         |     |        | empty_62     | add    | fabric    | 0       |
+|    add_ln325_fu_1229_p2                        |     |        | add_ln325    | add    | fabric    | 0       |
+|  + MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3 | 0   |        |              |        |           |         |
+|    icmp_ln323_fu_61_p2                         |     |        | icmp_ln323   | setgt  | auto      | 0       |
+|    icmp_ln489_fu_79_p2                         |     |        | icmp_ln489   | setlt  | auto      | 0       |
+|    add_ln489_fu_85_p2                          |     |        | add_ln489    | add    | fabric    | 0       |
++------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                     |           |           |      |      |        |          |      |         | Banks            |
++---------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + MHGD_detect_accel |           |           | 16   | 0    |        |          |      |         |                  |
+|   control_s_axi_U   | interface | s_axilite |      |      |        |          |      |         |                  |
+|   gmem_m_axi_U      | interface | m_axi     | 16   |      |        |          |      |         |                  |
++---------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+---------------------------------+------------------------------------------------+
+| Type           | Options                         | Location                                       |
++----------------+---------------------------------+------------------------------------------------+
+| interface      | mode = m_axi port = x_hat       | MHGD_accel_1.cpp:216 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = Nt        | MHGD_accel_1.cpp:217 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = Nr        | MHGD_accel_1.cpp:218 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = mu        | MHGD_accel_1.cpp:219 in mhgd_detect_accel      |
+| interface      | mode = m_axi port = H           | MHGD_accel_1.cpp:220 in mhgd_detect_accel      |
+| interface      | mode = m_axi port = y           | MHGD_accel_1.cpp:221 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = sigma2    | MHGD_accel_1.cpp:222 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = mmse_init | MHGD_accel_1.cpp:223 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = lr_approx | MHGD_accel_1.cpp:224 in mhgd_detect_accel      |
+| interface      | mode = ap_none port = iter      | MHGD_accel_1.cpp:225 in mhgd_detect_accel      |
+| interface      | mode = m_axi port = v_tb        | MHGD_accel_1.cpp:226 in mhgd_detect_accel      |
+| loop_tripcount | max=Nr_2_max min=Nr_2_min       | MHGD_accel_1.cpp:434 in mhgd_detect_accel      |
+| loop_tripcount | max=Nt_max min=Nt_min           | MHGD_accel_1.cpp:457 in mhgd_detect_accel      |
+| loop_tripcount | max=iter_max min=iter_min       | MHGD_accel_1.cpp:491 in mhgd_detect_accel      |
+| pipeline       | II=1                            | MHGD_accel_1.cpp:492 in mhgd_detect_accel      |
+| loop_tripcount | max=Nt_max min=Nt_min           | MHGD_accel_1.cpp:501 in mhgd_detect_accel      |
+| loop_tripcount | max=Nt_2_max min=Nt_2_min       | util_1.cpp:39 in c_eye_generate                |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:46 in c_eye_generate                |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:105 in initmatrix                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:108 in initmatrix                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:123 in mulmatrix                    |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:126 in mulmatrix                    |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:131 in mulmatrix                    |
+| pipeline       | II=1                            | util_1.cpp:171 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:174 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:175 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:181 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:182 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:187 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:188 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:194 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:195 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:198 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:199 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:203 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:204 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:211 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:212 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:217 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:218 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:227 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:228 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:234 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:235 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:238 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:239 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:243 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:244 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:256 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:257 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:263 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:264 in inverse_lu                   |
+| pipeline       | II=1                            | util_1.cpp:267 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:272 in inverse_lu                   |
+| unroll         |                                 | util_1.cpp:273 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:288 in my_complex_add               |
+| loop_tripcount | max=Nr_max min=Nr_min           | util_1.cpp:297 in my_complex_sub               |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:314 in my_complex_copy              |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:324 in my_complex_scal              |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:353 in c_matmultiple                |
+| pipeline       | II=1                            | util_1.cpp:354 in c_matmultiple                |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:356 in c_matmultiple                |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:360 in c_matmultiple                |
+| unroll         |                                 | util_1.cpp:361 in c_matmultiple                |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:446 in generateuniformrandoms_int   |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:459 in generateuniformrandoms_float |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:471 in argmin                       |
+| loop_tripcount | max=Nt_max min=Nt_min           | util_1.cpp:499 in map                          |
++----------------+---------------------------------+------------------------------------------------+
+
+

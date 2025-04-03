@@ -1,0 +1,226 @@
+
+
+================================================================
+== Vitis HLS Report for 'MHGD_detect_accel'
+================================================================
+* Date:           Wed Apr  2 12:08:03 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        component_perfect_loop_hls_cpp
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |        1|    17936|  10.000 ns|  0.179 ms|    2|  17937|       no|
+    +---------+---------+-----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------+---------------------------------------------+---------+---------+-----------+-----------+------+-------+------------------------------------------------+
+        |                                                        |                                             |  Latency (cycles) |   Latency (absolute)  |   Interval   |                    Pipeline                    |
+        |                        Instance                        |                    Module                   |   min   |   max   |    min    |    max    |  min |  max  |                      Type                      |
+        +--------------------------------------------------------+---------------------------------------------+---------+---------+-----------+-----------+------+-------+------------------------------------------------+
+        |grp_map_4_fu_124                                        |map_4                                        |      247|     2932|   2.470 us|  29.320 us|   247|   2932|                                              no|
+        |grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3_fu_136  |MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3  |     5002|    15002|  50.020 us|   0.150 ms|  5001|  15001|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +--------------------------------------------------------+---------------------------------------------+---------+---------+-----------+-----------+------+-------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     123|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |       16|     -|   22089|   26588|    0|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      65|    -|
+|Register         |        -|     -|     168|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |       16|     0|   22257|   26776|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        5|     0|       9|      22|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------+---------------------------------------------+---------+----+-------+-------+-----+
+    |                        Instance                        |                    Module                   | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +--------------------------------------------------------+---------------------------------------------+---------+----+-------+-------+-----+
+    |grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3_fu_136  |MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3  |        0|   0|     34|    166|    0|
+    |control_s_axi_U                                         |control_s_axi                                |        0|   0|    310|    552|    0|
+    |gmem_m_axi_U                                            |gmem_m_axi                                   |       16|   0|    925|    889|    0|
+    |grp_map_4_fu_124                                        |map_4                                        |        0|   0|  20820|  24981|    0|
+    +--------------------------------------------------------+---------------------------------------------+---------+----+-------+-------+-----+
+    |Total                                                   |                                             |       16|   0|  22089|  26588|    0|
+    +--------------------------------------------------------+---------------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state2_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln323_fu_154_p2             |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln440_fu_142_p2             |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln455_fu_148_p2             |      icmp|   0|  0|  39|          32|           1|
+    |ap_predicate_op48_call_state3    |        or|   0|  0|   2|           1|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0| 123|          99|           6|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm       |  20|          4|    1|          4|
+    |gmem_0_ARVALID  |   9|          2|    1|          2|
+    |gmem_0_AWVALID  |   9|          2|    1|          2|
+    |gmem_0_BREADY   |   9|          2|    1|          2|
+    |gmem_0_RREADY   |   9|          2|    1|          2|
+    |gmem_0_WVALID   |   9|          2|    1|          2|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |  65|         14|    6|         14|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------+----+----+-----+-----------+
+    |                                 Name                                | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------+----+----+-----+-----------+
+    |Nt_read_reg_169                                                      |  32|   0|   32|          0|
+    |ap_CS_fsm                                                            |   3|   0|    3|          0|
+    |grp_MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3_fu_136_ap_start_reg  |   1|   0|    1|          0|
+    |grp_map_4_fu_124_ap_start_reg                                        |   1|   0|    1|          0|
+    |icmp_ln323_reg_189                                                   |   1|   0|    1|          0|
+    |icmp_ln440_reg_181                                                   |   1|   0|    1|          0|
+    |icmp_ln455_reg_185                                                   |   1|   0|    1|          0|
+    |iter_read_reg_159                                                    |  32|   0|   32|          0|
+    |mu_read_reg_164                                                      |  32|   0|   32|          0|
+    |x_hat_read_reg_176                                                   |  64|   0|   64|          0|
+    +---------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                | 168|   0|  168|          0|
+    +---------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_AWADDR   |   in|    6|       s_axi|            control|        scalar|
+|s_axi_control_WVALID   |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_WREADY   |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_WDATA    |   in|   32|       s_axi|            control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|            control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_ARADDR   |   in|    6|       s_axi|            control|        scalar|
+|s_axi_control_RVALID   |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_RREADY   |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_RDATA    |  out|   32|       s_axi|            control|        scalar|
+|s_axi_control_RRESP    |  out|    2|       s_axi|            control|        scalar|
+|s_axi_control_BVALID   |  out|    1|       s_axi|            control|        scalar|
+|s_axi_control_BREADY   |   in|    1|       s_axi|            control|        scalar|
+|s_axi_control_BRESP    |  out|    2|       s_axi|            control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|ap_return              |  out|   32|  ap_ctrl_hs|  MHGD_detect_accel|  return value|
+|m_axi_gmem_AWVALID     |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWREADY     |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWADDR      |  out|   64|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWID        |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWLEN       |  out|    8|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWSIZE      |  out|    3|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWBURST     |  out|    2|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWLOCK      |  out|    2|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWCACHE     |  out|    4|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWPROT      |  out|    3|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWQOS       |  out|    4|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWREGION    |  out|    4|       m_axi|               gmem|       pointer|
+|m_axi_gmem_AWUSER      |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WVALID      |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WREADY      |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WDATA       |  out|  128|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WSTRB       |  out|   16|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WLAST       |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WID         |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_WUSER       |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARVALID     |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARREADY     |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARADDR      |  out|   64|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARID        |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARLEN       |  out|    8|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARSIZE      |  out|    3|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARBURST     |  out|    2|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARLOCK      |  out|    2|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARCACHE     |  out|    4|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARPROT      |  out|    3|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARQOS       |  out|    4|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARREGION    |  out|    4|       m_axi|               gmem|       pointer|
+|m_axi_gmem_ARUSER      |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RVALID      |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RREADY      |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RDATA       |   in|  128|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RLAST       |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RID         |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RUSER       |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_RRESP       |   in|    2|       m_axi|               gmem|       pointer|
+|m_axi_gmem_BVALID      |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_BREADY      |  out|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_BRESP       |   in|    2|       m_axi|               gmem|       pointer|
+|m_axi_gmem_BID         |   in|    1|       m_axi|               gmem|       pointer|
+|m_axi_gmem_BUSER       |   in|    1|       m_axi|               gmem|       pointer|
+|Nt                     |   in|   32|     ap_none|                 Nt|        scalar|
+|Nr                     |   in|   32|     ap_none|                 Nr|        scalar|
+|mu                     |   in|   32|     ap_none|                 mu|        scalar|
+|sigma2                 |   in|   32|     ap_none|             sigma2|        scalar|
+|mmse_init              |   in|   32|     ap_none|          mmse_init|        scalar|
+|lr_approx              |   in|   32|     ap_none|          lr_approx|        scalar|
+|iter                   |   in|   32|     ap_none|               iter|        scalar|
++-----------------------+-----+-----+------------+-------------------+--------------+
+

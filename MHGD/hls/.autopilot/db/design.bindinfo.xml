@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setgt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln435_fu_70_p2" SOURCE="MHGD_accel.c:435" VARIABLE="icmp_ln435" MODULE="MHGD_detect_accel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln420_fu_76_p2" SOURCE="MHGD_accel.c:420" VARIABLE="icmp_ln420" MODULE="MHGD_detect_accel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln394_fu_82_p2" SOURCE="util.c:394" VARIABLE="and_ln394" MODULE="MHGD_detect_accel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setgt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln466_fu_88_p2" SOURCE="MHGD_accel.c:466" VARIABLE="icmp_ln466" MODULE="MHGD_detect_accel" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

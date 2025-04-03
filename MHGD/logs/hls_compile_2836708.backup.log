@@ -1,0 +1,165 @@
+INFO: [HLS 200-2005] Using work_dir /home/ggg_wufuqi/hls/MHGD/MHGD 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=MHGD_accel.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MHGD_accel.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=MHGD_accel.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MHGD_accel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=MyComplex.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MyComplex.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=util.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(23)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/util.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=util.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(24)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/util.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=sys_config.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(25)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/sys_config.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(26)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.h' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(27)
+INFO: [HLS 200-10] Adding design file '/home/ggg_wufuqi/hls/MHGD/MIMO_simulation.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(4)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/tb.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=5.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=5.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=10.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=10.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=15.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=15.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=20.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=20.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=25.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/H_SNR=25.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=5.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=5.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=10.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=10.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=15.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=15.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=20.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=20.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=25.txt' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/MCMC_MIMO_Detector-master/input_file/y_SNR=25.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=MHGD_detect_accel' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(29)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(28)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.argv=MHGD_detect_accel' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'csim.argv=MHGD_detect_accel' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(19)
+INFO: [HLS 200-1465] Applying ini 'syn.dataflow.disable_fifo_sizing_opt=1' from /home/ggg_wufuqi/hls/MHGD/hls_config.cfg(30)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.75 seconds. CPU system time: 0.16 seconds. Elapsed time: 1.82 seconds; current allocated memory: 659.059 MB.
+INFO: [HLS 200-10] Analyzing design file 'MIMO_simulation.c' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'util.c' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MHGD_accel.c' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util.h:10:9)
+WARNING: [HLS 207-5292] unused parameter 'Nr' (MHGD_accel.c:144:34)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.51 seconds. CPU system time: 0.42 seconds. Elapsed time: 0.92 seconds; current allocated memory: 662.172 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 200-1995] There were 100,794 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/MHGD/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 10,974 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/MHGD/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,676 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/MHGD/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,796 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/MHGD/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,088 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MHGD/MHGD/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.79.114.123.133.164)' into 'fp_struct<double>::to_double() const (.111.120.130.161)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.111.120.130.161)' into 'fp_struct<double>::to_ieee() const' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0)
+INFO: [HLS 214-178] Inlining function 'complex_conjugate' into 'c_matmultiple' (util.c:253:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.171' into 'c_matmultiple' (util.c:253:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'c_matmultiple' (util.c:253:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply' into 'MulMatrix' (util.c:91:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'MulMatrix' (util.c:91:0)
+INFO: [HLS 214-178] Inlining function 'initMatrix' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'complex_add' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'complex_subtract' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide.196.201' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply.171.184' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'MulMatrix' into 'Inverse_LU' (util.c:113:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.79.114.123.133.164)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(ap_uint<64>)' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_floor<double>(double)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0)
+INFO: [HLS 214-178] Inlining function 'floor' into 'map' (util.c:415:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal' into 'map' (util.c:415:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'c_eye_generate' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_add' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_int' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_sub' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_copy' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'read_gaussian_data' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_float' into 'MHGD_detect_accel' (MHGD_accel.c:210:0)
+ERROR: [HLS 214-194] in function 'Inverse_LU': Undefined function malloc (util.c:118:18)
+ERROR: [HLS 214-194] in function 'Inverse_LU': Undefined function malloc (util.c:119:18)
+ERROR: [HLS 214-194] in function 'Inverse_LU': Undefined function malloc (util.c:120:26)
+ERROR: [HLS 214-194] in function 'Inverse_LU': Undefined function malloc (util.c:121:26)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function time (util.c:358:22)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function srand (util.c:358:2)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function rand (util.c:366:30)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function fopen (util.c:320:12)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function __isoc99_fscanf (util.c:332:7)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function fclose (util.c:334:4)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function __isoc99_fscanf (util.c:341:7)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function fclose (util.c:343:4)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function fclose (util.c:352:2)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function time (util.c:376:22)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function srand (util.c:376:2)
+ERROR: [HLS 214-194] in function 'MHGD_detect_accel': Undefined function rand (util.c:381:21)
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:82:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:83:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call5' (util.c:82:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call5' (util.c:83:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:82:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:83:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call13' (util.c:82:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call13' (util.c:83:24)
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:132:23)
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:133:23)
+WARNING: [HLS 214-450] Ignore address on register port 'call5' (util.c:137:10)
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:141:16)
+WARNING: [HLS 214-450] Ignore address on register port 'call5' (util.c:37:38)
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:37:38)
+WARNING: [HLS 214-450] Ignore address on register port 'call5' (util.c:153:21)
+WARNING: [HLS 214-450] Ignore address on register port 'call5'
+WARNING: [HLS 214-450] Ignore address on register port 'call' (util.c:163:21)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:169:31)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:170:31)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:37:38)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:37:51)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:181:32)
+WARNING: [HLS 214-450] Ignore address on register port 'call9' (util.c:182:32)
+WARNING: [HLS 214-450] Ignore address on register port 'call5' (util.c:61:36)
+WARNING: [HLS 214-450] Ignore address on register port 'call13' (util.c:190:28)
+WARNING: [HLS 214-450] Ignore address on register port 'call13' (util.c:37:38)
+WARNING: [HLS 214-450] Ignore address on register port 'call13' (util.c:206:29)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable '' (util.c:381:12)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable '' (MHGD_accel.c:376:16)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 4.52 seconds. Total CPU system time: 0.83 seconds. Total elapsed time: 9.67 seconds; peak allocated memory: 665.434 MB.

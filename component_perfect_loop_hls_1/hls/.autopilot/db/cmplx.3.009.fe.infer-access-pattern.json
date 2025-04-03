@@ -1,0 +1,127 @@
+{
+  "0": {
+    "basicblocks": 90,
+    "calls": "3 1 6 1 1 6 1 1 2 1 1 1 1 1 1 1 7 1 1 1 1 1",
+    "file": "MHGD_accel.c",
+    "fileloc": 214,
+    "instructions": 323,
+    "loads": {
+      "L": 7
+    },
+    "name": "MHGD_detect_accel",
+    "stores": {
+      "L": 32,
+      "T": 3
+    },
+    "total_instructions": 2185
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 324,
+    "instructions": 30,
+    "name": "c_matmultiple",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 30
+  },
+  "2": {
+    "basicblocks": 11,
+    "calls": "4 4",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 106,
+    "loads": {
+      "L": 3
+    },
+    "name": "map",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 220
+  },
+  "3": {
+    "basicblocks": 22,
+    "calls": "8 8 8 8 5 8 8 8 8",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 252,
+    "loads": {
+      "G": 4,
+      "L": 2
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 353
+  },
+  "4": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_floor.h",
+    "fileloc": 13,
+    "instructions": 45,
+    "loads": {
+      "G": 1
+    },
+    "name": "generic_floor<double>",
+    "total_instructions": 45
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 29,
+    "loads": {
+      "L": 1
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 29
+  },
+  "6": {
+    "basicblocks": 55,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 135,
+    "instructions": 367,
+    "loads": {
+      "L": 30
+    },
+    "name": "Inverse_LU",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 367
+  },
+  "7": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "util.c",
+    "fileloc": 486,
+    "instructions": 33,
+    "name": "map",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 33
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 9,
+    "loads": {
+      "L": 3
+    },
+    "name": "to_ieee",
+    "total_instructions": 9
+  }
+}

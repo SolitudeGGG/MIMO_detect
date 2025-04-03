@@ -1,0 +1,34 @@
+MHGD_accel.c:216:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = x_hat;
+                                       ^
+MHGD_accel.c:217:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = Nt;
+                                       ^
+MHGD_accel.c:218:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = Nr;
+                                       ^
+MHGD_accel.c:219:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = mu;
+                                       ^
+MHGD_accel.c:220:36: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = H;
+                                   ^
+MHGD_accel.c:221:36: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = y;
+                                   ^
+MHGD_accel.c:222:44: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = sigma2;
+                                           ^
+MHGD_accel.c:223:47: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = mmse_init;
+                                              ^
+MHGD_accel.c:224:47: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = lr_approx;
+                                              ^
+MHGD_accel.c:225:42: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = iter;
+                                         ^
+MHGD_accel.c:226:39: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = v_tb;
+                                      ^
+11 warnings generated.

@@ -1,0 +1,813 @@
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:9704:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:9704:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:9718:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:9718:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:9732:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:9732:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:11354:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:11354:7: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16603:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16604:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16605:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16606:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16607:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16637:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16638:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16639:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16640:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16641:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16642:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16643:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16644:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16645:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16646:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16696:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16697:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16698:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16725:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16726:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16727:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16728:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16729:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16730:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16766:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:16767:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17041:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17041:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17087:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17087:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17250:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17250:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17402:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17402:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17582:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17582:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17586:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17586:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17696:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17696:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17786:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17786:7: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17805:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:17805:7: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18095:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18095:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18178:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18178:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18584:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18584:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18590:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18590:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18594:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18594:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18642:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18642:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18648:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18648:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18652:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18652:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18667:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18667:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18675:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18675:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18740:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18740:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18746:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18746:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18750:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18750:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18765:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18765:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18773:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:18773:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19002:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19002:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19008:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19008:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19012:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19012:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19022:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19022:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19026:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19026:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19036:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19036:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19044:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19044:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19405:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19405:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19411:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19411:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19415:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19415:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19531:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19531:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19537:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19537:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19541:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19541:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19628:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19628:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19634:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19634:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19638:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19638:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19657:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19657:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19664:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19664:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19780:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19780:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19786:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19786:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19790:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19790:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19810:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19810:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19817:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:19817:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20079:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20079:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20085:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20085:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20089:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20089:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20113:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20113:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20120:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20120:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20550:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20550:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20556:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20556:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20560:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20560:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20690:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20690:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20697:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20697:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20701:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20701:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20748:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20748:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20755:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20755:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20759:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20759:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20777:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20777:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20832:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20832:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20839:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20839:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20843:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20843:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20861:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20861:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20950:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20950:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20957:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20957:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20961:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20961:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20971:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20971:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20975:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20975:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20986:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20986:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20994:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:20994:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21319:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21319:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21326:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21326:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21330:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21330:17: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21418:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21418:4: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21425:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21425:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21429:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21429:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21444:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21444:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21476:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21476:4: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21483:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21483:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21487:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21487:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21502:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21502:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21552:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21552:4: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21559:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21559:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21563:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21563:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21578:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21578:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21715:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21715:4: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21722:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21722:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21726:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21726:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21741:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21741:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21901:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21901:4: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21908:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21908:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21912:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:21912:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:22627:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:22627:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:22845:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:22845:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:23262:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:23262:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:23582:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:23582:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:23610:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:23610:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24312:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24312:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24365:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24365:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24379:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24379:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24409:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24409:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24494:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24494:12: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24514:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24514:16: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24528:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24528:20: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24621:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24621:12: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24635:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24635:15: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24755:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24755:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24879:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24879:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24934:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:24934:13: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25453:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25453:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25464:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25464:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25475:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25475:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25486:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25486:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25497:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25497:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25508:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25508:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25519:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25519:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25530:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:25530:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:27890:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:27890:12: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:27954:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:27954:7: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:28071:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:28071:9: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:28096:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:28096:5: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:28166:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:28166:8: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31403:3: warning: Added loop label VITIS_LOOP_50_1:   [xilinx-label-all-loops]
+  while (!feof(f))
+  ^~~~~
+  VITIS_LOOP_50_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31403:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31413:3: warning: Added loop label VITIS_LOOP_60_2:   [xilinx-label-all-loops]
+  while (!feof(f))
+  ^~~~~
+  VITIS_LOOP_60_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31413:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31536:2: warning: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+ while (!feof(f))
+ ^~~~~
+ VITIS_LOOP_190_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31536:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31545:2: warning: Added loop label VITIS_LOOP_199_2:   [xilinx-label-all-loops]
+ while (!feof(f))
+ ^~~~~
+ VITIS_LOOP_199_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31545:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31554:2: warning: Added loop label VITIS_LOOP_208_3:   [xilinx-label-all-loops]
+ while (!feof(f))
+ ^~~~~
+ VITIS_LOOP_208_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31554:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31567:2: warning: Added loop label VITIS_LOOP_221_4:   [xilinx-label-all-loops]
+ for (i = 0; i < max_iter; i++)
+ ^~~
+ VITIS_LOOP_221_4: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31567:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31570:3: warning: Added loop label VITIS_LOOP_224_5:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr * Nt; j++)
+  ^~~
+  VITIS_LOOP_224_5: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31570:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31572:3: warning: Added loop label VITIS_LOOP_226_6:   [xilinx-label-all-loops]
+  for (j = 0; j < Nr; j++)
+  ^~~
+  VITIS_LOOP_226_6: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31572:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31574:3: warning: Added loop label VITIS_LOOP_228_7:   [xilinx-label-all-loops]
+  for (j = 0; j < Nt * mu; j++)
+  ^~~
+  VITIS_LOOP_228_7: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31574:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31582:3: warning: Added loop label VITIS_LOOP_236_8:   [xilinx-label-all-loops]
+  for (j = 0; j < Nt * mu; j++)
+  ^~~
+  VITIS_LOOP_236_8: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31582:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31686:2: warning: Added loop label VITIS_LOOP_340_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_340_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31686:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31688:3: warning: Added loop label VITIS_LOOP_342_2:   [xilinx-label-all-loops]
+  for (j = 0; j < 4; j++)
+  ^~~
+  VITIS_LOOP_342_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31688:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31693:3: warning: Added loop label VITIS_LOOP_347_3:   [xilinx-label-all-loops]
+  for (j = 0; j < 4; j++)
+  ^~~
+  VITIS_LOOP_347_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31693:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31727:2: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_381_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31727:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31729:3: warning: Added loop label VITIS_LOOP_383_2:   [xilinx-label-all-loops]
+  for (j = 0; j < 16; j++)
+  ^~~
+  VITIS_LOOP_383_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31729:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31735:3: warning: Added loop label VITIS_LOOP_389_3:   [xilinx-label-all-loops]
+  for (j = 0; j < 16; j++)
+  ^~~
+  VITIS_LOOP_389_3: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31735:3: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31757:2: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+ for (i = 0; i < Nt; i++)
+ ^~~
+ VITIS_LOOP_411_1: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31757:2: note: FIX-IT applied suggested code changes
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31759:3: warning: Added loop label VITIS_LOOP_413_2:   [xilinx-label-all-loops]
+  for (j = 0; j < 64; j++)
+  ^~~
+  VITIS_LOOP_413_2: 
+/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/.autopilot/db/MIMO_simulation_1.pp.0.cpp:31759:3: note: FIX-IT applied suggested code changes

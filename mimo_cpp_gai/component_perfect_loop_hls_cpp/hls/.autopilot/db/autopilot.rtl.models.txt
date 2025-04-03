@@ -1,0 +1,7 @@
+MHGD_detect_accel_sdiv_96ns_1ns_96_100_1
+MHGD_detect_accel_flow_control_loop_pipe_sequential_init
+MHGD_detect_accel_gmem_m_axi
+MHGD_detect_accel_control_s_axi
+map_4
+MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3
+MHGD_detect_accel

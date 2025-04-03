@@ -1,0 +1,77 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 425,544 *    | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  25,434      | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  12,746      | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   7,738      | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   4,357      | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   3,709      | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   3,680      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   3,680      | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   3,680      | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   3,606      | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   3,387      | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   3,347      | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |   3,329      | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   3,261      | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   3,437      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   3,465      | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++------------------------------------+-----------------------+-------------------+-----------------+-----------------+-----------------+-----------------+
+| Function                           | Location              | Compile/Link      | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++------------------------------------+-----------------------+-------------------+-----------------+-----------------+-----------------+-----------------+
+| + MHGD_detect_accel                | MHGD_accel_1.cpp:214  | 425,544 *         | 4,357           | 3,606           | 3,261           | 3,465           |
+|    c_eye_generate                  | util_1.cpp:33         |  3,657 (3 calls)  |   87 (3 calls)  |   87 (3 calls)  |   81 (3 calls)  |   87 (3 calls)  |
+|  + c_matmultiple                   | util_1.cpp:331        | 72,726 (17 calls) |  680 (17 calls) |  354 (17 calls) |  330 (17 calls) |  348 (17 calls) |
+|     complex_conjugate              | util_1.cpp:304        |  4,318 (34 calls) |                 |                 |                 |                 |
+|     complex_multiply               | util_1.cpp:62         | 18,649 (17 calls) |                 |                 |                 |                 |
+|     complex_add                    | util_1.cpp:70         |  7,905 (17 calls) |                 |                 |                 |                 |
+|    my_complex_add                  | util_1.cpp:286        |  1,944 (4 calls)  |                 |                 |                 |                 |
+|  + Inverse_LU                      | util_1.cpp:141        | 57,956 (2 calls)  | 1,198 (2 calls) | 1,014 (2 calls) |  978 (2 calls)  | 1,008 (2 calls) |
+|     initMatrix                     | util_1.cpp:100        |  6,504 (8 calls)  |                 |                 |                 |                 |
+|     complex_divide                 | util_1.cpp:86         | 14,528 (8 calls)  |                 |                 |                 |                 |
+|     complex_multiply               | util_1.cpp:62         | 13,164 (12 calls) |                 |                 |                 |                 |
+|     complex_add                    | util_1.cpp:70         |  3,720 (8 calls)  |                 |                 |                 |                 |
+|     complex_subtract               | util_1.cpp:78         |  1,860 (4 calls)  |                 |                 |                 |                 |
+|   + MulMatrix                      | util_1.cpp:117        |  4,846 (2 calls)  |                 |                 |                 |                 |
+|      complex_multiply              | util_1.cpp:62         |  2,194 (2 calls)  |                 |                 |                 |                 |
+|      complex_add                   | util_1.cpp:70         |    930 (2 calls)  |                 |                 |                 |                 |
+|  + map                             | util_1.cpp:494        | 28,060 (2 calls)  |  328 (2 calls)  |  227 (2 calls)  |  217 (2 calls)  |  312 (2 calls)  |
+|     my_complex_scal                | util_1.cpp:321        |    824 (2 calls)  |                 |                 |                 |                 |
+|  + generateUniformRandoms_int      | util_1.cpp:437        | 28,992            |                 |                 |                 |                 |
+|     lcg_rand                       | util_1.cpp:19         |      4            |                 |                 |                 |                 |
+|    my_complex_sub                  | util_1.cpp:295        |    972 (2 calls)  |                 |                 |                 |                 |
+|    my_complex_copy                 | util_1.cpp:312        |    160 (5 calls)  |                 |                 |                 |                 |
+|    my_complex_scal                 | util_1.cpp:321        |    824 (2 calls)  |                 |                 |                 |                 |
+|  + generateUniformRandoms_float... | util_1.cpp:457        |    423            |                 |                 |                 |                 |
+|     lcg_rand_1                     | util_1.cpp:25         |    403            |                 |                 |                 |                 |
+|    sqrt_fixed<97, 65>              | hls_sqrt_apfixed.h:16 |                   |   10 (5 calls)  |   10 (5 calls)  |    6 (3 calls)  |    9 (3 calls)  |
+|    exp<64, 32>                     | hls_exp_apfixed.h:13  |                   |  216            |  216            |                 |                 |
++------------------------------------+-----------------------+-------------------+-----------------+-----------------+-----------------+-----------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

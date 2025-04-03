@@ -1,0 +1,204 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MHGD_detect_accel'
+================================================================
++ General Information: 
+    * Date:           Tue Apr  1 15:32:01 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        component_perfect_loop_hls_1
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+------------+-----------+-----+
+    |                     Modules                    | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |      |         |            |           |     |
+    |                     & Loops                    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined| BRAM |   DSP   |     FF     |    LUT    | URAM|
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+------------+-----------+-----+
+    |+ MHGD_detect_accel                             |     -|  0.39|    30018|  3.002e+05|         -|    30019|      -|        no|     -|  26 (2%)|  1391 (~0%)|  3016 (2%)|    -|
+    | + MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3  |     -|  3.80|    30003|  3.000e+05|         -|    30003|      -|        no|     -|        -|    70 (~0%)|  187 (~0%)|    -|
+    |  o VITIS_LOOP_483_3                            |    II|  7.30|    30001|  3.000e+05|         2|        2|  15000|       yes|     -|        -|           -|          -|    -|
+    +------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+---------+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+-----------+----------+
+| Port      | Mode    | Direction | Bitwidth |
++-----------+---------+-----------+----------+
+| H         | ap_none | in        | 64       |
+| Nr        | ap_none | in        | 32       |
+| Nt        | ap_none | in        | 32       |
+| ap_return |         | out       | 32       |
+| iter      | ap_none | in        | 32       |
+| lr_approx | ap_none | in        | 32       |
+| mmse_init | ap_none | in        | 32       |
+| mu        | ap_none | in        | 32       |
+| sigma2    | ap_none | in        | 32       |
+| v_tb      | ap_none | in        | 64       |
+| x_hat     | ap_none | in        | 64       |
+| y         | ap_none | in        | 64       |
++-----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+----------+
+| Argument  | Direction | Datatype |
++-----------+-----------+----------+
+| x_hat     | inout     | pointer  |
+| Nt        | in        | int      |
+| Nr        | in        | int      |
+| mu        | in        | int      |
+| H         | unused    | pointer  |
+| y         | unused    | pointer  |
+| sigma2    | in        | float    |
+| mmse_init | in        | int      |
+| lr_approx | in        | int      |
+| iter      | in        | int      |
+| v_tb      | unused    | pointer  |
+| return    | out       | float    |
++-----------+-----------+----------+
+
+* SW-to-HW Mapping
++-----------+--------------+---------+
+| Argument  | HW Interface | HW Type |
++-----------+--------------+---------+
+| x_hat     | x_hat        | port    |
+| Nt        | Nt           | port    |
+| Nr        | Nr           | port    |
+| mu        | mu           | port    |
+| H         | H            | port    |
+| y         | y            | port    |
+| sigma2    | sigma2       | port    |
+| mmse_init | mmse_init    | port    |
+| lr_approx | lr_approx    | port    |
+| iter      | iter         | port    |
+| v_tb      | v_tb         | port    |
+| return    | ap_return    | port    |
++-----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------+-----+--------+--------------+---------+---------+---------+
+| Name                                           | DSP | Pragma | Variable     | Op      | Impl    | Latency |
++------------------------------------------------+-----+--------+--------------+---------+---------+---------+
+| + MHGD_detect_accel                            | 26  |        |              |         |         |         |
+|   icmp_ln449_fu_101_p2                         |     |        | icmp_ln449   | setgt   | auto    | 0       |
+|   icmp_ln434_fu_107_p2                         |     |        | icmp_ln434   | seteq   | auto    | 0       |
+|   and_ln438_fu_113_p2                          |     |        | and_ln438    | and     | auto    | 0       |
+|   dexp_64ns_64ns_64_13_full_dsp_1_U9           | 26  |        | tmp_s        | dexp    | fulldsp | 12      |
+|   fptrunc_64ns_32_2_no_dsp_1_U8                |     |        | p_acc        | fptrunc | auto    | 1       |
+|  + MHGD_detect_accel_Pipeline_VITIS_LOOP_483_3 | 0   |        |              |         |         |         |
+|    icmp_ln483_fu_124_p2                        |     |        | icmp_ln483   | setlt   | auto    | 0       |
+|    add_ln483_fu_130_p2                         |     |        | add_ln483    | add     | fabric  | 0       |
+|    icmp_ln524_fu_146_p2                        |     |        | icmp_ln524   | setne   | auto    | 0       |
+|    icmp_ln524_1_fu_152_p2                      |     |        | icmp_ln524_1 | seteq   | auto    | 0       |
+|    or_ln524_fu_158_p2                          |     |        | or_ln524     | or      | auto    | 0       |
+|    fcmp_32ns_32ns_1_2_no_dsp_1_U1              |     |        | tmp_1        | fcmp    | auto    | 1       |
+|    and_ln524_fu_162_p2                         |     |        | and_ln524    | and     | auto    | 0       |
+|    and_ln524_1_fu_167_p2                       |     |        | and_ln524_1  | and     | auto    | 0       |
++------------------------------------------------+-----+--------+--------------+---------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Ignored Pragmas
++-----------+---------------------------+---------------------------------------+----------------------------------------------------+
+| Type      | Options                   | Location                              | Messages                                           |
++-----------+---------------------------+---------------------------------------+----------------------------------------------------+
+| interface | axis port = x_hat;        | MHGD_accel.c:216 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = Nt;        | MHGD_accel.c:217 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = Nr;        | MHGD_accel.c:218 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = mu;        | MHGD_accel.c:219 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | axis port = H;            | MHGD_accel.c:220 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | axis port = y;            | MHGD_accel.c:221 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = sigma2;    | MHGD_accel.c:222 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = mmse_init; | MHGD_accel.c:223 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = lr_approx; | MHGD_accel.c:224 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | ap_none port = iter;      | MHGD_accel.c:225 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
+| interface | axis port = v_tb;         | MHGD_accel.c:226 in mhgd_detect_accel | unexpected pragma argument ';', expects identifier |
++-----------+---------------------------+---------------------------------------+----------------------------------------------------+
+
+* Valid Pragma Syntax
++----------------+---------------------------+--------------------------------------------+
+| Type           | Options                   | Location                                   |
++----------------+---------------------------+--------------------------------------------+
+| loop_tripcount | max=Nt_max min=Nt_min     | MHGD_accel.c:451 in mhgd_detect_accel      |
+| loop_tripcount | max=iter_max min=iter_min | MHGD_accel.c:485 in mhgd_detect_accel      |
+| pipeline       | II=1                      | MHGD_accel.c:486 in mhgd_detect_accel      |
+| loop_tripcount | max=Nt_max min=Nt_min     | MHGD_accel.c:495 in mhgd_detect_accel      |
+| loop_tripcount | max=Nt_2_max min=Nt_2_min | util.c:37 in c_eye_generate                |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:44 in c_eye_generate                |
+| pipeline       | II=1                      | util.c:165 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:168 in inverse_lu                   |
+| unroll         |                           | util.c:169 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:175 in inverse_lu                   |
+| unroll         |                           | util.c:176 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:181 in inverse_lu                   |
+| unroll         |                           | util.c:182 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:188 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:189 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:192 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:193 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:197 in inverse_lu                   |
+| unroll         |                           | util.c:198 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:205 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:206 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:211 in inverse_lu                   |
+| unroll         |                           | util.c:212 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:221 in inverse_lu                   |
+| unroll         |                           | util.c:222 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:228 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:229 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:232 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:233 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:237 in inverse_lu                   |
+| unroll         |                           | util.c:238 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:250 in inverse_lu                   |
+| unroll         |                           | util.c:251 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:257 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:258 in inverse_lu                   |
+| pipeline       | II=1                      | util.c:261 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:266 in inverse_lu                   |
+| unroll         |                           | util.c:267 in inverse_lu                   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:282 in my_complex_add               |
+| loop_tripcount | max=Nr_max min=Nr_min     | util.c:291 in my_complex_sub               |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:308 in my_complex_copy              |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:317 in my_complex_scal              |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:346 in c_matmultiple                |
+| pipeline       | II=1                      | util.c:347 in c_matmultiple                |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:349 in c_matmultiple                |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:353 in c_matmultiple                |
+| unroll         | factor=4                  | util.c:354 in c_matmultiple                |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:439 in generateuniformrandoms_int   |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:452 in generateuniformrandoms_float |
+| loop_tripcount | max=Nt_max min=Nt_min     | util.c:491 in map                          |
++----------------+---------------------------+--------------------------------------------+
+
+

@@ -1,0 +1,616 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="./util.h:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_eye_generate" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_2_max min=Nt_2_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_eye_generate" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:169:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:175:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:181:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:182:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:188:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:189:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:192:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:193:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:197:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:206:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:211:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:212:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:228:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:229:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:232:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:233:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:237:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:238:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:250:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:251:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:257:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:258:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:261:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:267:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Inverse_LU" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:282:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_complex_add" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:291:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_complex_sub" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nr_max min=Nr_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:308:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_complex_copy" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_complex_scal" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:346:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_matmultiple" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:347:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_matmultiple" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_matmultiple" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:353:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_matmultiple" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:354:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="c_matmultiple" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:439:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateUniformRandoms_int" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:452:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateUniformRandoms_float" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="util.c:491:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="map" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="./util.h:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-910" msg_severity="WARNING" msg_loc="MHGD_accel.c:13:10" msg_body="'__SYNTHESIS__' macro redefined">
+        <args ClangWarningOption="macro-redefined"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-71" msg_severity="INFO" msg_loc="&lt;command line&gt;:3:9" msg_body="previous definition is here">
+        <args/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:216:40" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:217:40" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:218:40" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:219:40" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:220:36" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:221:36" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:222:44" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:223:47" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:224:47" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:225:42" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="MHGD_accel.c:226:39" msg_body="unexpected pragma argument ';', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="MHGD_accel.c:149:34" msg_body="unused parameter 'Nr'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="./util.h:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ggg_wufuqi/hls/MIMO_detect-main/run_tcl.tcl:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=MHGD_detect_accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:216:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="axis port = x_hat;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = Nt;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:218:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = Nr;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:219:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = mu;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="axis port = H;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="axis port = y;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = sigma2;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:223:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = mmse_init;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = lr_approx;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:225:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="ap_none port = iter;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="0" ARG_PragmaOptions="axis port = v_tb;" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:451:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:485:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=iter_max min=iter_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:486:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MHGD_accel.c:495:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MHGD_detect_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=Nt_max min=Nt_min" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MHGD_accel.c:494:21" msg_body="Loop 'VITIS_LOOP_494_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_494_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:451:20" msg_body="Loop 'VITIS_LOOP_451_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_451_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:307:20" msg_body="Loop 'VITIS_LOOP_307_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_307_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:290:20" msg_body="Loop 'VITIS_LOOP_290_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_290_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:489:20" msg_body="Loop 'VITIS_LOOP_489_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_489_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:316:20" msg_body="Loop 'VITIS_LOOP_316_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_316_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:255:21" msg_body="Loop 'VITIS_LOOP_255_14' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_255_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:259:21" msg_body="Loop 'VITIS_LOOP_259_15' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_259_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:264:23" msg_body="Loop 'VITIS_LOOP_264_16' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_264_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:248:21" msg_body="Loop 'VITIS_LOOP_248_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_248_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:226:21" msg_body="Loop 'VITIS_LOOP_226_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_226_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:230:21" msg_body="Loop 'VITIS_LOOP_230_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_230_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:236:23" msg_body="Loop 'VITIS_LOOP_236_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_236_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:219:20" msg_body="Loop 'VITIS_LOOP_219_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_219_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:186:20" msg_body="Loop 'VITIS_LOOP_186_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_186_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:190:20" msg_body="Loop 'VITIS_LOOP_190_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_190_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:196:22" msg_body="Loop 'VITIS_LOOP_196_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_196_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:203:21" msg_body="Loop 'VITIS_LOOP_203_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_203_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:209:22" msg_body="Loop 'VITIS_LOOP_209_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_209_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:179:20" msg_body="Loop 'VITIS_LOOP_179_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_179_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:173:20" msg_body="Loop 'VITIS_LOOP_173_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_173_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:166:20" msg_body="Loop 'VITIS_LOOP_166_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_166_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:117:20" msg_body="Loop 'VITIS_LOOP_117_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_117_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:119:21" msg_body="Loop 'VITIS_LOOP_119_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_119_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:124:22" msg_body="Loop 'VITIS_LOOP_124_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_124_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:101:20" msg_body="Loop 'VITIS_LOOP_101_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_101_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:103:21" msg_body="Loop 'VITIS_LOOP_103_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_103_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:281:20" msg_body="Loop 'VITIS_LOOP_281_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_281_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:345:20" msg_body="Loop 'VITIS_LOOP_345_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_345_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:348:20" msg_body="Loop 'VITIS_LOOP_348_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_348_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="util.c:352:22" msg_body="Loop 'VITIS_LOOP_352_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_352_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="util.c:450:0" msg_body="Updating loop lower bound from 1 to 10 for loop 'VITIS_LOOP_451_1' (util.c:451:20) in function 'generateUniformRandoms_float'.">
+        <args LoopLoc="util.c:451:20" LoopName="VITIS_LOOP_451_1" NewBound="10" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="util.c:450:0" msg_body="Unrolling loop 'VITIS_LOOP_451_1' (util.c:451:20) in function 'generateUniformRandoms_float' completely with a factor of 10">
+        <args Factor="10" LoopLoc="util.c:451:20" LoopName="VITIS_LOOP_451_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isinf&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="int generic_isinf&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isnan&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="int generic_isnan&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)' into 'fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 494 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)' into 'fp_struct&lt;double&gt;::to_ieee() const'">
+        <args Callee="fp_struct&lt;double&gt;::to_double() const (.111.120.130.161)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 494 Column 0" Caller="fp_struct&lt;double&gt;::to_ieee() const" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 71, 73&gt;(ap_ufixed&lt;71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 71, 73&gt;(ap_ufixed&lt;71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 73, 83&gt;(ap_ufixed&lt;73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 73, 83&gt;(ap_ufixed&lt;73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 12, 6, 83, 92&gt;(ap_ufixed&lt;83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 12, 6, 83, 92&gt;(ap_ufixed&lt;83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 17, 6, 92, 87&gt;(ap_ufixed&lt;92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 17, 6, 92, 87&gt;(ap_ufixed&lt;92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 22, 6, 87, 82&gt;(ap_ufixed&lt;87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 22, 6, 87, 82&gt;(ap_ufixed&lt;87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 27, 6, 82, 77&gt;(ap_ufixed&lt;82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 27, 6, 82, 77&gt;(ap_ufixed&lt;82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:186:0" msg_body="Inlining function 'void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32, 6, 77, 72&gt;(ap_ufixed&lt;77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void pow_reduce::log_range_reduce&lt;ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32, 6, 77, 72&gt;(ap_ufixed&lt;77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_ufixed&lt;72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 31 Column 0" Caller="ap_ufixed&lt;72, -37, (ap_q_mode)5, (ap_o_mode)3, 0&gt; pow_reduce::pow_traits&lt;double&gt;::log_range_reduction&lt;71&gt;(ap_ufixed&lt;71, -4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;121, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::expv() const' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::expv() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 485 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'int generic_isinf&lt;double&gt;(double)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="int generic_isinf&lt;double&gt;(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h Line 16 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'int generic_isnan&lt;double&gt;(double)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="int generic_isnan&lt;double&gt;(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h Line 16 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:292:0" msg_body="Inlining function 'pow_reduce::pow_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'double pow_reduce::pow_generic&lt;double&gt;(double, double)'">
+        <args Callee="pow_reduce::pow_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 224 Column 0" Caller="double pow_reduce::pow_generic&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:324:0" msg_body="Inlining function 'complex_conjugate' into 'c_matmultiple'">
+        <args Callee="complex_conjugate" Callee-DebugLoc="File util.c Line 298 Column 0" Caller="c_matmultiple" Caller-DebugLoc="File util.c Line 324 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:324:0" msg_body="Inlining function 'complex_multiply.208' into 'c_matmultiple'">
+        <args Callee="complex_multiply.208" Callee-DebugLoc="File util.c Line 60 Column 0" Caller="c_matmultiple" Caller-DebugLoc="File util.c Line 324 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:324:0" msg_body="Inlining function 'complex_add' into 'c_matmultiple'">
+        <args Callee="complex_add" Callee-DebugLoc="File util.c Line 68 Column 0" Caller="c_matmultiple" Caller-DebugLoc="File util.c Line 324 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:114:0" msg_body="Inlining function 'complex_multiply.208' into 'MulMatrix'">
+        <args Callee="complex_multiply.208" Callee-DebugLoc="File util.c Line 60 Column 0" Caller="MulMatrix" Caller-DebugLoc="File util.c Line 114 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:114:0" msg_body="Inlining function 'complex_add' into 'MulMatrix'">
+        <args Callee="complex_add" Callee-DebugLoc="File util.c Line 68 Column 0" Caller="MulMatrix" Caller-DebugLoc="File util.c Line 114 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'initMatrix' into 'Inverse_LU'">
+        <args Callee="initMatrix" Callee-DebugLoc="File util.c Line 99 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'complex_divide' into 'Inverse_LU'">
+        <args Callee="complex_divide" Callee-DebugLoc="File util.c Line 84 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'complex_multiply.208' into 'Inverse_LU'">
+        <args Callee="complex_multiply.208" Callee-DebugLoc="File util.c Line 60 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'complex_add' into 'Inverse_LU'">
+        <args Callee="complex_add" Callee-DebugLoc="File util.c Line 68 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'complex_subtract' into 'Inverse_LU'">
+        <args Callee="complex_subtract" Callee-DebugLoc="File util.c Line 76 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'complex_divide.221.227' into 'Inverse_LU'">
+        <args Callee="complex_divide.221.227" Callee-DebugLoc="File util.c Line 84 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:136:0" msg_body="Inlining function 'MulMatrix' into 'Inverse_LU'">
+        <args Callee="MulMatrix" Callee-DebugLoc="File util.c Line 114 Column 0" Caller="Inverse_LU" Caller-DebugLoc="File util.c Line 136 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double generic_copysign&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double generic_copysign&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_copysign&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0" Caller="double generic_copysign&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::__signbit() const' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::__signbit() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 512 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'double generic_copysign&lt;double&gt;(double, double)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="double generic_copysign&lt;double&gt;(double, double)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h Line 10 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.79.114.123.133.164)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 475 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(ap_uint&lt;64&gt;)' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(ap_uint&lt;64&gt;)" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 464 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h:14:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_floor&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0" Caller="double generic_floor&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_floor.h Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:487:0" msg_body="Inlining function 'floor' into 'map'">
+        <args Callee="floor" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c/floordouble.cpp Line 6 Column 0" Caller="map" Caller-DebugLoc="File util.c Line 487 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="util.c:487:0" msg_body="Inlining function 'my_complex_scal' into 'map'">
+        <args Callee="my_complex_scal" Callee-DebugLoc="File util.c Line 315 Column 0" Caller="map" Caller-DebugLoc="File util.c Line 487 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'pow' into 'MHGD_detect_accel'">
+        <args Callee="pow" Callee-DebugLoc="File /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp Line 6 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'c_eye_generate' into 'MHGD_detect_accel'">
+        <args Callee="c_eye_generate" Callee-DebugLoc="File util.c Line 33 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'my_complex_add' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_add" Callee-DebugLoc="File util.c Line 280 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'generateUniformRandoms_int' into 'MHGD_detect_accel'">
+        <args Callee="generateUniformRandoms_int" Callee-DebugLoc="File util.c Line 430 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'my_complex_sub' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_sub" Callee-DebugLoc="File util.c Line 289 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'my_complex_copy' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_copy" Callee-DebugLoc="File util.c Line 306 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'my_complex_scal' into 'MHGD_detect_accel'">
+        <args Callee="my_complex_scal" Callee-DebugLoc="File util.c Line 315 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Inlining function 'generateUniformRandoms_float' into 'MHGD_detect_accel'">
+        <args Callee="generateUniformRandoms_float" Callee-DebugLoc="File util.c Line 450 Column 0" Caller="MHGD_detect_accel" Caller-DebugLoc="File MHGD_accel.c Line 215 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:199:21" msg_body="Ignore address on register port 'vla.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:199:21" msg_body="Ignore address on register port 'vla.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:199:21" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:199:21" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:213:21" msg_body="Ignore address on register port 'vla.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:213:21" msg_body="Ignore address on register port 'vla.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:213:21" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:213:21" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:239:21" msg_body="Ignore address on register port 'vla.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:239:21" msg_body="Ignore address on register port 'vla.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:239:21" msg_body="Ignore address on register port 'vla4.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:239:21" msg_body="Ignore address on register port 'vla4.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:241:41" msg_body="Ignore address on register port 'vla4.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:241:41" msg_body="Ignore address on register port 'vla4.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:242:41" msg_body="Ignore address on register port 'vla4.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:252:27" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:252:27" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:268:21" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:268:21" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:268:21" msg_body="Ignore address on register port 'vla6.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:268:21" msg_body="Ignore address on register port 'vla6.imag'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:273:29" msg_body="Ignore address on register port 'vla2.real'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:273:29" msg_body="Ignore address on register port 'vla2.imag'"/>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Aggregating scalar variable 'v_tb' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="v_tb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Aggregating scalar variable 'y' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Aggregating scalar variable 'H' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="H"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MHGD_accel.c:215:0" msg_body="Aggregating scalar variable 'x_hat' with compact=bit mode in 64-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="64" HwTyName="scalar" Name="x_hat"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:493:17" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:500:18" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:506:18" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:512:18" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:318:19" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:319:20" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="MHGD_accel.c:452:13" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="util.c:310:20" msg_body="Ignore address on register port 'x_hat'"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:259:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_259_15'.">
+        <args LoopName="VITIS_LOOP_259_15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:259:21" msg_body="loop_flatten 0 1 Inverse_LU util.c:259:21VITIS_LOOP_259_15 util.c:259:21">
+        <args LoopLoc="util.c:259:21" LoopLoc-DebugLoc="File util.c Line 259 Column 21" LoopName="VITIS_LOOP_259_15" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:259:21" PragmaSrcLoc-DebugLoc="File util.c Line 259 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:230:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_230_11'.">
+        <args LoopName="VITIS_LOOP_230_11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:230:21" msg_body="loop_flatten 0 1 Inverse_LU util.c:230:21VITIS_LOOP_230_11 util.c:230:21">
+        <args LoopLoc="util.c:230:21" LoopLoc-DebugLoc="File util.c Line 230 Column 21" LoopName="VITIS_LOOP_230_11" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:230:21" PragmaSrcLoc-DebugLoc="File util.c Line 230 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:190:20" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_190_5'.">
+        <args LoopName="VITIS_LOOP_190_5"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:190:20" msg_body="loop_flatten 0 1 Inverse_LU util.c:190:20VITIS_LOOP_190_5 util.c:190:20">
+        <args LoopLoc="util.c:190:20" LoopLoc-DebugLoc="File util.c Line 190 Column 20" LoopName="VITIS_LOOP_190_5" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:190:20" PragmaSrcLoc-DebugLoc="File util.c Line 190 Column 20" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="util.c:203:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_203_7'.">
+        <args LoopName="VITIS_LOOP_203_7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="util.c:203:21" msg_body="loop_flatten 0 1 Inverse_LU util.c:203:21VITIS_LOOP_203_7 util.c:203:21">
+        <args LoopLoc="util.c:203:21" LoopLoc-DebugLoc="File util.c Line 203 Column 21" LoopName="VITIS_LOOP_203_7" PragmaFunction="Inverse_LU" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="util.c:203:21" PragmaSrcLoc-DebugLoc="File util.c Line 203 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:307:20" msg_body="Cannot unroll loop 'VITIS_LOOP_307_1' (util.c:307:20) in function 'MHGD_detect_accel' as it has a variable trip count">
+        <args LoopLoc="util.c:307:20" LoopName="VITIS_LOOP_307_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:316:20" msg_body="Cannot unroll loop 'VITIS_LOOP_316_1' (util.c:316:20) in function 'MHGD_detect_accel' as it has a variable trip count">
+        <args LoopLoc="util.c:316:20" LoopName="VITIS_LOOP_316_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:281:20" msg_body="Cannot unroll loop 'VITIS_LOOP_281_1' (util.c:281:20) in function 'MHGD_detect_accel' as it has a variable trip count">
+        <args LoopLoc="util.c:281:20" LoopName="VITIS_LOOP_281_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="MHGD_accel.c:494:21" msg_body="Cannot unroll loop 'VITIS_LOOP_494_4' (MHGD_accel.c:494:21) in function 'MHGD_detect_accel' as it has a variable trip count">
+        <args LoopLoc="MHGD_accel.c:494:21" LoopName="VITIS_LOOP_494_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:290:20" msg_body="Cannot unroll loop 'VITIS_LOOP_290_1' (util.c:290:20) in function 'MHGD_detect_accel' as it has a variable trip count">
+        <args LoopLoc="util.c:290:20" LoopName="VITIS_LOOP_290_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:316:20" msg_body="Cannot unroll loop 'VITIS_LOOP_316_1' (util.c:316:20) in function 'map' as it has a variable trip count">
+        <args LoopLoc="util.c:316:20" LoopName="VITIS_LOOP_316_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:489:20" msg_body="Cannot unroll loop 'VITIS_LOOP_489_1' (util.c:489:20) in function 'map' as it has a variable trip count">
+        <args LoopLoc="util.c:489:20" LoopName="VITIS_LOOP_489_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:316:20" msg_body="Cannot unroll loop 'VITIS_LOOP_316_1' (util.c:316:20) in function 'map.344' as it has a variable trip count">
+        <args LoopLoc="util.c:316:20" LoopName="VITIS_LOOP_316_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:489:20" msg_body="Cannot unroll loop 'VITIS_LOOP_489_1' (util.c:489:20) in function 'map.344' as it has a variable trip count">
+        <args LoopLoc="util.c:489:20" LoopName="VITIS_LOOP_489_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:117:20" msg_body="Cannot unroll loop 'VITIS_LOOP_117_1' (util.c:117:20) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:117:20" LoopName="VITIS_LOOP_117_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:119:21" msg_body="Cannot unroll loop 'VITIS_LOOP_119_2' (util.c:119:21) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:119:21" LoopName="VITIS_LOOP_119_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:255:21" msg_body="Cannot unroll loop 'VITIS_LOOP_255_14' (util.c:255:21) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:255:21" LoopName="VITIS_LOOP_255_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:259:21" msg_body="Cannot unroll loop 'VITIS_LOOP_259_15' (util.c:259:21) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:259:21" LoopName="VITIS_LOOP_259_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:264:23" msg_body="Cannot unroll loop 'VITIS_LOOP_264_16' (util.c:264:23) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:264:23" LoopName="VITIS_LOOP_264_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:226:21" msg_body="Cannot unroll loop 'VITIS_LOOP_226_10' (util.c:226:21) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:226:21" LoopName="VITIS_LOOP_226_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:230:21" msg_body="Cannot unroll loop 'VITIS_LOOP_230_11' (util.c:230:21) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:230:21" LoopName="VITIS_LOOP_230_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:236:23" msg_body="Cannot unroll loop 'VITIS_LOOP_236_12' (util.c:236:23) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:236:23" LoopName="VITIS_LOOP_236_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:186:20" msg_body="Cannot unroll loop 'VITIS_LOOP_186_4' (util.c:186:20) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:186:20" LoopName="VITIS_LOOP_186_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:190:20" msg_body="Cannot unroll loop 'VITIS_LOOP_190_5' (util.c:190:20) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:190:20" LoopName="VITIS_LOOP_190_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:196:22" msg_body="Cannot unroll loop 'VITIS_LOOP_196_6' (util.c:196:22) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:196:22" LoopName="VITIS_LOOP_196_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:203:21" msg_body="Cannot unroll loop 'VITIS_LOOP_203_7' (util.c:203:21) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:203:21" LoopName="VITIS_LOOP_203_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:209:22" msg_body="Cannot unroll loop 'VITIS_LOOP_209_8' (util.c:209:22) in function 'Inverse_LU' as it has a variable trip count">
+        <args LoopLoc="util.c:209:22" LoopName="VITIS_LOOP_209_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:345:20" msg_body="Cannot unroll loop 'VITIS_LOOP_345_1' (util.c:345:20) in function 'c_matmultiple' as it has a variable trip count">
+        <args LoopLoc="util.c:345:20" LoopName="VITIS_LOOP_345_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="util.c:348:20" msg_body="Cannot unroll loop 'VITIS_LOOP_348_2' (util.c:348:20) in function 'c_matmultiple' as it has a variable trip count">
+        <args LoopLoc="util.c:348:20" LoopName="VITIS_LOOP_348_2"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

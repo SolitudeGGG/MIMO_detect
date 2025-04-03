@@ -1,0 +1,90 @@
+In file included from MHGD_accel.c:1:
+In file included from ./MHGD_accel.h:4:
+./util.h:10:9: warning: unknown pragma ignored [-Winvalid-hls-pragmas]
+#pragma warning(disable:4996)
+        ^
+MHGD_accel.c:149:34: warning: unused parameter 'Nr' [-Wunused-parameter]
+void MHGD_free_accel(int Nt, int Nr, int mu)
+                                 ^
+/home/ggg_wufuqi/hls/MIMO_detect-main/run_tcl.tcl:74:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=name=MHGD_detect_accel_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=MHGD_detect_accel
+        ^
+MHGD_accel.c:216:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = x_hat;
+                                       ^
+MHGD_accel.c:216:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=axis port = x_hat;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface axis port = x_hat;
+        ^
+MHGD_accel.c:217:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = Nt;
+                                       ^
+MHGD_accel.c:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = Nt;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = Nt;
+        ^
+MHGD_accel.c:218:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = Nr;
+                                       ^
+MHGD_accel.c:218:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = Nr;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = Nr;
+        ^
+MHGD_accel.c:219:40: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = mu;
+                                       ^
+MHGD_accel.c:219:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = mu;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = mu;
+        ^
+MHGD_accel.c:220:36: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = H;
+                                   ^
+MHGD_accel.c:220:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=axis port = H;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface axis port = H;
+        ^
+MHGD_accel.c:221:36: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = y;
+                                   ^
+MHGD_accel.c:221:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=axis port = y;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface axis port = y;
+        ^
+MHGD_accel.c:222:44: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = sigma2;
+                                           ^
+MHGD_accel.c:222:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = sigma2;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = sigma2;
+        ^
+MHGD_accel.c:223:47: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = mmse_init;
+                                              ^
+MHGD_accel.c:223:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = mmse_init;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = mmse_init;
+        ^
+MHGD_accel.c:224:47: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = lr_approx;
+                                              ^
+MHGD_accel.c:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = lr_approx;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = lr_approx;
+        ^
+MHGD_accel.c:225:42: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface ap_none port = iter;
+                                         ^
+MHGD_accel.c:225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=ap_none port = iter;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_none port = iter;
+        ^
+MHGD_accel.c:226:39: warning: unexpected pragma argument ';', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS interface axis port = v_tb;
+                                      ^
+MHGD_accel.c:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=axis port = v_tb;_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface axis port = v_tb;
+        ^
+MHGD_accel.c:451:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=max=Nt_max min=Nt_min_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=Nt_max min=Nt_min
+        ^
+MHGD_accel.c:485:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=max=iter_max min=iter_min_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=iter_max min=iter_min
+        ^
+MHGD_accel.c:486:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+MHGD_accel.c:495:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=MHGD_detect_accel_XLX_SEP_ PragmaOptions=max=Nt_max min=Nt_min_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=Nt_max min=Nt_min
+        ^
+29 warnings generated.

@@ -1,0 +1,369 @@
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script '/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/run_cpp.tcl'
+INFO: [HLS 200-1510] Running: open_component -reset component_perfect_loop_hls_cpp -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening project '/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp'.
+INFO: [HLS 200-10] Opening and resetting solution '/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: add_files MHGD_accel_1.cpp 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel_1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files MHGD_accel_1.h 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files MIMO_simulation_1.cpp 
+INFO: [HLS 200-10] Adding design file 'MIMO_simulation_1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files MIMO_simulation_1.h 
+INFO: [HLS 200-10] Adding design file 'MIMO_simulation_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files MyComplex.cpp 
+WARNING: [HLS 200-40] Cannot find design file 'MyComplex.cpp'
+INFO: [HLS 200-1510] Running: add_files MyComplex_1.h 
+INFO: [HLS 200-10] Adding design file 'MyComplex_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files sys_config_1.h 
+INFO: [HLS 200-10] Adding design file 'sys_config_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files util_1.cpp 
+INFO: [HLS 200-10] Adding design file 'util_1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files util_1.h 
+INFO: [HLS 200-10] Adding design file 'util_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files MMSE_1.h 
+INFO: [HLS 200-10] Adding design file 'MMSE_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files MMSE_1.cpp 
+INFO: [HLS 200-10] Adding design file 'MMSE_1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_1.cpp 
+INFO: [HLS 200-10] Adding test bench file 'tb_1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt' to the project
+INFO: [HLS 200-1510] Running: set_top MHGD_detect_accel 
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_pipeline loop_perfect/LOOP_J 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-1998] cannot find relative file path 'MyComplex.cpp' in directory(s): /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai
+WARNING: [HLS 200-40] Cannot find source file MyComplex.cpp; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.57 seconds; current allocated memory: 657.234 MB.
+INFO: [HLS 200-10] Analyzing design file 'MMSE_1.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util_1.h:10:9)
+WARNING: [HLS 207-5292] unused parameter 'Nr' (MMSE_1.cpp:9:28)
+INFO: [HLS 200-10] Analyzing design file 'util_1.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util_1.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MIMO_simulation_1.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (./util_1.h:10:9)
+INFO: [HLS 200-10] Analyzing design file 'MHGD_accel_1.cpp' ... 
+WARNING: [HLS 207-910] '__SYNTHESIS__' macro redefined (MHGD_accel_1.cpp:13:10)
+INFO: [HLS 207-71] previous definition is here (<command line>:3:9)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:216:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:217:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:218:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:219:40)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:220:36)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:221:36)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:222:44)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:223:47)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:224:47)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:225:42)
+WARNING: [HLS 207-5570] unexpected pragma argument ';', expects identifier (MHGD_accel_1.cpp:226:39)
+WARNING: [HLS 207-1017] unknown pragma ignored (./util_1.h:10:9)
+WARNING: [HLS 207-5292] unused parameter 'Nr' (MHGD_accel_1.cpp:149:34)
+WARNING: [HLS 200-1986] Could not apply PIPELINE directive, invalid function, label, or variable (/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/run_cpp.tcl:73)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 46.25 seconds. CPU system time: 2.21 seconds. Elapsed time: 48.47 seconds; current allocated memory: 672.895 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 200-1995] There were 425,533 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,531 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 12,807 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,795 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,266 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,788 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,788 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,902 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,865 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,768 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,508 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,463 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,431 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,363 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,500 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,552 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/component_perfect_loop_hls_cpp/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_500_4' is marked as complete unroll implied by the pipeline pragma (MHGD_accel_1.cpp:500:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_458_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:458:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_918_23' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:918:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_914_22' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:914:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_908_21' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:908:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_547_20' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:547:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_539_19' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:539:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_529_18' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:529:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_525_17' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:525:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_313_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:313:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_296_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:296:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_497_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:497:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_323_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:323:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_261_14' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:261:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_265_15' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:265:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_270_16' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:270:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_254_13' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:254:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_232_10' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:232:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_236_11' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:236:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_242_12' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:242:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_225_9' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:225:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_192_4' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:192:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_196_5' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:196:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_202_6' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:202:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_209_7' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:209:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_215_8' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:215:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_185_3' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:185:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_179_2' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:179:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_172_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:172:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_121_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:121:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_124_2' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:124:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_129_3' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:129:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_103_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:103:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_106_2' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:106:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_287_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:287:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_352_1' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:352:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_355_2' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:355:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_359_3' is marked as complete unroll implied by the pipeline pragma (util_1.cpp:359:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2063_21' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2063:37)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2059_20' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2059:37)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2053_19' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2053:33)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1623_18' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1623:37)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1616_17' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1616:29)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_703_1' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:703:31)
+WARNING: [HLS 214-398] Updating loop lower bound from 1 to 10 for loop 'VITIS_LOOP_458_1' (util_1.cpp:458:20) in function 'generateUniformRandoms_float'. (util_1.cpp:457:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_458_1' (util_1.cpp:458:20) in function 'generateUniformRandoms_float' completely with a factor of 10 (util_1.cpp:457:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_918_23' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:918:36) in function 'exp_reduce::exp<64, 32>' completely with a factor of 63 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_914_22' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:914:36) in function 'exp_reduce::exp<64, 32>' completely with a factor of 1 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_908_21' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:908:32) in function 'exp_reduce::exp<64, 32>' completely with a factor of 1 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_547_20' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:547:36) in function 'exp_reduce::exp<64, 32>' completely with a factor of 64 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_539_19' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:539:28) in function 'exp_reduce::exp<64, 32>' completely with a factor of 27 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_529_18' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:529:28) in function 'exp_reduce::exp<64, 32>' completely with a factor of 1 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_525_17' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:525:28) in function 'exp_reduce::exp<64, 32>' completely with a factor of 64 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_48_1' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:48:30) in function 'pow_apfixed_reduce::pow<64, 32>' completely with a factor of 63 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:27:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_153_4' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:153:31) in function 'pow_apfixed_reduce::pow<64, 32>' completely with a factor of 63 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:27:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_109_2' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:109:23) in function 'pow_apfixed_reduce::pow<64, 32>' completely with a factor of 6 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:27:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2063_21' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2063:37) in function 'exp_reduce::exp_core<64, 32, 98>' completely with a factor of 63 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:932:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2059_20' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2059:37) in function 'exp_reduce::exp_core<64, 32, 98>' completely with a factor of 2 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:932:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2053_19' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2053:33) in function 'exp_reduce::exp_core<64, 32, 98>' completely with a factor of 2 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:932:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1623_18' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1623:37) in function 'exp_reduce::exp_core<64, 32, 98>' completely with a factor of 64 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:932:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1616_17' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1616:29) in function 'exp_reduce::exp_core<64, 32, 98>' completely with a factor of 27 (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:932:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 111, 105>(ap_ufixed<111, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<105, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 105, 100>(ap_ufixed<105, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<100, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 100, 95>(ap_ufixed<100, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<95, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 95, 90>(ap_ufixed<95, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<90, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 90, 85>(ap_ufixed<90, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<85, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 85, 80>(ap_ufixed<85, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<80, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'void log_apfixed_reduce::range_reduce<ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 80, 75>(ap_ufixed<80, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<75, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<75, -37, (ap_q_mode)5, (ap_o_mode)3, 0> log_apfixed_reduce::log_traits<8>::range_reduction<111>(ap_ufixed<111, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<119, 7, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:445:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0> fabs_fixed<65, 33>(ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> pow_apfixed_reduce::pow<64, 32>(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>) (.670)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_pow_apfixed.h:27:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> pow_apfixed_reduce::pow<64, 32>(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>) (.670)' into 'ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls::pow<64, 32>(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:2072:0)
+INFO: [HLS 214-178] Inlining function 'complex_conjugate(MyComplex)' into 'c_matmultiple(MyComplex*, int, MyComplex*, int, int, int, int, int, MyComplex*)' (util_1.cpp:331:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply(MyComplex, MyComplex)' into 'c_matmultiple(MyComplex*, int, MyComplex*, int, int, int, int, int, MyComplex*)' (util_1.cpp:331:0)
+INFO: [HLS 214-178] Inlining function 'complex_add(MyComplex, MyComplex)' into 'c_matmultiple(MyComplex*, int, MyComplex*, int, int, int, int, int, MyComplex*)' (util_1.cpp:331:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply(MyComplex, MyComplex)' into 'MulMatrix(MyComplex const*, MyComplex const*, MyComplex*, int, int, int)' (util_1.cpp:118:0)
+INFO: [HLS 214-178] Inlining function 'complex_add(MyComplex, MyComplex)' into 'MulMatrix(MyComplex const*, MyComplex const*, MyComplex*, int, int, int)' (util_1.cpp:118:0)
+INFO: [HLS 214-178] Inlining function 'initMatrix(MyComplex*, int, int)' into 'Inverse_LU(MyComplex*, int, int)' (util_1.cpp:142:0)
+INFO: [HLS 214-178] Inlining function 'complex_divide(MyComplex, MyComplex) (.331.334)' into 'Inverse_LU(MyComplex*, int, int)' (util_1.cpp:142:0)
+INFO: [HLS 214-178] Inlining function 'complex_multiply(MyComplex, MyComplex)' into 'Inverse_LU(MyComplex*, int, int)' (util_1.cpp:142:0)
+INFO: [HLS 214-178] Inlining function 'complex_add(MyComplex, MyComplex)' into 'Inverse_LU(MyComplex*, int, int)' (util_1.cpp:142:0)
+INFO: [HLS 214-178] Inlining function 'complex_subtract(MyComplex, MyComplex)' into 'Inverse_LU(MyComplex*, int, int)' (util_1.cpp:142:0)
+INFO: [HLS 214-178] Inlining function 'MulMatrix(MyComplex const*, MyComplex const*, MyComplex*, int, int, int)' into 'Inverse_LU(MyComplex*, int, int)' (util_1.cpp:142:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<130, 98, (ap_q_mode)5, (ap_o_mode)3, 0> floor_fixed<130, 98>(ap_fixed<130, 98, (ap_q_mode)5, (ap_o_mode)3, 0>) (.515)' into 'ap_fixed<130, 98, (ap_q_mode)5, (ap_o_mode)3, 0> hls::floor<130, 98>(ap_fixed<130, 98, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1339:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal(int, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, MyComplex*, int)' into 'map(int, int, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, MyComplex*, MyComplex*)' (util_1.cpp:495:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_add(int, MyComplex const*, MyComplex const*, MyComplex*)' into 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_int(int, int*, int)' into 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_sub(int, MyComplex const*, MyComplex const*, MyComplex*)' into 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_copy(int, MyComplex const*, int, MyComplex*, int)' into 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-178] Inlining function 'my_complex_scal(int, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, MyComplex*, int)' into 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-178] Inlining function 'generateUniformRandoms_float(int, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (MHGD_accel_1.cpp:215:0)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util_1.cpp:205:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util_1.cpp:205:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util_1.cpp:205:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util_1.cpp:205:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real'
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag'
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util_1.cpp:219:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util_1.cpp:219:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util_1.cpp:219:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util_1.cpp:219:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.real' (util_1.cpp:245:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla.imag' (util_1.cpp:245:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util_1.cpp:245:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.imag' (util_1.cpp:245:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util_1.cpp:247:58)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.imag' (util_1.cpp:247:58)
+WARNING: [HLS 214-450] Ignore address on register port 'vla4.real' (util_1.cpp:248:58)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util_1.cpp:258:46)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util_1.cpp:258:46)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util_1.cpp:274:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util_1.cpp:274:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla6.real' (util_1.cpp:274:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla6.imag' (util_1.cpp:274:54)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.real' (util_1.cpp:279:47)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2.imag' (util_1.cpp:279:47)
+INFO: [HLS 214-241] Aggregating scalar variable 'v_tb' with compact=bit mode in 128-bits (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'y' with compact=bit mode in 128-bits (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'H' with compact=bit mode in 128-bits (MHGD_accel_1.cpp:215:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'x_hat' with compact=bit mode in 128-bits (MHGD_accel_1.cpp:215:0)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:501:17)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:508:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:514:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:520:18)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:325:19)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:326:20)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (MHGD_accel_1.cpp:458:11)
+WARNING: [HLS 214-450] Ignore address on register port 'x_hat' (util_1.cpp:316:20)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_37_1> at util_1.cpp:37:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_44_2> at util_1.cpp:44:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_432_1> at MHGD_accel_1.cpp:432:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_445_1> at util_1.cpp:445:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_455_2> at MHGD_accel_1.cpp:455:21 
+INFO: [HLS 214-364] Automatically inlining function 'ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> exp_reduce::exp<64, 32>(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' to improve effectiveness of pipeline pragma in function 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1178:12)
+INFO: [HLS 214-364] Automatically inlining function 'ap_fixed<97, 65, (ap_q_mode)5, (ap_o_mode)3, 0> sqrt_fixed<97, 65>(ap_fixed<97, 65, (ap_q_mode)5, (ap_o_mode)3, 0>) (.647)' to improve effectiveness of pipeline pragma in function 'MHGD_detect_accel(MyComplex*, int, int, int, MyComplex*, MyComplex*, float, int, int, int, MyComplex*)' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/hls_math.h:1268:12)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_265_15'. (util_1.cpp:265:21)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_236_11'. (util_1.cpp:236:21)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_196_5'. (util_1.cpp:196:20)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_209_7'. (util_1.cpp:209:21)
+INFO: [HLS 214-449] Automatically partitioning array '_ZZN10exp_reduce3expILi64ELi32EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_E13f_x_lsb_table_1' dimension 1 completely based on constant index. (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:638:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> exp_reduce::exp<64, 32>(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)::f_x_lsb_table' due to pipeline pragma (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:638:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN10exp_reduce3expILi64ELi32EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_E13f_x_lsb_table_1': Complete partitioning on dimension 1. (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_exp_apfixed.h:638:0)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_313_1' (util_1.cpp:313:20) in function 'MHGD_detect_accel' as it has a variable trip count (util_1.cpp:313:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_323_1' (util_1.cpp:323:20) in function 'MHGD_detect_accel' as it has a variable trip count (util_1.cpp:323:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_287_1' (util_1.cpp:287:20) in function 'MHGD_detect_accel' as it has a variable trip count (util_1.cpp:287:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_500_4' (MHGD_accel_1.cpp:500:21) in function 'MHGD_detect_accel' as it has a variable trip count (MHGD_accel_1.cpp:500:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_296_1' (util_1.cpp:296:20) in function 'MHGD_detect_accel' as it has a variable trip count (util_1.cpp:296:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_323_1' (util_1.cpp:323:20) in function 'map' as it has a variable trip count (util_1.cpp:323:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_497_1' (util_1.cpp:497:20) in function 'map' as it has a variable trip count (util_1.cpp:497:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_121_1' (util_1.cpp:121:20) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:121:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_124_2' (util_1.cpp:124:20) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:124:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_261_14' (util_1.cpp:261:21) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:261:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_265_15' (util_1.cpp:265:21) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:265:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_270_16' (util_1.cpp:270:23) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:270:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_232_10' (util_1.cpp:232:21) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:232:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_236_11' (util_1.cpp:236:21) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:236:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_242_12' (util_1.cpp:242:23) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:242:23)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_192_4' (util_1.cpp:192:20) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:192:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_196_5' (util_1.cpp:196:20) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:196:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_202_6' (util_1.cpp:202:22) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:202:22)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_209_7' (util_1.cpp:209:21) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:209:21)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_215_8' (util_1.cpp:215:22) in function 'Inverse_LU' as it has a variable trip count (util_1.cpp:215:22)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_352_1' (util_1.cpp:352:20) in function 'c_matmultiple' as it has a variable trip count (util_1.cpp:352:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_355_2' (util_1.cpp:355:20) in function 'c_matmultiple' as it has a variable trip count (util_1.cpp:355:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_703_1' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:703:31) in function 'log_apfixed_reduce::log<131, 33>' as it has a variable trip count (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:703:31)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6.3 seconds. CPU system time: 0.46 seconds. Elapsed time: 8.36 seconds; current allocated memory: 686.453 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 686.453 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 690.676 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::log_traits<8>::range_reduction<111>' into 'log_apfixed_reduce::log<131, 33>' (/tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/hls_log_apfixed.h:746) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 694.008 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 717.461 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 718.129 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MHGD_detect_accel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_489_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_489_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 719.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 719.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MHGD_detect_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive for function 'MHGD_detect_accel': contains subfunction 'MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3' which is not pipelined.
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive for function 'MHGD_detect_accel': contains subfunction 'MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3' which is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 719.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 719.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MHGD_detect_accel_Pipeline_VITIS_LOOP_489_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 719.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MHGD_detect_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/x_hat' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/Nt' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/Nr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/mu' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/H' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/y' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/sigma2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/mmse_init' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/lr_approx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/iter' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MHGD_detect_accel/v_tb' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MHGD_detect_accel' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/x_hat' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/Nr' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/mu' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/H' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/y' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/sigma2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/lr_approx' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MHGD_detect_accel/v_tb' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MHGD_detect_accel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 719.070 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 719.867 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 724.613 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MHGD_detect_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for MHGD_detect_accel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 315.16 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:59; Allocated memory: 83.379 MB.
+INFO: [HLS 200-112] Total CPU user time: 54.73 seconds. Total CPU system time: 2.9 seconds. Total elapsed time: 61.67 seconds; peak allocated memory: 724.613 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 2s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.
