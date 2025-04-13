@@ -71,7 +71,7 @@ set hls_exec 2
 config_interface -m_axi_max_widen_bitwidth 512
 config_interface -m_axi_alignment_byte_size 64
 
- csim_design
+# csim_design
 # Set any optimization directives
 set_directive_pipeline loop_perfect/LOOP_J
 # End of directives

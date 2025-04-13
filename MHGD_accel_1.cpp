@@ -215,25 +215,24 @@ void MHGD_detect_accel(Myreal* x_hat_real, Myimage* x_hat_imag,int Nt, int Nr, i
 {
 	#pragma HLS interface mode=m_axi port = x_hat_real bundle=X depth = 8
 	#pragma HLS interface mode=m_axi port = x_hat_imag bundle=X depth = 8
-	#pragma HLS interface mode=s_axilite port = Nt bundle=contrl
-	#pragma HLS interface mode=s_axilite port = Nr bundle=contrl
-	#pragma HLS interface mode=s_axilite port = mu bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = Nt bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = Nr bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = mu bundle=contrl
 	#pragma HLS interface mode=m_axi port = H bundle=H depth = 64
 	#pragma HLS interface mode=m_axi port = y bundle=Y depth = 8
-	#pragma HLS interface mode=s_axilite port = sigma2 bundle=contrl
-	#pragma HLS interface mode=s_axilite port = mmse_init bundle=contrl
-	#pragma HLS interface mode=s_axilite port = lr_approx bundle=contrl
-	#pragma HLS interface mode=s_axilite port = iter bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = sigma2 bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = mmse_init bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = lr_approx bundle=contrl
+	// #pragma HLS interface mode=s_axilite port = iter bundle=contrl
 	#pragma HLS interface mode=m_axi port = v_tb bundle=V_TB depth = 256
 
-    #pragma HLS data_pack variable=x_hat_real  // 确保结构体连续存储
-	#pragma HLS data_pack variable=x_hat_imag  // 确保结构体连续存储
-    //  #pragma HLS DATA_PACK variable=x_hat_real
-	//  #pragma HLS DATA_PACK variable=x_hat_imag
-	//  #pragma HLS DATA_PACK variable=y
-	//  #pragma HLS DATA_PACK variable=H
-	//  #pragma HLS DATA_PACK variable=v_tb
-	MyComplex x_hat_1[8];
+    #pragma HLS DATA_PACK variable=x_hat_real
+	#pragma HLS DATA_PACK variable=x_hat_imag
+	#pragma HLS DATA_PACK variable=y
+	#pragma HLS DATA_PACK variable=H
+	#pragma HLS DATA_PACK variable=v_tb
+	
+	 MyComplex x_hat_1[8];
 	// for(int i= 0;i<8;i++){
 		// #pragma HLS PIPELINE II=1
 		// x_hat_1[i].real=*(x_hat_real + i);
