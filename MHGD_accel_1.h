@@ -18,17 +18,17 @@
 
 // for循环范围限定参数定义区
 static const int Nr_min = 1;
-static const int Nr_max = 10;
+static const int Nr_max = 8;
 static const int Nr_2_min = 1;
 static const int Nr_2_max = 100;
 
 static const int Nt_min = 1;
-static const int Nt_max = 10;
+static const int Nt_max = 8;
 static const int Nt_2_min = 1;
 static const int Nt_2_max = 100;
 
-static const int iter_min = 5000;
-static const int iter_max = 15000;
+static const int iter_min = 10;
+static const int iter_max = 10000;
 
 
 
@@ -55,7 +55,7 @@ typedef enum
 }time_seperate_t;
 
 void MHGD_Init_accel(int Nt, int Nr, int mu, int iter, MyComplex* constellation);
-void MHGD_detect_accel(Myreal* x_hat_real, Myimage* x_hat_imag,int Nt, int Nr, int mu, MyComplex* H, MyComplex* y, float sigma2, int mmse_init, int lr_approx, int iter, MyComplex* v_tb);
+void MHGD_detect_accel(Myreal* x_hat_real, Myimage* x_hat_imag,int Nt, int Nr, int mu, Myreal* H_real, Myimage* H_imag, Myreal* y_real, Myimage* y_imag, float sigma2, int mmse_init, int lr_approx, int iter, Myreal* v_tb_real, Myimage* v_tb_imag);
 void MHGD_free_accel(int Nt, int Nr, int mu);
 void Hx_accel(int Nt, int Nr, int mu, float dqam, MyComplex* x, MyComplex* x_result);
 

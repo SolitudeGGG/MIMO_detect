@@ -3,6 +3,8 @@ component_perfect_loop_hls_cpp/
 _ide/
 .vscode/
 logs/
+MHGD_hw/
+output/
 
 # Ignore build output directory
 /build

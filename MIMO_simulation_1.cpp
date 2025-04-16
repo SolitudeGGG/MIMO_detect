@@ -19,14 +19,21 @@ float* Throughput;
 int* bits;
 MyComplex* x;
 MyComplex* H;
+Myreal* H_real;
+Myimage* H_imag;
 MyComplex* y;
+Myreal* y_real;
+Myimage* y_imag;
+MyComplex* v_tb;
+Myreal* v_tb_real;
+Myimage* v_tb_imag;
 MyComplex* noise;
 // MyComplex* x_hat;
 Myreal* x_hat_real;
 Myimage* x_hat_imag;
 int* bits_demod;
-MyComplex* H_real;
-MyComplex* H_image;
+// MyComplex* H_real;
+// MyComplex* H_image;
 MyComplex* noise_real;
 MyComplex* noise_image;
 MyComplex* input_H;//信道H
@@ -105,10 +112,16 @@ void Parameter_init(int Nt, int Nr, int mu, int iter, int samples, detect_type_t
 	noise = (MyComplex*)malloc(Nr * sizeof(MyComplex));
 	// x_hat = (MyComplex*)malloc(Nt * sizeof(MyComplex));
 	x_hat_real = (Myreal*)malloc(Nt * sizeof(Myreal));
-	x_hat_imag = (Myreal*)malloc(Nt * sizeof(Myimage));
+	x_hat_imag = (Myimage*)malloc(Nt * sizeof(Myimage));
 	bits_demod = (int*)malloc(sizeof(int) * Nt * mu);//received bits after demodulation
-	H_real = (MyComplex*)malloc(Nt * Nr * sizeof(MyComplex));
-	H_image = (MyComplex*)malloc(Nt * Nr * sizeof(MyComplex));
+	H_real = (Myreal*)malloc(Nt * Nr * sizeof(Myreal));
+	H_imag = (Myimage*)malloc(Nt * Nr * sizeof(Myimage));
+	y_real = (Myreal*)malloc(Nt * sizeof(Myreal));
+	y_imag = (Myimage*)malloc(Nt * sizeof(Myimage));
+	v_tb = (MyComplex*)malloc(Nt * samples*sizeof(MyComplex));
+	v_tb_real = (Myreal*)malloc(Nt * samples*sizeof(Myreal));
+	v_tb_imag = (Myimage*)malloc(Nt * samples*sizeof(Myimage));
+	
 	noise_real = (MyComplex*)malloc(Nr * sizeof(MyComplex));
 	noise_image = (MyComplex*)malloc(Nr * sizeof(MyComplex));
 	/*集中检测用到的矩阵*/
@@ -139,7 +152,9 @@ void MIMO_free(MIMO_sys_t MIMO_sys)
 	free(x_hat_real);
 	free(x_hat_imag);
 	free(H_real);
-	free(H_image);
+	free(H_imag);
+	free(y_real);
+	free(y_imag);
 	free(noise_real);
 	free(noise_image);
 	free(bits_demod);
@@ -280,9 +295,6 @@ float detection(MIMO_sys_t MIMO_sys, float SNR)
  */
 float MIMO_detect(MIMO_sys_t MIMO_sys, MyComplex* H, MyComplex* y, MyComplex x_hat[8], float SNR)
 {
-	MyComplex* v_tb;
-
-	v_tb = (MyComplex*)malloc(MIMO_sys.Nt*MIMO_sys.samples*sizeof(MyComplex));
 	read_gaussian_data("/home/ggg_wufuqi/hls/MHGD/gaussian_random_values.txt", v_tb, MIMO_sys.Nt*MIMO_sys.samples, 0);
 	/*接收参数*/
 	int mu = MIMO_sys.mu; int Nt = MIMO_sys.Nt; int Nr = MIMO_sys.Nr;
@@ -300,6 +312,19 @@ float MIMO_detect(MIMO_sys_t MIMO_sys, MyComplex* H, MyComplex* y, MyComplex x_h
 	signal_power = (float)Nt / (float)Nr;
 	sigma2 = signal_power * pow(10.0f, -SNR / 10.0f);
 
+	for (int j = 0; j < MIMO_sys.Nr * MIMO_sys.Nt; j++){
+		H_real[j] = H[j].real;
+		H_imag[j] = H[j].imag;
+	}
+	for (int j = 0; j < MIMO_sys.Nr; j++){
+		y_real[j] = y[j].real;
+		y_imag[j] = y[j].imag;
+	}
+	for (int j = 0; j < MIMO_sys.Nt*MIMO_sys.samples; j++){
+		v_tb_real[j] = v_tb[j].real;
+		v_tb_imag[j] = v_tb[j].imag;
+	}
+
 	switch (detect_type)
 	{
 	/*------------------MMSE detect----------------*/
@@ -313,7 +338,7 @@ float MIMO_detect(MIMO_sys_t MIMO_sys, MyComplex* H, MyComplex* y, MyComplex x_h
 	case MHGD:
 		start = clock();
 #ifdef accel
-		MHGD_detect_accel(x_hat_real, x_hat_imag, Nt, Nr, mu, H, y, sigma2, mmse_init, lr_approx, samples, v_tb);
+		MHGD_detect_accel(x_hat_real, x_hat_imag, Nt, Nr, mu, H_real, H_imag, y_real, y_imag, sigma2, mmse_init, lr_approx, samples, v_tb_real, v_tb_imag);
 		for(int i=0; i<8; i++){
 			x_hat[i].real = *(x_hat_real+i);
 			x_hat[i].imag = *(x_hat_imag+i);

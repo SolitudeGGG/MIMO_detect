@@ -16,24 +16,16 @@
 
 # Create a project
 
-open_component -reset component_perfect_loop_hls_cpp_cosim -flow_target vivado
+open_component -reset MHGD_hw -flow_target vivado
 
 # Add design files
-add_files MHGD_accel_1.cpp
-add_files MHGD_accel_1.h
-add_files MIMO_simulation_1.cpp
-add_files MIMO_simulation_1.h
-# add_files MyComplex.cpp
-add_files MyComplex_1.h
-add_files sys_config_1.h
-add_files util_1.cpp
-add_files util_1.h
-add_files MMSE_1.h
-add_files MMSE_1.cpp
+add_files MHGD_accel_hw.cpp
+
 
 # Add test bench & files
-add_files -tb tb_1.cpp
-# add_files -tb result.golden.dat
+add_files -tb MHGD_accel_hw.h
+add_files -tb MyComplex_1.h
+add_files -tb main_hw.cpp
 add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I.
 add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I.
 add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt -cflags -I.
@@ -56,7 +48,7 @@ add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I.
 add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I.
 
 # Set the top-level function
-set_top MHGD_detect_accel
+set_top MHGD_detect_accel_hw
 
 # ########################################################
 # Create a solution
@@ -65,14 +57,14 @@ set_part  {xck26-sfvc784-2LV-c}
 create_clock -period 10
 
 # Set variable to select which steps to execute
-set hls_exec 0
+set hls_exec 2
 
 
 config_interface -m_axi_max_widen_bitwidth 512
 config_interface -m_axi_alignment_byte_size 64
 
 
- csim_design
+# csim_design
 # Set any optimization directives
 set_directive_pipeline loop_perfect/LOOP_J
 # End of directives

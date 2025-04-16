@@ -455,7 +455,7 @@ void generateUniformRandoms_int(int Nt, int* x_init, int mu) {
 
 // ????????????????
 void generateUniformRandoms_float(int Nt, like_float p_uni[9]) {//一个随机数生成的函数 其中lcg_rand用于生成随机数，/LIMIT_MAX用于限幅
-	for (int i = 0; i < Nt; ++i) {
+	for (int i = 0; i < Nt; i++) {
 		#pragma HLS LOOP_TRIPCOUNT max=Nt_max min=Nt_min
 		#pragma HLS PIPELINE II=1
 		p_uni[i] = lcg_rand_1();
