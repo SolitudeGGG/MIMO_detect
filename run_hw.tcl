@@ -20,11 +20,11 @@ open_component -reset MHGD_hw -flow_target vivado
 
 # Add design files
 add_files MHGD_accel_hw.cpp
+add_files MHGD_accel_hw.h
+add_files MyComplex_1.h
 
 
 # Add test bench & files
-add_files -tb MHGD_accel_hw.h
-add_files -tb MyComplex_1.h
 add_files -tb main_hw.cpp
 add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I.
 add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I.
@@ -46,6 +46,7 @@ add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt -cflags -I.
 
 add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I.
 add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I.
+add_files -tb /home/ggg_wufuqi/hls/MHGD/gaussian_random_values.txt -cflags -I.
 
 # Set the top-level function
 set_top MHGD_detect_accel_hw
@@ -64,7 +65,7 @@ config_interface -m_axi_max_widen_bitwidth 512
 config_interface -m_axi_alignment_byte_size 64
 
 
-# csim_design
+ csim_design
 # Set any optimization directives
 set_directive_pipeline loop_perfect/LOOP_J
 # End of directives

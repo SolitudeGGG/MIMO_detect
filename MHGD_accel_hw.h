@@ -12,19 +12,20 @@ typedef struct _IO_FILE FILE;
 #define max(a,b) (((a) > (b)) ? (a) : (b))
 #define min(a,b) (((a) < (b)) ? (a) : (b))
 
-static const int Ntr_1 = 8;
-static const int Ntr_2 = 64;
-static const int iter_1 = 32;
-static const int mu_1 = 4;
-static const int mmse_init_1 = 0;
+/*算法参数*/
+static const int Ntr_1 = 8;/*发射&接收天线数*/
+static const int Ntr_2 = 64;/*NtorNr^2*/
+static const int iter_1 = 32;/*采样器的采样数*/
+static const int mu_1 = 4;/*调制阶数*/
+static const int mmse_init_1 = 0;/*是否使用MMSE检测的结果作为MCMC采样的初始值*/
 static const int lr_approx_1 = 0;
-static const int max_iter_1 = 100;
+static const int max_iter_1 = 100;/*希望仿真的最大轮数*/
 
 void read_gaussian_data_hw(const char* filename, MyComplex* array, int n, int offset);
 void QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int mu, int* bits_demod);
 void QPSK_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod);
 void _16QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod);void _64QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod);
-int argmin_hw(float* array, int n);
+int argmin_hw(like_float* array, int n);
 int unequal_times_hw(int* array1, int* array2, int n);
 
 unsigned int lcg_rand_hw();
@@ -59,6 +60,15 @@ void r_newnorm_hw(MyComplex* H, int transB, MyComplex* x_prop, int transA, MyCom
 void survivor_hw(like_float r_norm_survivor, like_float r_norm_prop, MyComplex* x_prop, MyComplex* x_survivor);
 void acceptance_hw(int transB, int transA, like_float r_norm_prop, like_float r_norm, like_float log_pacc, like_float p_acc, like_float* p_uni, MyComplex* x_prop , MyComplex* x_hat, MyComplex* r_prop, MyComplex* r, MyComplex* pmat, MyComplex* pr_prev, MyComplex* temp_1, MyComplex* _temp_1, like_float lr, like_float step_size, like_float dqam, like_float alpha);
 void out_hw(const MyComplex* X, const int incX, Myreal* Y_real, Myimage* Y_imag, int incY);
+
+void Inverse_LU(MyComplex_f* A);
+void initMatrix(MyComplex_f* A);
+void MulMatrix(const MyComplex_f* A, const MyComplex_f* B, MyComplex_f* C);
+MyComplex_f complex_divide(MyComplex_f a, MyComplex_f b);
+MyComplex_f complex_multiply(MyComplex_f a, MyComplex_f b);
+MyComplex_f complex_add(MyComplex_f a, MyComplex_f b);
+MyComplex_f complex_subtract(MyComplex_f a, MyComplex_f b);
+MyComplex_f complex_divide(MyComplex_f a, MyComplex_f b);
 
 void MHGD_detect_accel_hw(
     Myreal* x_hat_real, Myimage* x_hat_imag, 

@@ -5,9 +5,9 @@
 #include "hls_stream.h"
 
 
-typedef ap_fixed<64, 32>like_float;
-typedef ap_fixed<64, 32>Myreal;
-typedef ap_fixed<64, 32>Myimage;
+typedef ap_fixed<64,32>like_float;
+typedef ap_fixed<64,32>Myreal;
+typedef ap_fixed<64,32>Myimage;
 
 // 自定义复数结构体
 typedef struct {
@@ -15,5 +15,10 @@ typedef struct {
     Myimage imag;  // 虚部
 } MyComplex;
 
+
+typedef struct {
+    float real;  // 实部
+    float imag;  // 虚部
+} MyComplex_f;
 
 

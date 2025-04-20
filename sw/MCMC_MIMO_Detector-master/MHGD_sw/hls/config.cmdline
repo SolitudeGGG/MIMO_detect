@@ -1,0 +1,3 @@
+relativeroot=/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw
+original_argv=--mode hls --csim --config /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/./hls-debug.cfg --config /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/hls_config.cfg --work_dir . 
+

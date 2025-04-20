@@ -1,0 +1,67 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5239630 on 2024-11-10-11:19:46
+  **** Start of session at: Fri Apr 18 16:19:22 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script '/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/run_hw.tcl'
+INFO: [HLS 200-1510] Running: open_component -reset MHGD_hw -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening project '/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MHGD_hw'.
+INFO: [HLS 200-10] Opening and resetting solution '/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/MHGD_hw/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: add_files MHGD_accel_hw.cpp 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel_hw.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files MHGD_accel_hw.h 
+INFO: [HLS 200-10] Adding design file 'MHGD_accel_hw.h' to the project
+INFO: [HLS 200-1510] Running: add_files MyComplex_1.h 
+INFO: [HLS 200-10] Adding design file 'MyComplex_1.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb main_hw.cpp 
+INFO: [HLS 200-10] Adding test bench file 'main_hw.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/output_file/bits_output_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/H_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=5.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=5.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=10.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=15.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=15.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=20.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=20.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/MHGD/input_file/y_SNR=25.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_64QAM_Constellation.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/_16QAM_Constellation.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/ggg_wufuqi/hls/MHGD/gaussian_random_values.txt -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file '/home/ggg_wufuqi/hls/MHGD/gaussian_random_values.txt' to the project
+INFO: [HLS 200-1510] Running: set_top MHGD_detect_accel_hw 
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 
+INFO: [HLS 200-1510] Running: csim_design 

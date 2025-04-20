@@ -317,14 +317,14 @@ void MHGD_detect_accel(
 	like_float alpha;
 	like_float dqam;
 	like_float step_size;
-	int i; int j; int k; int id;
+	int i; int j; int k; 
 	like_float log_pacc;
 	like_float r_norm;/*the norm of residual vector*/
 	like_float r_norm_survivor;
 	like_float lr;/*learning rate*/
 	like_float r_norm_prop;/*new norm*/
 	like_float p_acc;
-	like_float p_uni[9];
+	like_float p_uni[10];
 
 	like_float temp_3;
 

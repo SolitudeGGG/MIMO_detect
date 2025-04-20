@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw",
+    "arguments": [
+      "/tools/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/tools/Xilinx/Vitis/2024.2/common/technology/autopilot",
+      "-fhlstoplevel=MHGD_detect_accel_sw",
+      "-c",
+      "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/../MHGD_accel_sw.cpp"
+    ],
+    "file": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/../MHGD_accel_sw.cpp"
+  },
+  {
+    "directory": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw",
+    "arguments": [
+      "/tools/Xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/Xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/tools/Xilinx/Vitis/2024.2/include",
+      "-c",
+      "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/../main_sw.cpp"
+    ],
+    "file": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/../main_sw.cpp"
+  }
+]

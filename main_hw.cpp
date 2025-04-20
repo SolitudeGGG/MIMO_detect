@@ -1,8 +1,6 @@
 #include "MHGD_accel_hw.h"
 #include "MyComplex_1.h"
 #include "hls_math.h"
-// #include "util_1.h"
-// #include "MIMO_simulation_1.h"
 #include <string.h>
 #include <stdio.h>
 
@@ -11,7 +9,7 @@ int main()
     /*变量定义*/
     FILE* ff;
     int bits[Ntr_1 * mu_1];
-    float SNR = 5;
+    float SNR = 25;
     float detect_time = 0;
     int bits_demod[Ntr_1 * mu_1];
     int origin_bits[max_iter_1 * Ntr_1 * mu_1];
@@ -100,6 +98,7 @@ int main()
     /*开始检测*/
     for (i = 0; i < max_iter; i++)
     {
+        int l;
         float MSE = 0;/*?*/
         /*将读取的数据存入变量并处理*/
 		for (j = 0; j < Nr * Nt; j++)
@@ -109,24 +108,34 @@ int main()
         for (j = 0; j < Nt * mu; j++)
             bits[j] = origin_bits[Nt * mu * i + j];
         /*MIMO检测，检测类型可在main.c的MIMO_sys中更改，可选MHGD与MMSE*/
-        float signal_power = (float)Nt / (float)Nr;
-	    float sigma2 = signal_power * pow(10.0f, -SNR / 10.0f);
+        float signal_power = 0;
+	    float sigma2 = 0;
+        signal_power = (float)Nt / (float)Nr;
+        sigma2 = signal_power * pow(10.0f, -SNR / 10.0f);
         read_gaussian_data_hw("/home/ggg_wufuqi/hls/MHGD/gaussian_random_values.txt", v_tb, Nt*iter_1, 0);
-        for (j = 0; j < Nt*iter_1; j++){
-            v_tb_real[j] = v_tb[j].real;
-            v_tb_imag[j] = v_tb[j].imag;
+        for (l = 0; l < Nt*iter_1; l++){
+            v_tb_real[l] = v_tb[l].real;
+            v_tb_imag[l] = v_tb[l].imag;
+        }
+        for (l = 0; l < Nr * Nt; l++){
+            H_real[l] = H[l].real;
+            H_imag[l] = H[l].imag;
+        }
+        for (l = 0; l < Nr; l++){
+            y_real[l] = y[l].real;
+            y_imag[l] = y[l].imag;
         }
         MHGD_detect_accel_hw(x_hat_real, x_hat_imag, H_real, H_imag, y_real, y_imag, sigma2, v_tb_real, v_tb_imag);
-        for(int i=0; i<8; i++){
-			x_hat[i].real = *(x_hat_real+i);
-			x_hat[i].imag = *(x_hat_imag+i);
+        for(l = 0; l < Nt; l++){
+			x_hat[l].real = x_hat_real[l];
+			x_hat[l].imag = x_hat_imag[l];
 		}
         /*解调，检测的结果比特存储在bits_demod中*/
         QAM_Demodulation_hw(x_hat, Nt, mu, bits_demod);
         /*将解调比特结果输出到相应的文件中*/
         ff = fopen(bits_output_file, "a");
-        for (j = 0; j < Nt * mu; j++)
-            fprintf(ff, "%d\n", bits_demod[j]);
+        for (l = 0; l < Nt * mu; l++)
+            fprintf(ff, "%d\n", bits_demod[l]);
         fclose(ff);
         /*将结果输出到控制台*/
         int err_bits = 0;

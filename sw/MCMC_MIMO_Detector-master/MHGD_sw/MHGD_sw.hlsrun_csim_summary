@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/MHGD_sw.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Apr 19 14:45:57 2025",
+ "timestampMillis": "1745045157009",
+ "buildStep": {
+  "cmdId": "3a1330f1-4a29-459b-b579-13bfbd9559b1",
+  "name": "vitis-run",
+  "logFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/logs/MHGD_sw.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/./hls-debug.cfg --config /home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/hls_config.cfg --work_dir . ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/./hls-debug.cfg",
+   "--config",
+   "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/hls_config.cfg",
+   "--work_dir",
+   "."
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 19 14:45:57 2025",
+ "timestampMillis": "1745045157009",
+ "status": {
+  "cmdId": "3a1330f1-4a29-459b-b579-13bfbd9559b1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Apr 19 14:45:59 2025",
+ "timestampMillis": "1745045159595",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MHGD_detect_accel_sw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_accel_sw.cpp",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_accel_sw.h",
+     "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MyComplex.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 19 14:45:59 2025",
+ "timestampMillis": "1745045159596",
+ "buildStep": {
+  "cmdId": "986d21ab-c5e7-4100-8247-46fb1e63c92a",
+  "name": "",
+  "logFile": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ggg_wufuqi/hls/MIMO_detect-main/mimo_cpp_gai/sw/MCMC_MIMO_Detector-master/MHGD_sw"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 19 14:45:59 2025",
+ "timestampMillis": "1745045159596",
+ "status": {
+  "cmdId": "986d21ab-c5e7-4100-8247-46fb1e63c92a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 19 14:46:04 2025",
+ "timestampMillis": "1745045164678",
+ "status": {
+  "cmdId": "986d21ab-c5e7-4100-8247-46fb1e63c92a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 19 14:46:04 2025",
+ "timestampMillis": "1745045164815",
+ "status": {
+  "cmdId": "3a1330f1-4a29-459b-b579-13bfbd9559b1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 19 14:46:04 2025",
+ "timestampMillis": "1745045164816",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 19 14:46:04 2025",
+ "timestampMillis": "1745045164816",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

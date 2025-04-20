@@ -2,10 +2,11 @@
 #include "hls_math.h"
 #include "MHGD_accel_hw.h"
 #include <stdio.h>
+#include <string.h>
 
 MyComplex QPSK_Constellation_hw[4] = {{-1,-1},{-1,1},{1,-1},{1,1}};
-MyComplex _16QAM_Constellation_hw[16] = {{-3,-3},{-3,-1},{-3,3},{-3,1},{-1,-3},{-1,-1},{-1,3},{-1,1},{3,-3},{3,-1},{3,3},{3,1},{1,-3},{1,-1},{1,3},{1,1}};
-MyComplex _64QAM_Constellation_hw[64] = {{-7.0, 7.0},  {-5.0, 7.0},  {-3.0, 7.0}, {-1.0, 7.0},
+MyComplex _16QAM_Constellation_hw[16] = {{-3.0,-3.0},{-3.0,-1.0},{-3.0,3.0},{-3.0,1.0},{-1.0,-3.0},{-1.0,-1.0},{-1.0,3.0},{-1.0,1.0},{3.0,-3.0},{3.0,-1.0},{3.0,3.0},{3.0,1.0},{1.0,-3.0},{1.0,-1.0},{1.0,3.0},{1.0,1.0}};
+MyComplex _64QAM_Constellation_hw[64] = {{-7.0, 7.0},  {-5.0, 7.0},  {-3.0, 7.0}, {-1.0, 7.0}, 
                                          {1.0, 7.0},   {3.0, 7.0},   {5.0, 7.0},  {7.0, 7.0},
                                          {-7.0, 5.0},  {-5.0, 5.0},  {-3.0, 5.0}, {-1.0, 5.0},
                                          {1.0, 5.0},   {3.0, 5.0},   {5.0, 5.0},  {7.0, 5.0},
@@ -41,6 +42,7 @@ void read_gaussian_data_hw(const char* filename, MyComplex* array, int n, int of
 
 	int i;
 	float temp_real, temp_imag;
+	like_float local_temp = sqrt(2.0f);
 
 	// 跳过文件中的前offset个数据，继续读取
 	for (i = 0; i < offset; i++) {
@@ -59,12 +61,10 @@ void read_gaussian_data_hw(const char* filename, MyComplex* array, int n, int of
 			fclose(f);
 			return;  // 返回已成功读取的数据数量
 		}
-
 		// 将读取的实部和虚部数据存入数组
-		array[i].real = temp_real / (float)sqrt(2.0f);
-		array[i].imag = temp_imag / (float)sqrt(2.0f);
+		array[i].real = hls_internal::generic_divide((ap_fixed<64,32>)temp_real, (ap_fixed<64,32>)local_temp);
+		array[i].imag = hls_internal::generic_divide((ap_fixed<64,32>)temp_imag, (ap_fixed<64,32>)local_temp);
 	}
-
 	fclose(f);
 }
 
@@ -90,19 +90,24 @@ void QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int mu, int* bits_demod)
 void QPSK_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod)
 {
 	int i = 0; int j = 0; int best_id = 0;
-	MyComplex* temp = (MyComplex*)malloc(4 * sizeof(MyComplex));
-	float distance[4] = { 0 };
+	MyComplex temp[4];
+	MyComplex temp_1[4];
+	like_float temp_2;
+	like_float distance[4] = {0, 0, 0, 0};
 	/*for one in x_hat*/
 	for (i = 0; i < Nt; i++)
 	{
 		for (j = 0; j < 4; j++)
 		{
-			temp[j].real = x_hat[i].real * (like_float)hls::sqrt(2.0) - QPSK_Constellation_hw[j].real;
-			temp[j].imag = x_hat[i].imag * (like_float)hls::sqrt(2.0) - QPSK_Constellation_hw[j].imag;
+			temp_1[j].real = x_hat[i].real * hls::sqrt((ap_fixed<64,32>)2.0);
+			temp_1[j].imag = x_hat[i].imag * hls::sqrt((ap_fixed<64,32>)2.0);
+			temp[j].real = temp_1[j].real - QPSK_Constellation_hw[j].real;
+			temp[j].imag = temp_1[j].imag - QPSK_Constellation_hw[j].imag;
 		}
 		for (j = 0; j < 4; j++)
 		{
-			distance[j] = std::sqrt((float)(temp[j].real * temp[j].real + temp[j].imag * temp[j].imag));
+			temp_2 = (temp[j].real * temp[j].real + temp[j].imag * temp[j].imag);
+			distance[j] = hls::sqrt((ap_fixed<64,32>)temp_2);
 		}
 		best_id = argmin_hw(distance, 4);
 		switch (best_id)
@@ -123,28 +128,31 @@ void QPSK_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod)
 			break;
 		}
 	}
-
-	free(temp);
 }
 
 /*16QAM解调*/
 void _16QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod)
 {
 	int i = 0; int j = 0; int best_id = 0;
-	MyComplex* temp = (MyComplex*)malloc(16 * sizeof(MyComplex));
-	float distance[16] = { 0 };
+	MyComplex temp[16];
+	MyComplex temp_1[16];
+	like_float temp_2;
+	like_float distance[16] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	/*for one in x_hat*/
 	for (i = 0; i < Nt; i++)
 	{
 		for (j = 0; j < 16; j++)
 		{
-			temp[j].real = x_hat[i].real * (like_float)hls::sqrt(10.0) - _16QAM_Constellation_hw[j].real;
-			temp[j].imag = x_hat[i].imag * (like_float)hls::sqrt(10.0) - _16QAM_Constellation_hw[j].imag;
+			temp_1[j].real = x_hat[i].real * hls::sqrt((ap_fixed<64,32>)10.0);
+			temp_1[j].imag = x_hat[i].imag * hls::sqrt((ap_fixed<64,32>)10.0);
+			temp[j].real = temp_1[j].real - _16QAM_Constellation_hw[j].real;
+			temp[j].imag = temp_1[j].imag - _16QAM_Constellation_hw[j].imag;
 		}
 		/*find the closest one*/
 		for (j = 0; j < 16; j++)
 		{
-			distance[j] = std::sqrt((float)(temp[j].real * temp[j].real + temp[j].imag * temp[j].imag));
+			temp_2 = (temp[j].real * temp[j].real + temp[j].imag * temp[j].imag);
+			distance[j] = hls::sqrt((ap_fixed<64,32>)temp_2);
 		}
 		best_id = argmin_hw(distance, 16);
 		bits_demod[4 * i] = (best_id >> 3) & 0x01;
@@ -152,25 +160,27 @@ void _16QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod)
 		bits_demod[4 * i + 2] = (best_id >> 1) & 0x01;
 		bits_demod[4 * i + 3] = best_id & 0x01;
 	}
-
-	free(temp);
 }
 
 /*64QAM解调*/
 void _64QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod)
 {
 	int i = 0; int j = 0; int best_id = 0;
-	MyComplex* temp = (MyComplex*)malloc(64 * sizeof(MyComplex));
-	float distance[64] = { 0 };
+	MyComplex temp[64];
+	MyComplex temp_1[64];
+	like_float temp_2;
+	like_float distance[64] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	int int_real; int int_imag;
 	/*for one in x_hat*/
 	for (i = 0; i < Nt; i++)
 	{
 		for (j = 0; j < 64; j++)
 		{
-			temp[j].real = x_hat[i].real * (like_float)sqrt(42.0) - _64QAM_Constellation_hw[j].real;
-			temp[j].imag = x_hat[i].imag * (like_float)sqrt(42.0) - _64QAM_Constellation_hw[j].imag;
-			distance[j] = (float)(temp[j].real * temp[j].real + temp[j].imag * temp[j].imag);
+			temp_1[j].real = x_hat[i].real * hls::sqrt((ap_fixed<64,32>)42.0);
+			temp_1[j].imag = x_hat[i].imag * hls::sqrt((ap_fixed<64,32>)42.0);
+			temp[j].real = temp_1[j].real - _64QAM_Constellation_hw[j].real;
+			temp[j].imag = temp_1[j].imag - _64QAM_Constellation_hw[j].imag;
+			distance[j] = temp[j].real * temp[j].real + temp[j].imag * temp[j].imag;
 		}
 		best_id = argmin_hw(distance, 64);
 		switch ((int)_64QAM_Constellation_hw[best_id].real)
@@ -232,18 +242,16 @@ void _64QAM_Demodulation_hw(MyComplex* x_hat, int Nt, int* bits_demod)
 			break;
 		}
 	}
-
-	free(temp);
 }
-int argmin_hw(float* array, int n)
+int argmin_hw(like_float* array, int n)
 {
 	int i = 0; int best_id = 0;
-	like_float minval = (like_float)array[0];
+	like_float minval = array[0];
 	for (i = 1; i < n; i++)
 	{
-		if (minval > (like_float)array[i])
+		if (minval > array[i])
 		{
-			minval = (like_float)array[i];
+			minval = array[i];
 			best_id = i;
 		}
 	}
@@ -271,13 +279,13 @@ int unequal_times_hw(int* array1, int* array2, int n)
 /**********************************************************************************/
 // 线性同余生成器
 unsigned int lcg_rand_hw() {
-    unsigned int lcg_seed = 1;
+    static unsigned int lcg_seed = 1;
 	lcg_seed = (LCG_A * lcg_seed + LCG_C) % LIMIT_MAX;;
 	
     return lcg_seed;
 }
 like_float lcg_rand_1_hw() {
-    unsigned int lcg_seed = 1;
+    static unsigned int lcg_seed = 1;
 	lcg_seed = (LCG_A * lcg_seed + LCG_C) % LIMIT_MAX;
     return (like_float)(lcg_seed / LIMIT_MAX_F);
 }
@@ -310,19 +318,20 @@ void c_eye_generate_hw(MyComplex* Mat, float val)
 }
 void data_local(MyComplex* H, MyComplex* y, MyComplex* v_tb, Myreal* H_real, Myimage* H_imag, Myreal* y_real, Myimage* y_imag, Myreal* v_tb_real, Myimage* v_tb_imag)
 {
-    for(int i=0; i<Ntr_1; i++){
-		y[i].real = *(y_real+i);
-		y[i].imag = *(y_imag+i);
+    int i;
+	for(i = 0; i<Ntr_1; i++){
+		y[i].real = y_real[i];
+		y[i].imag = y_imag[i];
 	}
-	for (int i = 0; i < Ntr_1*Ntr_1; i++)
+	for (i = 0; i < Ntr_1*Ntr_1; i++)
 	{
-		H[i].real = *(H_real+i);
-		H[i].imag = *(H_imag+i);
+		H[i].real = H_real[i];
+		H[i].imag = H_imag[i];
 	}
-	for (int i = 0; i < Ntr_1*iter_1; i++)
+	for (i = 0; i < Ntr_1*iter_1; i++)
 	{
-		v_tb[i].real = *(v_tb_real+i);
-		v_tb[i].imag = *(v_tb_imag+i);
+		v_tb[i].real = v_tb_real[i];
+		v_tb[i].imag = v_tb_imag[i];
 	}
 }
 void c_matmultiple_hw(MyComplex* matA, int transA, MyComplex* matB, int transB, int ma, int na, int mb, int nb, MyComplex* res)
@@ -411,16 +420,26 @@ MyComplex complex_divide_hw(MyComplex a, MyComplex b)
 {
     MyComplex result;
     like_float denominator = b.real * b.real + b.imag * b.imag;
-    result.real = (a.real * b.real + a.imag * b.imag) / denominator;
-    result.imag = (a.imag * b.real - a.real * b.imag) / denominator;
+	like_float temp_1 = a.real * b.real + a.imag * b.imag;
+	like_float temp_2 = a.imag * b.real - a.real * b.imag;
+    result.real = hls_internal::generic_divide((ap_fixed<64,32>)temp_1, (ap_fixed<64,32>)denominator);
+    result.imag = hls_internal::generic_divide((ap_fixed<64,32>)temp_2, (ap_fixed<64,32>)denominator);
     return result;
 }
 // 复数乘法
 MyComplex complex_multiply_hw(MyComplex a, MyComplex b)
 {
     MyComplex result;
-    result.real = a.real * b.real - a.imag * b.imag;
-    result.imag = a.real * b.imag + a.imag * b.real;
+	like_float local_temp_1;
+	like_float local_temp_2;
+	like_float local_temp_3;
+	like_float local_temp_4;
+    local_temp_1 = a.real * b.real;
+    local_temp_2 = a.imag * b.imag;
+    local_temp_3 = a.real * b.imag;
+    local_temp_4 = a.imag * b.real;
+    result.real = local_temp_1 - local_temp_2;
+    result.imag = local_temp_3 + local_temp_4;
     return result;
 }
 // 复数加法
@@ -454,15 +473,12 @@ void MulMatrix_hw(const MyComplex* A, const MyComplex* B, MyComplex* C)
 	MyComplex sum, tmp;
 	for (i = 0; i < Ntr_1; i++)
 	{
-        #pragma HLS pipeline
 		for (j = 0; j < Ntr_1; j++)
 		{
-            #pragma HLS pipeline
 			sum.real = 0.0;
 			sum.imag = 0.0;
 			for (k = 0; k < Ntr_1; k++)
 			{
-                #pragma HLS pipeline
 				sum = complex_add_hw(sum, complex_multiply_hw(A[i * Ntr_1 + k], B[k * Ntr_1 + j]));
 			}
 			C[i * Ntr_1 + j].real = sum.real;
@@ -473,15 +489,15 @@ void MulMatrix_hw(const MyComplex* A, const MyComplex* B, MyComplex* C)
 // 复数矩阵求逆
 void Inverse_LU_hw(MyComplex* A)
 {
-    MyComplex _L[Ntr_2];//row * col
-	MyComplex _U[Ntr_2];//row * col
-	MyComplex _L_Inverse[Ntr_2];//row * col
-	MyComplex _U_Inverse[Ntr_2];//row * col
+    MyComplex L[Ntr_2];//row * col
+	MyComplex U[Ntr_2];//row * col
+	MyComplex L_Inverse[Ntr_2];//row * col
+	MyComplex U_Inverse[Ntr_2];//row * col
 
-	MyComplex* L = &_L[0];
-	MyComplex* U = &_U[0];
-	MyComplex* L_Inverse = &_L_Inverse[0];
-	MyComplex* U_Inverse = &_U_Inverse[0];
+	// MyComplex* L = &_L[0];
+	// MyComplex* U = &_U[0];
+	// MyComplex* L_Inverse = &_L_Inverse[0];
+	// MyComplex* U_Inverse = &_U_Inverse[0];
     initMatrix_hw(L);
 	initMatrix_hw(U);
 	initMatrix_hw(L_Inverse);
@@ -586,36 +602,82 @@ void my_complex_scal_hw_1(const like_float alpha, MyComplex* X, const int incX)
 // 星座点映射
 void map_hw(like_float dqam, MyComplex* x, MyComplex* x_hat)
 {
-	int i;
-	for (i = 0; i < Ntr_1; i++)
-	{
-		x_hat[i].real = ((like_float)2.0 * (like_float)hls::floor(x[i].real / dqam / (like_float)2.0) + (like_float)1.0);
-		x_hat[i].imag = ((like_float)2.0 * (like_float)hls::floor(x[i].imag / dqam / (like_float)2.0) + (like_float)1.0);
-		switch (mu_1)
-		{
-		case 2:
-			x_hat[i].real = (x_hat[i].real > (like_float) 1.0  ? (like_float)1.0 : x_hat[i].real);
-			x_hat[i].real = (x_hat[i].real < (like_float)-1.0 ? (like_float)-1.0 : x_hat[i].real);
-			x_hat[i].imag = (x_hat[i].imag > (like_float) 1.0  ? (like_float)1.0 : x_hat[i].imag);
-			x_hat[i].imag = (x_hat[i].imag < (like_float)-1.0 ? (like_float)-1.0 : x_hat[i].imag);
-			break;
-		case 4:
-			x_hat[i].real = (x_hat[i].real > (like_float) 3.0  ? (like_float)3.0 : x_hat[i].real);
-			x_hat[i].real = (x_hat[i].real < (like_float)-3.0 ? (like_float)-3.0 : x_hat[i].real);
-			x_hat[i].imag = (x_hat[i].imag > (like_float) 3.0  ? (like_float)3.0 : x_hat[i].imag);
-			x_hat[i].imag = (x_hat[i].imag < (like_float)-3.0 ? (like_float)-3.0 : x_hat[i].imag);
-			break;
-		case 6:
-			x_hat[i].real = (x_hat[i].real > (like_float) 7.0  ? (like_float)7.0 : x_hat[i].real);
-			x_hat[i].real = (x_hat[i].real < (like_float)-7.0 ? (like_float)-7.0 : x_hat[i].real);
-			x_hat[i].imag = (x_hat[i].imag > (like_float) 7.0  ? (like_float)7.0 : x_hat[i].imag);
-			x_hat[i].imag = (x_hat[i].imag < (like_float)-7.0 ? (like_float)-7.0 : x_hat[i].imag);
-			break;
-		default:
-			break;
-		}
-	}
-	my_complex_scal_hw(dqam, x_hat, 1);
+	// int i;
+	// float temp_1;
+	// float temp_2;
+	// float temp_3;
+	// float temp_4;
+	// float temp_5;
+	// for (i = 0; i < Ntr_1; i++)
+	// {
+		// temp_1 = (float)dqam/2.0;
+		// temp_2 = (float)x[i].real/temp_1;
+		// temp_3 = (float)x[i].imag/temp_1;
+		// temp_4 = floor(temp_2);
+		// temp_5 = floor(temp_3);
+		// x_hat[i].real = ((like_float)2.0 * (like_float)temp_4 + (like_float)1.0);
+		// x_hat[i].imag = ((like_float)2.0 * (like_float)temp_5 + (like_float)1.0);
+		// switch (mu_1)
+		// {
+		// case 2:
+			// x_hat[i].real = hls::fmin((ap_fixed<64,32>)x_hat[i].real, (ap_fixed<64,32>)1.0); //(x_hat[i].real > (like_float) 1.0  ? (like_float)1.0 : x_hat[i].real);
+			// x_hat[i].real = hls::fmax((ap_fixed<64,32>)x_hat[i].real, (ap_fixed<64,32>)-1.0);//(x_hat[i].real < (like_float)-1.0 ? (like_float)-1.0 : x_hat[i].real);
+			// x_hat[i].imag = hls::fmin((ap_fixed<64,32>)x_hat[i].imag, (ap_fixed<64,32>)1.0); //(x_hat[i].imag > (like_float) 1.0  ? (like_float)1.0 : x_hat[i].imag);
+			// x_hat[i].imag = hls::fmax((ap_fixed<64,32>)x_hat[i].imag, (ap_fixed<64,32>)-1.0);//(x_hat[i].imag < (like_float)-1.0 ? (like_float)-1.0 : x_hat[i].imag);
+			// break;
+		// case 4:
+			// x_hat[i].real = hls::fmin((ap_fixed<64,32>)x_hat[i].real, (ap_fixed<64,32>)3.0); //(x_hat[i].real > (like_float) 3.0  ? (like_float)3.0 : x_hat[i].real);
+			// x_hat[i].real = hls::fmax((ap_fixed<64,32>)x_hat[i].real, (ap_fixed<64,32>)-3.0);//(x_hat[i].real < (like_float)-3.0 ? (like_float)-3.0 : x_hat[i].real);
+			// x_hat[i].imag = hls::fmin((ap_fixed<64,32>)x_hat[i].imag, (ap_fixed<64,32>)3.0); //(x_hat[i].imag > (like_float) 3.0  ? (like_float)3.0 : x_hat[i].imag);
+			// x_hat[i].imag = hls::fmax((ap_fixed<64,32>)x_hat[i].imag, (ap_fixed<64,32>)-3.0);//(x_hat[i].imag < (like_float)-3.0 ? (like_float)-3.0 : x_hat[i].imag);
+			// break;
+		// case 6:
+			// x_hat[i].real = hls::fmin((ap_fixed<64,32>)x_hat[i].real, (ap_fixed<64,32>)7.0); //(x_hat[i].real > (like_float) 7.0  ? (like_float)7.0 : x_hat[i].real);
+			// x_hat[i].real = hls::fmax((ap_fixed<64,32>)x_hat[i].real, (ap_fixed<64,32>)-7.0);//(x_hat[i].real < (like_float)-7.0 ? (like_float)-7.0 : x_hat[i].real);
+			// x_hat[i].imag = hls::fmin((ap_fixed<64,32>)x_hat[i].imag, (ap_fixed<64,32>)7.0); //(x_hat[i].imag > (like_float) 7.0  ? (like_float)7.0 : x_hat[i].imag);
+			// x_hat[i].imag = hls::fmax((ap_fixed<64,32>)x_hat[i].imag, (ap_fixed<64,32>)-7.0);//(x_hat[i].imag < (like_float)-7.0 ? (like_float)-7.0 : x_hat[i].imag);
+			// break;
+		// default:
+			// break;
+		// }
+	// }
+	// my_complex_scal_hw(dqam, x_hat, 1);
+	for (int i = 0; i < Ntr_1; i++) {
+        // 处理实部
+        like_float temp_real = x[i].real / dqam / like_float(2.0);
+        like_float floored_real = floor(temp_real.to_double());
+        x_hat[i].real = like_float(2.0) * floored_real + like_float(1.0);
+
+        // 处理虚部
+        like_float temp_imag = x[i].imag / dqam / like_float(2.0);
+        like_float floored_imag = floor(temp_imag.to_double());
+        x_hat[i].imag = like_float(2.0) * floored_imag + like_float(1.0);
+
+        // 根据 mu 限幅
+        switch (mu_1) {
+            case 2:
+                x_hat[i].real = (x_hat[i].real > like_float(1.0)) ? like_float(1.0) : x_hat[i].real;
+                x_hat[i].real = (x_hat[i].real < like_float(-1.0)) ? like_float(-1.0) : x_hat[i].real;
+                x_hat[i].imag = (x_hat[i].imag > like_float(1.0)) ? like_float(1.0) : x_hat[i].imag;
+                x_hat[i].imag = (x_hat[i].imag < like_float(-1.0)) ? like_float(-1.0) : x_hat[i].imag;
+                break;
+            case 4:
+                x_hat[i].real = (x_hat[i].real > like_float(3.0)) ? like_float(3.0) : x_hat[i].real;
+                x_hat[i].real = (x_hat[i].real < like_float(-3.0)) ? like_float(-3.0) : x_hat[i].real;
+                x_hat[i].imag = (x_hat[i].imag > like_float(3.0)) ? like_float(3.0) : x_hat[i].imag;
+                x_hat[i].imag = (x_hat[i].imag < like_float(-3.0)) ? like_float(-3.0) : x_hat[i].imag;
+                break;
+            case 6:
+                x_hat[i].real = (x_hat[i].real > like_float(7.0)) ? like_float(7.0) : x_hat[i].real;
+                x_hat[i].real = (x_hat[i].real < like_float(-7.0)) ? like_float(-7.0) : x_hat[i].real;
+                x_hat[i].imag = (x_hat[i].imag > like_float(7.0)) ? like_float(7.0) : x_hat[i].imag;
+                x_hat[i].imag = (x_hat[i].imag < like_float(-7.0)) ? like_float(-7.0) : x_hat[i].imag;
+                break;
+            default:
+                break;
+        }
+    }
+    my_complex_scal_hw(dqam, x_hat, 1);
 }
 // 生成均匀分布随机整数
 void generateUniformRandoms_int_hw(int* x_init)
@@ -657,7 +719,7 @@ void generateUniformRandoms_float_hw(like_float* p_uni)
 /**********************************************************************************/
 /**********************************************************************************/
 /**********************************************************************************/
-/*********************************顶层函数分布计算函数******** **********************/
+/*********************************顶层函数分步计算函数*******************************/
 /**********************************************************************************/
 /**********************************************************************************/
 /**********************************************************************************/
@@ -668,6 +730,7 @@ void grad_preconditioner_updater_hw(MyComplex* H, int transA, int transB, MyComp
     c_matmultiple_hw(H, transA, H, transB, Nr, Nt, Nr, Nt, HH_H);
     my_complex_add_hw(HH_H, sigma2eye, grad_preconditioner);
     Inverse_LU_hw(grad_preconditioner);
+	
 }
 /*For learning rate line search*/
 void learning_rate_line_search_hw(int lr_approx, MyComplex* H, int transA, int transB, MyComplex* grad_preconditioner, int Nr, int Nt, MyComplex* temp_NtNr, MyComplex* pmat)
@@ -676,12 +739,12 @@ void learning_rate_line_search_hw(int lr_approx, MyComplex* H, int transA, int t
 	{
 		c_matmultiple_hw(H, transB, grad_preconditioner, transB, Nr, Nt, Nt, Nt, temp_NtNr);
 		c_matmultiple_hw(temp_NtNr, transB, H, transA, Nr, Nt, Nr, Nt, pmat);
-	}
-	else
+	}else
 	{
 		 for (int i = 0; i < Ntr_2; i++)
 		{
-			pmat[i].real = (like_float)0; pmat[i].imag = (like_float)0;
+			pmat[i].real = (like_float)0; 
+			pmat[i].imag = (like_float)0;
 		}
 	}
 }
@@ -697,11 +760,10 @@ void x_initialize_hw(int mmse_init, MyComplex* sigma2eye, int Nt, int Nr, float 
 		c_matmultiple_hw(temp_NtNt, transB, temp_Nt, transB, Nt, Nt, Nt, transA, x_mmse);
 		/*映射到归一化星座图中 xhat = constellation_norm[np.argmin(abs(x_mmse * np.ones(nt, 2 * *mu) - constellation_norm), axis = 1)].reshape(-1, 1)*/
 		map_hw(dqam, x_mmse, x_hat);
-	}
-	else
+	}else
 	{
 		/*xhat = constellation_norm[np.random.randint(low=0, high=2 ** mu, size=(samplers, nt, 1))].copy()*/
-		generateUniformRandoms_int_hw(x_init);
+		//generateUniformRandoms_int_hw(x_init);
 		for (int i = 0; i < Ntr_1; i++)
 			x_hat[i] = constellation_norm[x_init[i]];
 	}
@@ -723,14 +785,17 @@ void r_cal_hw(MyComplex* r, int transA, int transB, int Nr, int Nt, MyComplex* t
 /*确定最优学习率*/
 void lr_hw(int lr_approx, MyComplex* pmat, int transB, int transA, MyComplex* r, int Nr, int Nt, MyComplex* pr_prev, MyComplex* temp_1, MyComplex* _temp_1, like_float lr)
 {
+	like_float local_temp_1;
+	like_float local_temp_2;
     if (!lr_approx)
 	{
 		c_matmultiple_hw(pmat, transB, r, transB, Nr, Nr, Nr, transA, pr_prev);
 		c_matmultiple_hw(r, transA, pr_prev, transB, Nr, transA, Nr, transA, temp_1);
 		c_matmultiple_hw(pr_prev, transA, pr_prev, transB, Nr, transA, Nr, transA, _temp_1);
-		lr = temp_1->real / _temp_1->real;
-	}
-	else
+		local_temp_1 = temp_1->real;
+		local_temp_2 = _temp_1->real;
+		lr = hls_internal::generic_divide((ap_fixed<64,32>)local_temp_1, (ap_fixed<64,32>)local_temp_2);
+	}else
 	{
 		lr = 1;
 	}
@@ -750,7 +815,7 @@ void gauss_add_hw(MyComplex* v, MyComplex* v_tb, int offset, like_float step_siz
         v[i].real = v_tb[i+offset].real;
         v[i].imag = v_tb[i+offset].imag;
     }
-    offset = offset + Ntr_1;
+    //offset = offset + Ntr_1;
     my_complex_scal_hw(step_size, v, 1);
     my_complex_add_hw_1(z_grad, v, z_prop);
 }
@@ -775,9 +840,10 @@ void survivor_hw(like_float r_norm_survivor, like_float r_norm_prop, MyComplex* 
 void acceptance_hw(int transB, int transA, like_float r_norm_prop, like_float r_norm, like_float log_pacc, like_float p_acc, like_float* p_uni, MyComplex* x_prop , MyComplex* x_hat, MyComplex* r_prop, MyComplex* r, MyComplex* pmat, MyComplex* pr_prev, MyComplex* temp_1, MyComplex* _temp_1, like_float lr, like_float step_size, like_float dqam, like_float alpha)
 {
     like_float temp_3 = -(r_norm_prop - r_norm);
-	log_pacc = min(like_float(0), temp_3);
-	p_acc = hls::exp<64,32>((ap_fixed<64,32>)log_pacc);
+	log_pacc = hls::fmin((ap_fixed<64,32>)0, (ap_fixed<64,32>)temp_3);
+	p_acc = hls::exp((ap_fixed<64,32>)log_pacc);
 	generateUniformRandoms_float_hw(p_uni);
+	like_float step_temp_;
 	if (p_acc > p_uni[5])/*概率满足条件时候*/
 	{
 		my_complex_copy_hw(x_prop, 1, x_hat, 1);
@@ -792,7 +858,8 @@ void acceptance_hw(int transB, int transA, like_float r_norm_prop, like_float r_
 			lr = temp_1->real / _temp_1->real;
 		}
 		/*update random walk size*/
-		step_size = max(dqam, (like_float)hls::sqrt(r_norm / (like_float)Ntr_1)) * alpha;
+		step_temp_ = hls_internal::generic_divide((ap_fixed<64,32>)r_norm, (ap_fixed<64,32>)Ntr_1);
+		step_size = hls::fmax((ap_fixed<64,32>)dqam, hls::sqrt((ap_fixed<64,32>)step_temp_)) * alpha;
 	}
 }
 /*输出*/
@@ -802,6 +869,168 @@ void out_hw(const MyComplex* X, const int incX, Myreal* Y_real, Myimage* Y_imag,
 		Y_real[j * incY] = X[i * incX].real;  // 复制实部
 		Y_imag[j * incY] = X[i * incX].imag;  // 复制虚部
 	}
+}
+
+/******特殊*******/
+void initMatrix(MyComplex_f* A)
+{
+	int i, j;
+	for (i = 0; i < Ntr_1; i++)
+	{
+		for (j = 0; j < Ntr_1; j++)
+		{
+			A[i * Ntr_1 + j].real = 0.0;
+			A[i * Ntr_1 + j].imag = 0.0;
+		}
+	}
+}
+MyComplex_f complex_divide(MyComplex_f a, MyComplex_f b) {
+    MyComplex_f result;
+    float denominator = b.real * b.real + b.imag * b.imag;
+    result.real = (a.real * b.real + a.imag * b.imag) / denominator;
+    result.imag = (a.imag * b.real - a.real * b.imag) / denominator;
+    return result;
+}
+MyComplex_f complex_multiply(MyComplex_f a, MyComplex_f b) {
+    MyComplex_f result;
+    float local_temp_1;
+	float local_temp_2;
+	float local_temp_3;
+	float local_temp_4;
+    local_temp_1 = a.real * b.real;
+    local_temp_2 = a.imag * b.imag;
+    local_temp_3 = a.real * b.imag;
+    local_temp_4 = a.imag * b.real;
+    result.real = local_temp_1 - local_temp_2;
+    result.imag = local_temp_3 + local_temp_4;
+    return result;
+}
+MyComplex_f complex_add(MyComplex_f a, MyComplex_f b) {
+    MyComplex_f result;
+    result.real = a.real + b.real;
+    result.imag = a.imag + b.imag;
+    return result;
+}
+MyComplex_f complex_subtract(MyComplex_f a, MyComplex_f b) {
+    MyComplex_f result;
+    result.real = a.real - b.real;
+    result.imag = a.imag - b.imag;
+    return result;
+}
+void MulMatrix(const MyComplex_f* A, const MyComplex_f* B, MyComplex_f* C)
+{
+	int i, j, k;
+	MyComplex_f sum, tmp;
+	for (i = 0; i < Ntr_1; i++)
+	{
+		for (j = 0; j < Ntr_1; j++)
+		{
+
+			sum.real = 0.0;
+			sum.imag = 0.0;
+			for (k = 0; k < Ntr_1; k++)
+			{
+				sum = complex_add(sum, complex_multiply(A[i * Ntr_1 + k], B[k * Ntr_1 + j]));
+			}
+			C[i * Ntr_1 + j].real = sum.real;
+			C[i * Ntr_1 + j].imag = sum.imag;
+		}
+	}
+}
+void Inverse_LU(MyComplex_f* A)
+{
+    MyComplex_f L[Ntr_2];//row * col
+	MyComplex_f U[Ntr_2];//row * col
+	MyComplex_f L_Inverse[Ntr_2];//row * col
+	MyComplex_f U_Inverse[Ntr_2];//row * col
+
+
+	initMatrix(L);
+	initMatrix(U);
+	initMatrix(L_Inverse);
+	initMatrix(U_Inverse);
+
+	int i, j, k, t;
+	MyComplex_f s;
+	for (i = 0; i < Ntr_1; i++)//锟皆斤拷元锟斤拷
+	{
+		L[i * Ntr_1 + i].real = 1.0;
+		L[i * Ntr_1 + i].imag = 0.0;
+	}
+	for (j = 0; j < Ntr_1; j++)
+	{
+		U[j] = A[j];
+	}
+	for (i = 1; i < Ntr_1; i++)
+	{
+		L[i * Ntr_1] = complex_divide(A[i * Ntr_1], U[0]);
+	}
+	for (k = 1; k < Ntr_1; k++)
+	{
+		for (j = k; j < Ntr_1; j++)
+		{
+			s.imag = 0.0;
+			s.real = 0.0;
+			for (t = 0; t < k; t++) {
+				s = complex_add(s, complex_multiply(L[k * Ntr_1 + t], U[t * Ntr_1 + j]));
+			}
+			U[k * Ntr_1 + j] = complex_subtract(A[k * Ntr_1 + j], s);
+		}
+		for (i = k; i < Ntr_1; i++)
+		{
+			s.imag = 0.0;
+			s.real = 0.0;
+			for (t = 0; t < k; t++)
+			{
+				s = complex_add(s, complex_multiply(L[i * Ntr_1 + t], U[t * Ntr_1 + k]));
+			}
+			L[i * Ntr_1 + k] = complex_divide(complex_subtract(A[i * Ntr_1 + k], s), U[k * Ntr_1 + k]);
+		}
+	}
+
+	for (i = 0; i < Ntr_1; i++)
+	{
+		L_Inverse[i * Ntr_1 + i].imag = 0.0;
+		L_Inverse[i * Ntr_1 + i].real = 1.0;
+	}
+	for (j = 0; j < Ntr_1; j++)
+	{
+		for (i = j + 1; i < Ntr_1; i++)
+		{
+			s.imag = 0.0;
+			s.real = 0.0;
+			for (k = j; k < i; k++) {
+				s = complex_add(s, complex_multiply(L[i * Ntr_1 + k], L_Inverse[k * Ntr_1 + j]));
+			}
+			L_Inverse[i * Ntr_1 + j].real = (-1) * complex_multiply(L_Inverse[j * Ntr_1 + j], s).real;
+			L_Inverse[i * Ntr_1 + j].imag = (-1) * complex_multiply(L_Inverse[j * Ntr_1 + j], s).imag;
+		}
+	}
+	MyComplex_f di;
+	di.real = 1.0;
+	di.imag = 0.0;
+	for (i = 0; i < Ntr_1; i++) //锟斤拷锟斤拷锟斤拷锟斤拷锟节帮拷锟秸达拷锟铰碉拷锟较ｏ拷锟斤拷锟斤拷u锟斤拷锟斤拷锟斤拷锟�
+	{
+		U_Inverse[i * Ntr_1 + i] = complex_divide(di, U[i * Ntr_1 + i]);
+
+	}
+	for (j = 0; j < Ntr_1; j++)
+	{
+		for (i = j - 1; i >= 0; i--)
+		{
+			s.imag = 0.0;
+			s.real = 0.0;
+			for (k = i + 1; k <= j; k++)
+			{
+				s = complex_add(s, complex_multiply(U[i * Ntr_1 + k], U_Inverse[k * Ntr_1 + j]));
+
+			}
+			s.imag = -s.imag;
+			s.real = -s.real;
+			U_Inverse[i * Ntr_1 + j] = complex_divide(s, U[i * Ntr_1 + i]);
+		}
+	}
+	MulMatrix(U_Inverse, L_Inverse, A);
 }
 
 /**********************************************************************************/
@@ -842,12 +1071,12 @@ void MHGD_detect_accel_hw(
 	MyComplex H_local[64];
 	MyComplex v_tb_local[256];
 	data_local(H_local, y_local, v_tb_local, H_real, H_imag, y_real, y_imag, v_tb_real, v_tb_imag);
-
     /********************变量定义*******************/
     like_float alpha;
 	like_float dqam;
 	like_float step_size;
-	int i; int j; int k; int id;int x_init[8];int offset = 0;
+	int x_init[8] = {1, 11, 3, 6, 13, 11, 15, 9};
+	int i; int j; int k; int offset = 0;
     int transA = 1;  // CblasConjTrans 的等效值，表示共轭转置
 	int transB = 0;  // CblasNoTrans 的等效值，表示不转置
 	like_float log_pacc;
@@ -856,7 +1085,7 @@ void MHGD_detect_accel_hw(
 	like_float lr;/*learning rate*/
 	like_float r_norm_prop;/*new norm*/
 	like_float p_acc;
-	like_float p_uni[10];
+	like_float p_uni[10] = {0.0546594001, 0.372195959, 0.999145865, 0.0510859713, 0.411008626, 0.0656750798, 0.0993093923, 0.258695126, 0.443532109, 0.960875571};
 	MyComplex HH_H[64];
 	MyComplex grad_preconditioner[64];
 	MyComplex constellation_norm[16];/*depend on 2^mu*/
@@ -873,53 +1102,173 @@ void MHGD_detect_accel_hw(
     MyComplex r_prop[8];
     MyComplex temp_NtNt[64];
     MyComplex temp_NtNr[64];
-    MyComplex temp_1;
-    MyComplex _temp_1;
+    MyComplex temp_1[1];
+    MyComplex _temp_1[1];
     MyComplex temp_Nt[8];
     MyComplex temp_Nr[8];
     MyComplex sigma2eye[64]; 
+	like_float local_temp_1;
+	like_float local_temp_2;
+	MyComplex_f local_f_complex_1[Ntr_1];
+	MyComplex_f local_f_complex_2[Ntr_2];
+	float local_1;
+	float local_2;
     /****************************核心迭代计算前部分数据处理*************************/
     /*定义发送符号之间最小距离的一半，是星座点经过归一化处理后的结果*/
-    get_dqam_hw(dqam);
+    like_float numerator = 1.5;
+    like_float denominator = hls::pow((ap_fixed<64,32>)2, (ap_fixed<64,32>)mu_1) - (ap_fixed<64,32>)1;
+	like_float tttt = numerator/denominator;
+	dqam = hls::sqrt((ap_fixed<64,32>)tttt);
     /*初始化constellation_norm*/
     my_complex_copy_hw_1(_16QAM_Constellation_hw, 1, constellation_norm, 1);
 	my_complex_scal_hw_1(dqam, constellation_norm, 1);
     /*生成部分中间量供后续使用*/
     c_eye_generate_hw(sigma2eye, sigma2_local / (float)(dqam * dqam));
 	/*二阶梯度下降，计算grad_preconditioner(梯度更新的预条件矩阵)*/
-    grad_preconditioner_updater_hw(H_local, transA, transB, HH_H, sigma2eye, grad_preconditioner, Ntr_1, Ntr_1);
+    //grad_preconditioner_updater_hw(H_local, transA, transB, HH_H, sigma2eye, grad_preconditioner, Ntr_1, Ntr_1);
+	c_matmultiple_hw(H_local, transA, H_local, transB, Ntr_1, Ntr_1, Ntr_1, Ntr_1, HH_H);
+    my_complex_add_hw(HH_H, sigma2eye, grad_preconditioner);
+	for(i=0; i<Ntr_2; i++){
+		local_f_complex_2[i].real = grad_preconditioner[i].real;
+		local_f_complex_2[i].imag = grad_preconditioner[i].imag;
+	}
+	for(i=0; i<Ntr_2; i++){
+		local_1 = fabsf(local_f_complex_2[i].real);
+        local_2 = fabsf(local_f_complex_2[i].imag);
+		local_f_complex_2[i].real = (local_1 < 0.000001f)?0.0f:local_f_complex_2[i].real;
+		local_f_complex_2[i].imag = (local_2 < 0.000001f)?0.0f:local_f_complex_2[i].imag;
+	}
+    Inverse_LU(local_f_complex_2);
+	for(i=0; i<Ntr_2; i++){
+		grad_preconditioner[i].real = local_f_complex_2[i].real;
+		grad_preconditioner[i].imag = local_f_complex_2[i].imag;
+	}
+	/*alpha*/
     like_float exponent = like_float(1) / like_float(3); // 避免浮点字面值隐式转换
 	like_float exponent_1 = (like_float)Ntr_1 / like_float(8);
-    alpha = like_float(1) / hls::pow<64,32>((ap_fixed<64,32>)exponent, (ap_fixed<64,32>)exponent_1);
+    alpha = like_float(1) / hls::pow<64,32>((ap_fixed<64,32>)exponent_1, (ap_fixed<64,32>)exponent);
     c_eye_generate_hw(covar, 1.0f); //源代码有的covar，似乎并未使用
     /*For learning rate line search */
     learning_rate_line_search_hw(lr_approx_1, H_local, transA, transB, grad_preconditioner, Ntr_1, Ntr_1, temp_NtNr, pmat);
     /*x的初始化*/
-    x_initialize_hw(mmse_init_1, sigma2eye, Ntr_1, Ntr_1, sigma2_local, HH_H, temp_NtNt, H_local, transA, transB, y_local, temp_Nt, x_mmse, dqam, x_hat_1, x_init, constellation_norm);
-    /*计算剩余向量r=y-Hx*/
-    r_hw(H_local, transB, transA, x_hat_1, Ntr_1, Ntr_1, r, y_local);
+    //x_initialize_hw(mmse_init_1, sigma2eye, Ntr_1, Ntr_1, sigma2_local, HH_H, temp_NtNt, H_local, transA, transB, y_local, temp_Nt, x_mmse, dqam, x_hat_1, x_init, constellation_norm);
+    if (mmse_init_1)
+	{
+		/*x_mmse = la.inv(AHA + noise_var * np.eye(nt)) @ AH @ y*/
+		c_eye_generate_hw(sigma2eye, sigma2);
+		my_complex_add_hw(sigma2eye, HH_H, temp_NtNt);
+		//Inverse_LU_hw(temp_NtNt);
+		for(i=0; i<Ntr_2; i++){
+			local_f_complex_2[i].real = temp_NtNt[i].real;
+			local_f_complex_2[i].imag = temp_NtNt[i].imag;
+		}
+		for(i=0; i<Ntr_2; i++){
+			local_1 = fabsf(local_f_complex_2[i].real);
+			local_2 = fabsf(local_f_complex_2[i].imag);
+			local_f_complex_2[i].real = (local_1 < 0.000001f)?0.0f:local_f_complex_2[i].real;
+			local_f_complex_2[i].imag = (local_2 < 0.000001f)?0.0f:local_f_complex_2[i].imag;
+		}
+		Inverse_LU(local_f_complex_2);
+		for(i=0; i<Ntr_2; i++){
+			temp_NtNt[i].real = local_f_complex_2[i].real;
+			temp_NtNt[i].imag = local_f_complex_2[i].imag;
+		}
+		c_matmultiple_hw(H_local, transA, y_local, transB, Ntr_1, Ntr_1, Ntr_1, transA, temp_Nt);
+		c_matmultiple_hw(temp_NtNt, transB, temp_Nt, transB, Ntr_1, Ntr_1, Ntr_1, transA, x_mmse);
+		/*映射到归一化星座图中 xhat = constellation_norm[np.argmin(abs(x_mmse * np.ones(nt, 2 * *mu) - constellation_norm), axis = 1)].reshape(-1, 1)*/
+		map_hw(dqam, x_mmse, x_hat_1);
+	}else
+	{
+		/*xhat = constellation_norm[np.random.randint(low=0, high=2 ** mu, size=(samplers, nt, 1))].copy()*/
+		//generateUniformRandoms_int_hw(x_init);
+		for (int i = 0; i < Ntr_1; i++)
+			x_hat_1[i] = constellation_norm[x_init[i]];
+	}
+	/*计算剩余向量r=y-Hx*/
+    //r_hw(H_local, transB, transA, x_hat_1, Ntr_1, Ntr_1, r, y_local);
+	c_matmultiple_hw(H_local, transB, x_hat_1, transB, Ntr_1, Ntr_1, Ntr_1, transA, r);
+	my_complex_sub_hw(y_local, r, r);
     /*计算剩余向量的范数（就是模值）*/
-    r_cal_hw(r, transA, transB, Ntr_1, Ntr_1, &temp_1, x_hat_1, x_survivor, r_norm, r_norm_survivor);
+    c_matmultiple_hw(r, transA, r, transB, Ntr_1, transA, Ntr_1, transA, temp_1);
+	r_norm = temp_1[0].real;
+	my_complex_copy_hw(x_hat_1, 1, x_survivor, 1);
+	r_norm_survivor = r_norm;
     /*确定最优学习率*/
-    lr_hw(lr_approx_1, pmat, transB, transA, r, Ntr_1, Ntr_1, pr_prev, &temp_1, &_temp_1, lr);
-    /*补偿初始化*/
-    step_size = max(dqam, like_float(hls::sqrt(r_norm / (like_float)Ntr_1))) * alpha;
+	//lr_hw(lr_approx_1, pmat, transB, transA, r, Ntr_1, Ntr_1, pr_prev, &temp_1, &_temp_1, lr);
+    if (!lr_approx_1)
+	{
+		c_matmultiple_hw(pmat, transB, r, transB, Ntr_1, Ntr_1, Ntr_1, transA, pr_prev);
+		c_matmultiple_hw(r, transA, pr_prev, transB, Ntr_1, transA, Ntr_1, transA, temp_1);
+		c_matmultiple_hw(pr_prev, transA, pr_prev, transB, Ntr_1, transA, Ntr_1, transA, _temp_1);
+		local_temp_1 = temp_1[0].real;
+		local_temp_2 = _temp_1[0].real;
+		lr = hls_internal::generic_divide((ap_fixed<64,32>)local_temp_1, (ap_fixed<64,32>)local_temp_2);
+	}else
+	{
+		lr = 1;
+	}
+    /*步长初始化*/
+	local_temp_1 = hls_internal::generic_divide((ap_fixed<64,32>)r_norm, (ap_fixed<64,32>)Ntr_1);
+	local_temp_2 = hls::sqrt((ap_fixed<64,32>)local_temp_1);
+    step_size = hls::fmax((ap_fixed<64,32>)dqam, (ap_fixed<64,32>)local_temp_2) * alpha;
     /****************************核心迭代计算*********************************/
     for (k = 0; k < iter_1; k++)
 	{
         /*更新梯度 z_grad = xhat + lr * (grad_preconditioner @ (AH @ r))*/
-        z_grad_hw(H_local, transA, transB, temp_Nt, grad_preconditioner, z_grad, lr, x_hat_1, r);
+        //z_grad_hw(H_local, transA, transB, temp_Nt, grad_preconditioner, z_grad, lr, x_hat_1, r);
+		c_matmultiple_hw(H_local, transA, r, transB, Ntr_1, Ntr_1, Ntr_1, transA, temp_Nt);
+	    c_matmultiple_hw(grad_preconditioner, transB, temp_Nt, transB, Ntr_1, Ntr_1, Ntr_1, transA, z_grad);
+	    my_complex_scal_hw(lr, z_grad, 1); 
+	    my_complex_add_hw_1(x_hat_1, z_grad, z_grad);
         /*加入高斯随机扰动*/
-        gauss_add_hw(v, v_tb_local, offset, step_size, z_grad, z_prop);
+        ///gauss_add_hw(v, v_tb_local, offset, step_size, z_grad, z_prop);
+		for(int i = 0; i < Ntr_1; i++){
+			v[i].real = v_tb_local[i+offset].real;
+			v[i].imag = v_tb_local[i+offset].imag;
+		}
+		offset = offset + Ntr_1;
+		my_complex_scal_hw(step_size, v, 1);
+		my_complex_add_hw_1(z_grad, v, z_prop);
         /*将梯度映射到QAM星座点中 x_prop = constellation_norm[np.argmin(abs(z_prop * ones - constellation_norm), axis=2)].reshape(-1, nt, 1) */
         map_hw(dqam, z_prop, x_prop);
         /*计算新的残差范数 calculate residual norm of the proposal*/
-        r_newnorm_hw(H_local, transB, x_prop, transA, temp_Nr, y_local, r_prop, &temp_1, r_norm_prop);
+        //r_newnorm_hw(H_local, transB, x_prop, transA, temp_Nr, y_local, r_prop, temp_1, r_norm_prop);
+		c_matmultiple_hw(H_local, transB, x_prop, transB, Ntr_1, Ntr_1, Ntr_1, transA, temp_Nr);
+		my_complex_sub_hw(y_local, temp_Nr, r_prop);
+		c_matmultiple_hw(r_prop, transA, r_prop, transB, Ntr_1, transA, Ntr_1, transA, temp_1);
+		r_norm_prop = temp_1[0].real;
         /*update the survivor*/
-        survivor_hw(r_norm_survivor, r_norm_prop, x_prop, x_survivor);
+        //survivor_hw(r_norm_survivor, r_norm_prop, x_prop, x_survivor);
+		if (r_norm_survivor > r_norm_prop)
+		{
+			my_complex_copy_hw(x_prop, 1, x_survivor, 1);
+			r_norm_survivor = r_norm_prop;
+		}
         /*acceptance test＆update GD learning rate＆update random walk size*/
-        acceptance_hw(transB, transA, r_norm_prop, r_norm, log_pacc, p_acc, p_uni, x_prop , x_hat_1, r_prop, r, pmat, pr_prev, &temp_1, &_temp_1, lr, step_size, dqam, alpha);
-    }
+        //acceptance_hw(transB, transA, r_norm_prop, r_norm, log_pacc, p_acc, p_uni, x_prop , x_hat_1, r_prop, r, pmat, pr_prev, &temp_1, &_temp_1, lr, step_size, dqam, alpha);
+        local_temp_1 = -(r_norm_prop - r_norm);
+		log_pacc = hls::fmin((ap_fixed<64,32>)0, (ap_fixed<64,32>)local_temp_1);
+		p_acc = hls::exp((ap_fixed<64,32>)log_pacc);
+		//generateUniformRandoms_float_hw(p_uni);
+		if (p_acc > p_uni[5])/*概率满足条件时候*/
+		{
+			my_complex_copy_hw(x_prop, 1, x_hat_1, 1);
+			my_complex_copy_hw(r_prop, 1, r, 1);
+			r_norm = r_norm_prop;
+			/*update GD learning rate*/
+			if (!lr_approx_1)
+			{
+				c_matmultiple_hw(pmat, transB, r, transB, Ntr_1, Ntr_1, Ntr_1, transA, pr_prev);
+				c_matmultiple_hw(r, transA, pr_prev, transB, Ntr_1, transA, Ntr_1, transA, temp_1);
+				c_matmultiple_hw(pr_prev, transA, pr_prev, transB, Ntr_1, transA, Ntr_1, transA, _temp_1);
+				lr = temp_1[0].real / _temp_1[0].real;
+			}
+			/*update random walk size*/
+			local_temp_1 = hls_internal::generic_divide((ap_fixed<64,32>)r_norm, (ap_fixed<64,32>)Ntr_1);
+			local_temp_2 = hls::fmax((ap_fixed<64,32>)dqam, hls::sqrt((ap_fixed<64,32>)local_temp_1));
+			step_size = local_temp_2 * alpha;
+		}
+	}
     /****************************迭代结束x_survivor写入输出口*********************************/
     out_hw(x_survivor, 1, x_hat_real, x_hat_imag, 1);
 }

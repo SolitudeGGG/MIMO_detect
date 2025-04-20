@@ -5,6 +5,18 @@ _ide/
 logs/
 MHGD_hw/
 output/
+debug.log/
+MHGD_accel_1.cpp/
+MHGD_accel_1.h/
+MIMO_simulation_1.cpp/
+MIMO_simulation_1.h/
+MMSE_1.cpp/
+MMSE_1.h/
+run_cpp.tcl/
+sys_config_1.h/
+tb_1.cpp/
+util_1.cpp/
+util_1.h/
 
 # Ignore build output directory
 /build
